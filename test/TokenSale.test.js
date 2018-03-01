@@ -9,6 +9,7 @@ const Promise = require('bluebird')
 
 contract('TokenSale', async accounts => {
   it('should fail when trying to send ether before startPresaleTime', async () => {
+    console.log(accounts)
     const sale = await TokenSale.deployed()
     try {
       await sale.sendTransaction({

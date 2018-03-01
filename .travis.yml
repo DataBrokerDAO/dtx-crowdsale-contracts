@@ -10,8 +10,8 @@ node_js:
 before_install:
   - echo "//registry.npmjs.org/:_authToken=\${NPM_TOKEN}" > .npmrc
   - echo "//registry.npmjs.org/:_authToken=\${NPM_TOKEN}" > ~/.npmrc
-  - npm i -g truffle @settlemint/mint-cli ganache-cli
-  - ganache-cli -m 'robot robot robot robot robot robot robot robot robot robot robot robot' -l 0xfffffffffff -id 1234 > testrpc.log &
+  - npm i -g truffle @settlemint/mint-cli ganache-cli@6.1.0-beta.4
+  - ganache-cli -e 1000 -m 'robot robot robot robot robot robot robot robot robot robot robot robot' -l 0xfffffffffff -id 1234 > testrpc.log &
 
 after_script:
   - cat testrpc.log
