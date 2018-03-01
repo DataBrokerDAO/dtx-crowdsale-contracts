@@ -10,7 +10,11 @@ node_js:
 before_install:
   - echo "//registry.npmjs.org/:_authToken=\${NPM_TOKEN}" > .npmrc
   - echo "//registry.npmjs.org/:_authToken=\${NPM_TOKEN}" > ~/.npmrc
-  - npm i -g truffle @settlemint/mint-cli
+  - npm i -g truffle @settlemint/mint-cli ganache-cli
+  - ganache-cli -m 'robot robot robot robot robot robot robot robot robot robot robot robot' -l 0xfffffffffff -id 1234 > testrpc.log &
+
+after_script:
+  - cat testrpc.log
 
 after_success:
   - npm run semantic-release
