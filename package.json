@@ -10,8 +10,8 @@
     "node": ">=8.7.0"
   },
   "scripts": {
-    "quicktest": "mint test",
-    "test": "solidity-coverage",
+    "coverage": "solidity-coverage",
+    "test": "mint test",
     "lint": "npm run solium -- --dir contracts --fix",
     "watch": "nodemon --watch . --exec npm run test",
     "semantic-release": "semantic-release",
@@ -48,23 +48,11 @@
     "eslint-plugin-standard": "^3.0.1",
     "husky": "^0.14.3",
     "lint-staged": "^7.0.0",
-    "prettier": "^1.10.2"
-  },
-  "dependencies": {
-    "@settlemint/lib-crypto": "^4.5.2",
-    "@settlemint/solidity-mint": "^1.11.0",
-    "bip39": "^2.5.0",
+    "prettier": "^1.10.2",
     "bluebird": "^3.5.1",
-    "debug": "^3.1.0",
-    "ethereumjs-wallet": "^0.6.0",
-    "i": "^0.3.6",
-    "minimetoken": "^0.2.0",
-    "moment": "^2.20.1",
-    "node-fetch": "^2.0.0",
-    "p-iteration": "^1.1.5",
-    "solc": "^0.4.20",
-    "zeppelin-solidity": "^1.7.0"
+    "solc": "^0.4.20"
   },
+  "dependencies": {},
   "publishConfig": {
     "access": "restricted"
   },
