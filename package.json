@@ -46,6 +46,7 @@
     "lint-staged": "^7.0.0",
     "moment": "^2.20.1",
     "nodemon": "^1.15.1",
+    "p-iteration": "^1.1.5",
     "prettier": "^1.10.2",
     "semantic-release": "^12.4.1",
     "solc": "^0.4.20",
