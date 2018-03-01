@@ -1,4 +1,15 @@
 language: node_js
 
+cache:
+  directories:
+    - node_modules
+
 node_js:
-  - "8"
+  - '8'
+
+before_install:
+  - echo "//registry.npmjs.org/:_authToken=\${NPM_TOKEN}" > .npmrc
+  - echo "//registry.npmjs.org/:_authToken=\${NPM_TOKEN}" > ~/.npmrc
+
+after_success:
+  - npm run semantic-release
