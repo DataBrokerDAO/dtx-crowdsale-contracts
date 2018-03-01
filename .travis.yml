@@ -10,7 +10,7 @@ node_js:
 before_install:
   - echo "//registry.npmjs.org/:_authToken=\${NPM_TOKEN}" > .npmrc
   - echo "//registry.npmjs.org/:_authToken=\${NPM_TOKEN}" > ~/.npmrc
-  - npm i -g truffle @solidity/mint-cli
+  - npm i -g truffle @settlemint/mint-cli
 
 after_success:
   - npm run semantic-release
