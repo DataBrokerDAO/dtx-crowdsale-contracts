@@ -36,8 +36,8 @@
       "type": "function"
     }
   ],
-  "bytecode": "0x6060604052341561000f57600080fd5b60008054600160a060020a033316600160a060020a03199091161790556101668061003b6000396000f30060606040526004361061004b5763ffffffff7c01000000000000000000000000000000000000000000000000000000006000350416633cebb8238114610050578063f77c47911461007e575b600080fd5b341561005b57600080fd5b61007c73ffffffffffffffffffffffffffffffffffffffff600435166100ba565b005b341561008957600080fd5b61009161011e565b60405173ffffffffffffffffffffffffffffffffffffffff909116815260200160405180910390f35b6000543373ffffffffffffffffffffffffffffffffffffffff9081169116146100e257600080fd5b6000805473ffffffffffffffffffffffffffffffffffffffff191673ffffffffffffffffffffffffffffffffffffffff92909216919091179055565b60005473ffffffffffffffffffffffffffffffffffffffff16815600a165627a7a7230582016189648ce184d4a3a1e5fd249a57be554869de2663ba3667b6cdc8a177ee1610029",
-  "deployedBytecode": "0x60606040526004361061004b5763ffffffff7c01000000000000000000000000000000000000000000000000000000006000350416633cebb8238114610050578063f77c47911461007e575b600080fd5b341561005b57600080fd5b61007c73ffffffffffffffffffffffffffffffffffffffff600435166100ba565b005b341561008957600080fd5b61009161011e565b60405173ffffffffffffffffffffffffffffffffffffffff909116815260200160405180910390f35b6000543373ffffffffffffffffffffffffffffffffffffffff9081169116146100e257600080fd5b6000805473ffffffffffffffffffffffffffffffffffffffff191673ffffffffffffffffffffffffffffffffffffffff92909216919091179055565b60005473ffffffffffffffffffffffffffffffffffffffff16815600a165627a7a7230582016189648ce184d4a3a1e5fd249a57be554869de2663ba3667b6cdc8a177ee1610029",
+  "bytecode": "0x6060604052341561000f57600080fd5b60008054600160a060020a033316600160a060020a03199091161790556101668061003b6000396000f30060606040526004361061004b5763ffffffff7c01000000000000000000000000000000000000000000000000000000006000350416633cebb8238114610050578063f77c47911461007e575b600080fd5b341561005b57600080fd5b61007c73ffffffffffffffffffffffffffffffffffffffff600435166100ba565b005b341561008957600080fd5b61009161011e565b60405173ffffffffffffffffffffffffffffffffffffffff909116815260200160405180910390f35b6000543373ffffffffffffffffffffffffffffffffffffffff9081169116146100e257600080fd5b6000805473ffffffffffffffffffffffffffffffffffffffff191673ffffffffffffffffffffffffffffffffffffffff92909216919091179055565b60005473ffffffffffffffffffffffffffffffffffffffff16815600a165627a7a72305820a7e8c6dd53c8f3307d23256d923fe33c1c8b1c8ece6b544d94e28e3602182b860029",
+  "deployedBytecode": "0x60606040526004361061004b5763ffffffff7c01000000000000000000000000000000000000000000000000000000006000350416633cebb8238114610050578063f77c47911461007e575b600080fd5b341561005b57600080fd5b61007c73ffffffffffffffffffffffffffffffffffffffff600435166100ba565b005b341561008957600080fd5b61009161011e565b60405173ffffffffffffffffffffffffffffffffffffffff909116815260200160405180910390f35b6000543373ffffffffffffffffffffffffffffffffffffffff9081169116146100e257600080fd5b6000805473ffffffffffffffffffffffffffffffffffffffff191673ffffffffffffffffffffffffffffffffffffffff92909216919091179055565b60005473ffffffffffffffffffffffffffffffffffffffff16815600a165627a7a72305820a7e8c6dd53c8f3307d23256d923fe33c1c8b1c8ece6b544d94e28e3602182b860029",
   "sourceMap": "26:548:2:-;;;274:56;;;;;;;;305:10;:23;;-1:-1:-1;;;;;318:10:2;305:23;-1:-1:-1;;;;;;305:23:2;;;;;;26:548;;;;;;",
   "deployedSourceMap": "26:548:2:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;456:116;;;;;;;;;;;;;;;;;;242:25;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;456:116;219:10;;205;219;205:24;;;219:10;;205:24;197:33;;;;;;538:10;:27;;-1:-1:-1;;538:27:2;;;;;;;;;;;;456:116::o;242:25::-;;;;;;:::o",
   "source": "pragma solidity ^0.4.19;\n\ncontract Controlled {\n    /// @notice The address of the controller is the only address that can call\n    ///  a function with this modifier\n    modifier onlyController { require(msg.sender == controller); _; }\n\n    address public controller;\n\n    function Controlled() public { controller = msg.sender;}\n\n    /// @notice Changes the controller of the contract\n    /// @param _newController The new controller of the contract\n    function changeController(address _newController) public onlyController {\n        controller = _newController;\n    }\n}\n",
@@ -105,7 +105,7 @@
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 3309,
+                            "referencedDeclaration": 2061,
                             "src": "205:3:2",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
@@ -159,7 +159,7 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 3312,
+                      "referencedDeclaration": 2064,
                       "src": "197:7:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -191,6 +191,7 @@
                 }
               ]
             },
+            "documentation": "@notice The address of the controller is the only address that can call\n  a function with this modifier",
             "id": 752,
             "name": "onlyController",
             "nodeType": "ModifierDefinition",
@@ -266,7 +267,7 @@
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 3309,
+                        "referencedDeclaration": 2061,
                         "src": "318:3:2",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
@@ -299,6 +300,7 @@
                 }
               ]
             },
+            "documentation": null,
             "id": 763,
             "implemented": true,
             "isConstructor": true,
@@ -379,6 +381,7 @@
                 }
               ]
             },
+            "documentation": "@notice Changes the controller of the contract\n @param _newController The new controller of the contract",
             "id": 775,
             "implemented": true,
             "isConstructor": false,
@@ -522,7 +525,7 @@
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 3309,
+                            "referencedDeclaration": 2061,
                             "src": "205:3:2",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
@@ -576,7 +579,7 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 3312,
+                      "referencedDeclaration": 2064,
                       "src": "197:7:2",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
@@ -608,6 +611,7 @@
                 }
               ]
             },
+            "documentation": "@notice The address of the controller is the only address that can call\n  a function with this modifier",
             "id": 752,
             "name": "onlyController",
             "nodeType": "ModifierDefinition",
@@ -683,7 +687,7 @@
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 3309,
+                        "referencedDeclaration": 2061,
                         "src": "318:3:2",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
@@ -716,6 +720,7 @@
                 }
               ]
             },
+            "documentation": null,
             "id": 763,
             "implemented": true,
             "isConstructor": true,
@@ -796,6 +801,7 @@
                 }
               ]
             },
+            "documentation": "@notice Changes the controller of the contract\n @param _newController The new controller of the contract",
             "id": 775,
             "implemented": true,
             "isConstructor": false,
@@ -878,9 +884,9 @@
   },
   "compiler": {
     "name": "solc",
-    "version": "0.4.20+commit.3155dd80.Emscripten.clang"
+    "version": "0.4.21+commit.dfe3193c.Emscripten.clang"
   },
   "networks": {},
   "schemaVersion": "2.0.0",
-  "updatedAt": "2018-03-01T16:32:20.140Z"
+  "updatedAt": "2018-03-10T17:09:40.345Z"
 }

@@ -217,6 +217,7 @@
         "nodes": [
           {
             "body": null,
+            "documentation": "total amount of tokens",
             "id": 783,
             "implemented": false,
             "isConstructor": false,
@@ -272,6 +273,7 @@
           },
           {
             "body": null,
+            "documentation": "@param _owner The address from which the balance will be retrieved\n @return The balance",
             "id": 790,
             "implemented": false,
             "isConstructor": false,
@@ -354,6 +356,7 @@
           },
           {
             "body": null,
+            "documentation": "@notice send `_value` token to `_to` from `msg.sender`\n @param _to The address of the recipient\n @param _value The amount of token to be transferred\n @return Whether the transfer was successful or not",
             "id": 799,
             "implemented": false,
             "isConstructor": false,
@@ -462,6 +465,7 @@
           },
           {
             "body": null,
+            "documentation": "@notice send `_value` token to `_to` from `_from` on the condition it is approved by `_from`\n @param _from The address of the sender\n @param _to The address of the recipient\n @param _value The amount of token to be transferred\n @return Whether the transfer was successful or not",
             "id": 810,
             "implemented": false,
             "isConstructor": false,
@@ -596,6 +600,7 @@
           },
           {
             "body": null,
+            "documentation": "@notice `msg.sender` approves `_spender` to spend `_value` tokens\n @param _spender The address of the account able to transfer the tokens\n @param _value The amount of tokens to be approved for transfer\n @return Whether the approval was successful or not",
             "id": 819,
             "implemented": false,
             "isConstructor": false,
@@ -704,6 +709,7 @@
           },
           {
             "body": null,
+            "documentation": "@param _owner The address of the account owning tokens\n @param _spender The address of the account able to transfer the tokens\n @return Amount of remaining tokens allowed to spent",
             "id": 828,
             "implemented": false,
             "isConstructor": false,
@@ -812,6 +818,7 @@
           },
           {
             "anonymous": false,
+            "documentation": null,
             "id": 836,
             "name": "Transfer",
             "nodeType": "EventDefinition",
@@ -907,6 +914,7 @@
           },
           {
             "anonymous": false,
+            "documentation": null,
             "id": 844,
             "name": "Approval",
             "nodeType": "EventDefinition",
@@ -1043,6 +1051,7 @@
         "nodes": [
           {
             "body": null,
+            "documentation": "total amount of tokens",
             "id": 783,
             "implemented": false,
             "isConstructor": false,
@@ -1098,6 +1107,7 @@
           },
           {
             "body": null,
+            "documentation": "@param _owner The address from which the balance will be retrieved\n @return The balance",
             "id": 790,
             "implemented": false,
             "isConstructor": false,
@@ -1180,6 +1190,7 @@
           },
           {
             "body": null,
+            "documentation": "@notice send `_value` token to `_to` from `msg.sender`\n @param _to The address of the recipient\n @param _value The amount of token to be transferred\n @return Whether the transfer was successful or not",
             "id": 799,
             "implemented": false,
             "isConstructor": false,
@@ -1288,6 +1299,7 @@
           },
           {
             "body": null,
+            "documentation": "@notice send `_value` token to `_to` from `_from` on the condition it is approved by `_from`\n @param _from The address of the sender\n @param _to The address of the recipient\n @param _value The amount of token to be transferred\n @return Whether the transfer was successful or not",
             "id": 810,
             "implemented": false,
             "isConstructor": false,
@@ -1422,6 +1434,7 @@
           },
           {
             "body": null,
+            "documentation": "@notice `msg.sender` approves `_spender` to spend `_value` tokens\n @param _spender The address of the account able to transfer the tokens\n @param _value The amount of tokens to be approved for transfer\n @return Whether the approval was successful or not",
             "id": 819,
             "implemented": false,
             "isConstructor": false,
@@ -1530,6 +1543,7 @@
           },
           {
             "body": null,
+            "documentation": "@param _owner The address of the account owning tokens\n @param _spender The address of the account able to transfer the tokens\n @return Amount of remaining tokens allowed to spent",
             "id": 828,
             "implemented": false,
             "isConstructor": false,
@@ -1638,6 +1652,7 @@
           },
           {
             "anonymous": false,
+            "documentation": null,
             "id": 836,
             "name": "Transfer",
             "nodeType": "EventDefinition",
@@ -1733,6 +1748,7 @@
           },
           {
             "anonymous": false,
+            "documentation": null,
             "id": 844,
             "name": "Approval",
             "nodeType": "EventDefinition",
@@ -1835,9 +1851,9 @@
   },
   "compiler": {
     "name": "solc",
-    "version": "0.4.20+commit.3155dd80.Emscripten.clang"
+    "version": "0.4.21+commit.dfe3193c.Emscripten.clang"
   },
   "networks": {},
   "schemaVersion": "2.0.0",
-  "updatedAt": "2018-03-01T16:32:20.141Z"
+  "updatedAt": "2018-03-10T17:09:40.346Z"
 }

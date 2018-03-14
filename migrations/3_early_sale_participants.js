@@ -8,12 +8,15 @@ async function performMigration(deployer, network, accounts) {
   let DATAHoldersWei = {}
   let counter = 1
   Object.keys(DATAHolders).forEach(address => {
-    if (counter % 20 === 0) {
+    if (counter % 50 === 0) {
       DATABatches.push(DATAHoldersWei)
       DATAHoldersWei = {}
     }
     DATAHoldersWei[address] = web3.toWei(DATAHolders[address])
     counter++
+    if (Object.keys(DATAHolders).length === counter) {
+      DATABatches.push(DATAHoldersWei)
+    }
   })
   await forEachSeries(DATABatches, async batch => {
     await DeployedTokenSale.handleEarlySaleBuyers(
@@ -21,7 +24,6 @@ async function performMigration(deployer, network, accounts) {
       Object.values(batch)
     )
   })
-  // }
 }
 
 const DATAHolders = {
