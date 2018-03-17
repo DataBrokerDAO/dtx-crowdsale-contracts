@@ -140,6 +140,22 @@ contract TokenSale is TokenController, Controlled {
     transferable = true;
   }
 
+  /// @dev update method for all the dates
+  function updateDates(
+    uint256 _startPresaleTime,
+    uint256 _endPresaleTime,
+    uint256 _startDayOneTime,
+    uint256 _endDayOneTime,
+    uint256 _startTime,
+    uint256 _endTime) public onlyController {
+    startPresaleTime = _startPresaleTime;
+    endPresaleTime = _endPresaleTime;
+    startDayOneTime = _startDayOneTime;
+    endDayOneTime = _endDayOneTime;
+    startTime = _startTime;
+    endTime = _endTime;
+  }
+
   /// @dev utility function to allow the owner to handle the early sale purchases
   function handleEarlySaleBuyers(address[] _recipients, uint256[] _ethAmounts) public onlyController {
     // only run if the sale is not finalised yet

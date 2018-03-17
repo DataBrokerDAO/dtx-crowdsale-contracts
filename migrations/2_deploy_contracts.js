@@ -38,11 +38,11 @@ async function performMigration(deployer, network, accounts) {
   await deployer.deploy(DTXToken, MiniMeTokenFactory.address)
 
   const startPresaleTime = moment('2018-03-19 16:00:00+01:00').unix()
-  const endPresaleTime = moment('2018-03-26 15:59:59+01:00').unix()
-  const startDayOneTime = moment('2018-03-26 16:00:00+01:00').unix()
-  const endDayOneTime = moment('2018-03-27 15:59:59+01:00').unix()
-  const startTime = moment('2018-03-27 16:00:00+01:00').unix()
-  const endTime = moment('2018-04-23 16:00:00+01:00').unix()
+  const endPresaleTime = moment('2018-04-26 15:59:59+01:00').unix()
+  const startDayOneTime = moment('2018-04-26 16:00:00+01:00').unix()
+  const endDayOneTime = moment('2018-04-27 15:59:59+01:00').unix()
+  const startTime = moment('2018-04-27 16:00:00+01:00').unix()
+  const endTime = moment('2018-05-26 16:00:00+01:00').unix()
 
   if (network === 'mainnet') {
     // Deploy the TokenSale, again owned by the one deploying (Roderik)
