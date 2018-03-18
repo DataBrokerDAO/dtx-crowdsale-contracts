@@ -1,4 +1,4 @@
-pragma solidity ^0.4.15;
+pragma solidity ^0.4.21;
 
 import "./DTXToken.sol";
 import "./external/SafeMath.sol";
@@ -30,8 +30,14 @@ contract TokenSale is TokenController, Controlled {
   // hard cap of 108 million tokens, in their smallest denomination
   uint256 constant public HARD_CAP = 108000000 * 10**18;
 
+  // tokens locked for 3 years
+  uint256 public lockedTokens;
+
   // total amount of tokens issues
   uint256 public totalIssued;
+
+  // total amount of tokens locked in vesting
+  uint256 public totalVested;
 
   // total amount of tokens issues
   uint256 public totalIssuedEarlySale;
@@ -97,6 +103,8 @@ contract TokenSale is TokenController, Controlled {
     // make sure the token is there
     require(_tokenAddress != 0x0);
     tokenContract = DTXToken(_tokenAddress);
+    // calculate the amount of tokens we need to lock up
+    lockedTokens = MAX_TOKENS.div(100).mul(30);
     // set some stating flags
     paused = false;
     finalized = false;
@@ -120,7 +128,7 @@ contract TokenSale is TokenController, Controlled {
   /// @notice Notifies the controller about a transfer, for this TokenSale all
   /// transfers are allowed by default and no extra notifications are needed
   function onTransfer(address _from, address /*_to*/, uint /*_amount*/) public returns(bool success) {
-    if ( _from == controller ) {
+    if ( _from == controller || _from == address(this) ) {
       return true;
     }
     return transferable;
@@ -129,7 +137,7 @@ contract TokenSale is TokenController, Controlled {
   /// @notice Notifies the controller about an approval, for this TokenSale all
   /// approvals are allowed by default and no extra notifications are needed
   function onApprove(address _owner, address /*_spender*/, uint /*_amount*/) public returns(bool success) {
-    if ( _owner == controller ) {
+    if ( _owner == controller || _owner == address(this) ) {
       return true;
     }
     return transferable;
@@ -188,6 +196,8 @@ contract TokenSale is TokenController, Controlled {
       require(tokenContract.generateTokens(_recipients[i], _free[i]));
       // locks the rest until the cliff is reached
       vestedAllowances[_recipients[i]] = Vesting(_locked[i], _cliffs[i]);
+      totalVested.add(_locked[i]);
+      require(lockedTokens.add(totalVested.add(totalIssued.add(totalIssuedEarlySale))) <= MAX_TOKENS);
     }
   }
 
@@ -228,6 +238,7 @@ contract TokenSale is TokenController, Controlled {
 
     // have we reached the max contribution
     require(totalIssued.add(tokensToIssue) <= HARD_CAP);
+    require(tokensToIssue.add(lockedTokens.add(totalVested.add(totalIssued.add(totalIssuedEarlySale)))) <= MAX_TOKENS);
 
     // Track how much the TokenSale has collected
     totalIssued = totalIssued.add(tokensToIssue);
@@ -256,16 +267,14 @@ contract TokenSale is TokenController, Controlled {
     // we should only do this function once since it generates tokens
     require(!finalized);
 
-    // calculate the amount of tokens we need to lock up
-    uint256 lockedTokens = MAX_TOKENS.div(100).mul(30);
-
     vestedAllowances[vaultAddress] = Vesting(lockedTokens, now + 3 years);
 
     // calculate how many tokens are left if we subtract all the issued amounts
-    uint256 leftoverTokens = MAX_TOKENS.sub(lockedTokens).sub(totalIssued).sub(totalIssuedEarlySale);
+    uint256 leftoverTokens = MAX_TOKENS.sub(lockedTokens).sub(totalIssued).sub(totalIssuedEarlySale).sub(totalVested);
 
     // generate that left over amount in the vault address
     require(tokenContract.generateTokens(vaultAddress, leftoverTokens));
+    require(tokenContract.generateTokens(address(this), lockedTokens.add(totalVested)));
 
     finalized = true;
   }
@@ -275,7 +284,7 @@ contract TokenSale is TokenController, Controlled {
     require(now >= vestedAllowances[_owner].cliff);
     uint256 amount = vestedAllowances[_owner].amount;
     vestedAllowances[_owner].amount = 0;
-    require(tokenContract.generateTokens(_owner, amount));
+    require(tokenContract.transfer(_owner, amount));
   }
 
   /// @notice Pauses the contribution if there is any issue
