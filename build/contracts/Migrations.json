@@ -64,30 +64,30 @@
       "type": "function"
     }
   ],
-  "bytecode":
-    "0x6060604052341561000f57600080fd5b60008054600160a060020a033316600160a060020a03199091161790556102348061003b6000396000f3006060604052600436106100615763ffffffff7c01000000000000000000000000000000000000000000000000000000006000350416630900f0108114610066578063445df0ac146100945780638da5cb5b146100b9578063fdacd576146100f5575b600080fd5b341561007157600080fd5b61009273ffffffffffffffffffffffffffffffffffffffff6004351661010b565b005b341561009f57600080fd5b6100a76101b9565b60405190815260200160405180910390f35b34156100c457600080fd5b6100cc6101bf565b60405173ffffffffffffffffffffffffffffffffffffffff909116815260200160405180910390f35b341561010057600080fd5b6100926004356101db565b600080543373ffffffffffffffffffffffffffffffffffffffff90811691161461013457600080fd5b8190508073ffffffffffffffffffffffffffffffffffffffff1663fdacd5766001546040517c010000000000000000000000000000000000000000000000000000000063ffffffff84160281526004810191909152602401600060405180830381600087803b15156101a557600080fd5b5af115156101b257600080fd5b5050505050565b60015481565b60005473ffffffffffffffffffffffffffffffffffffffff1681565b6000543373ffffffffffffffffffffffffffffffffffffffff90811691161461020357600080fd5b6001555600a165627a7a723058207650d1d086a7af48c3106323cd8017c0bad91c82191468e2ead72968161bc9ae0029",
-  "deployedBytecode":
-    "0x6060604052600436106100615763ffffffff7c01000000000000000000000000000000000000000000000000000000006000350416630900f0108114610066578063445df0ac146100945780638da5cb5b146100b9578063fdacd576146100f5575b600080fd5b341561007157600080fd5b61009273ffffffffffffffffffffffffffffffffffffffff6004351661010b565b005b341561009f57600080fd5b6100a76101b9565b60405190815260200160405180910390f35b34156100c457600080fd5b6100cc6101bf565b60405173ffffffffffffffffffffffffffffffffffffffff909116815260200160405180910390f35b341561010057600080fd5b6100926004356101db565b600080543373ffffffffffffffffffffffffffffffffffffffff90811691161461013457600080fd5b8190508073ffffffffffffffffffffffffffffffffffffffff1663fdacd5766001546040517c010000000000000000000000000000000000000000000000000000000063ffffffff84160281526004810191909152602401600060405180830381600087803b15156101a557600080fd5b5af115156101b257600080fd5b5050505050565b60015481565b60005473ffffffffffffffffffffffffffffffffffffffff1681565b6000543373ffffffffffffffffffffffffffffffffffffffff90811691161461020357600080fd5b6001555600a165627a7a723058207650d1d086a7af48c3106323cd8017c0bad91c82191468e2ead72968161bc9ae0029",
-  "sourceMap":
-    "27:495:4:-;;;188:58;;;;;;;;223:5;:18;;-1:-1:-1;;;;;231:10:4;223:18;-1:-1:-1;;;;;;223:18:4;;;;;;27:495;;;;;;",
-  "deployedSourceMap":
-    "27:495:4:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;357:163;;;;;;;;;;;;;;;;;;75:36;;;;;;;;;;;;;;;;;;;;;;;;;;;51:20;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;250:103;;;;;;;;;;;;;;357:163;418:19;166:5;;152:10;166:5;152:19;;;166:5;;152:19;144:28;;;;;;451:10;418:44;;468:8;:21;;;490:24;;468:47;;;;;;;;;;;;;;;;;;-1:-1:-1;468:47:4;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;357:163;;:::o;75:36::-;;;;:::o;51:20::-;;;;;;:::o;250:103::-;166:5;;152:10;166:5;152:19;;;166:5;;152:19;144:28;;;;;;312:24;:36;250:103::o",
-  "source":
-    "pragma solidity ^0.4.15;\n\n\ncontract Migrations {\n  address public owner;\n  uint public last_completed_migration;\n\n  modifier restricted() {\n    require(msg.sender == owner);\n    _;\n  }\n\n  function Migrations() public {\n    owner = msg.sender;\n  }\n\n  function setCompleted(uint completed) public restricted {\n    last_completed_migration = completed;\n  }\n\n  function upgrade(address newAddress) public restricted {\n    Migrations upgraded = Migrations(newAddress);\n    upgraded.setCompleted(last_completed_migration);\n  }\n}\n",
-  "sourcePath":
-    "/Users/roderik/Development/dtx-crowdsale-contracts/contracts/external/Migrations.sol",
+  "bytecode": "0x6060604052341561000f57600080fd5b60008054600160a060020a033316600160a060020a03199091161790556102348061003b6000396000f3006060604052600436106100615763ffffffff7c01000000000000000000000000000000000000000000000000000000006000350416630900f0108114610066578063445df0ac146100945780638da5cb5b146100b9578063fdacd576146100f5575b600080fd5b341561007157600080fd5b61009273ffffffffffffffffffffffffffffffffffffffff6004351661010b565b005b341561009f57600080fd5b6100a76101b9565b60405190815260200160405180910390f35b34156100c457600080fd5b6100cc6101bf565b60405173ffffffffffffffffffffffffffffffffffffffff909116815260200160405180910390f35b341561010057600080fd5b6100926004356101db565b600080543373ffffffffffffffffffffffffffffffffffffffff90811691161461013457600080fd5b8190508073ffffffffffffffffffffffffffffffffffffffff1663fdacd5766001546040517c010000000000000000000000000000000000000000000000000000000063ffffffff84160281526004810191909152602401600060405180830381600087803b15156101a557600080fd5b5af115156101b257600080fd5b5050505050565b60015481565b60005473ffffffffffffffffffffffffffffffffffffffff1681565b6000543373ffffffffffffffffffffffffffffffffffffffff90811691161461020357600080fd5b6001555600a165627a7a723058207650d1d086a7af48c3106323cd8017c0bad91c82191468e2ead72968161bc9ae0029",
+  "deployedBytecode": "0x6060604052600436106100615763ffffffff7c01000000000000000000000000000000000000000000000000000000006000350416630900f0108114610066578063445df0ac146100945780638da5cb5b146100b9578063fdacd576146100f5575b600080fd5b341561007157600080fd5b61009273ffffffffffffffffffffffffffffffffffffffff6004351661010b565b005b341561009f57600080fd5b6100a76101b9565b60405190815260200160405180910390f35b34156100c457600080fd5b6100cc6101bf565b60405173ffffffffffffffffffffffffffffffffffffffff909116815260200160405180910390f35b341561010057600080fd5b6100926004356101db565b600080543373ffffffffffffffffffffffffffffffffffffffff90811691161461013457600080fd5b8190508073ffffffffffffffffffffffffffffffffffffffff1663fdacd5766001546040517c010000000000000000000000000000000000000000000000000000000063ffffffff84160281526004810191909152602401600060405180830381600087803b15156101a557600080fd5b5af115156101b257600080fd5b5050505050565b60015481565b60005473ffffffffffffffffffffffffffffffffffffffff1681565b6000543373ffffffffffffffffffffffffffffffffffffffff90811691161461020357600080fd5b6001555600a165627a7a723058207650d1d086a7af48c3106323cd8017c0bad91c82191468e2ead72968161bc9ae0029",
+  "sourceMap": "27:495:4:-;;;188:58;;;;;;;;223:5;:18;;-1:-1:-1;;;;;231:10:4;223:18;-1:-1:-1;;;;;;223:18:4;;;;;;27:495;;;;;;",
+  "deployedSourceMap": "27:495:4:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;357:163;;;;;;;;;;;;;;;;;;75:36;;;;;;;;;;;;;;;;;;;;;;;;;;;51:20;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;250:103;;;;;;;;;;;;;;357:163;418:19;166:5;;152:10;166:5;152:19;;;166:5;;152:19;144:28;;;;;;451:10;418:44;;468:8;:21;;;490:24;;468:47;;;;;;;;;;;;;;;;;;-1:-1:-1;468:47:4;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;357:163;;:::o;75:36::-;;;;:::o;51:20::-;;;;;;:::o;250:103::-;166:5;;152:10;166:5;152:19;;;166:5;;152:19;144:28;;;;;;312:24;:36;250:103::o",
+  "source": "pragma solidity ^0.4.15;\n\n\ncontract Migrations {\n  address public owner;\n  uint public last_completed_migration;\n\n  modifier restricted() {\n    require(msg.sender == owner);\n    _;\n  }\n\n  function Migrations() public {\n    owner = msg.sender;\n  }\n\n  function setCompleted(uint completed) public restricted {\n    last_completed_migration = completed;\n  }\n\n  function upgrade(address newAddress) public restricted {\n    Migrations upgraded = Migrations(newAddress);\n    upgraded.setCompleted(last_completed_migration);\n  }\n}\n",
+  "sourcePath": "/Users/roderik/Development/dtx-crowdsale-contracts/contracts/external/Migrations.sol",
   "ast": {
-    "absolutePath":
-      "/Users/roderik/Development/dtx-crowdsale-contracts/contracts/external/Migrations.sol",
+    "absolutePath": "/Users/roderik/Development/dtx-crowdsale-contracts/contracts/external/Migrations.sol",
     "exportedSymbols": {
-      "Migrations": [1019]
+      "Migrations": [
+        1019
+      ]
     },
     "id": 1020,
     "nodeType": "SourceUnit",
     "nodes": [
       {
         "id": 962,
-        "literals": ["solidity", "^", "0.4", ".15"],
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".15"
+        ],
         "nodeType": "PragmaDirective",
         "src": "0:24:4"
       },
@@ -98,7 +98,9 @@
         "documentation": null,
         "fullyImplemented": true,
         "id": 1019,
-        "linearizedBaseContracts": [1019],
+        "linearizedBaseContracts": [
+          1019
+        ],
         "name": "Migrations",
         "nodeType": "ContractDefinition",
         "nodes": [
@@ -240,8 +242,7 @@
                       "referencedDeclaration": 3428,
                       "src": "144:7:4",
                       "typeDescriptions": {
-                        "typeIdentifier":
-                          "t_function_require_pure$_t_bool_$returns$__$",
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
                         "typeString": "function (bool) pure"
                       }
                     },
@@ -515,7 +516,9 @@
               "src": "412:108:4",
               "statements": [
                 {
-                  "assignments": [1006],
+                  "assignments": [
+                    1006
+                  ],
                   "declarations": [
                     {
                       "constant": false,
@@ -578,8 +581,7 @@
                       "referencedDeclaration": 1019,
                       "src": "440:10:4",
                       "typeDescriptions": {
-                        "typeIdentifier":
-                          "t_type$_t_contract$_Migrations_$1019_$",
+                        "typeIdentifier": "t_type$_t_contract$_Migrations_$1019_$",
                         "typeString": "type(contract Migrations)"
                       }
                     },
@@ -648,8 +650,7 @@
                       "referencedDeclaration": 998,
                       "src": "468:21:4",
                       "typeDescriptions": {
-                        "typeIdentifier":
-                          "t_function_external_nonpayable$_t_uint256_$returns$__$",
+                        "typeIdentifier": "t_function_external_nonpayable$_t_uint256_$returns$__$",
                         "typeString": "function (uint256) external"
                       }
                     },
@@ -755,17 +756,23 @@
     "src": "0:523:4"
   },
   "legacyAST": {
-    "absolutePath":
-      "/Users/roderik/Development/dtx-crowdsale-contracts/contracts/external/Migrations.sol",
+    "absolutePath": "/Users/roderik/Development/dtx-crowdsale-contracts/contracts/external/Migrations.sol",
     "exportedSymbols": {
-      "Migrations": [1019]
+      "Migrations": [
+        1019
+      ]
     },
     "id": 1020,
     "nodeType": "SourceUnit",
     "nodes": [
       {
         "id": 962,
-        "literals": ["solidity", "^", "0.4", ".15"],
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".15"
+        ],
         "nodeType": "PragmaDirective",
         "src": "0:24:4"
       },
@@ -776,7 +783,9 @@
         "documentation": null,
         "fullyImplemented": true,
         "id": 1019,
-        "linearizedBaseContracts": [1019],
+        "linearizedBaseContracts": [
+          1019
+        ],
         "name": "Migrations",
         "nodeType": "ContractDefinition",
         "nodes": [
@@ -918,8 +927,7 @@
                       "referencedDeclaration": 3428,
                       "src": "144:7:4",
                       "typeDescriptions": {
-                        "typeIdentifier":
-                          "t_function_require_pure$_t_bool_$returns$__$",
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
                         "typeString": "function (bool) pure"
                       }
                     },
@@ -1193,7 +1201,9 @@
               "src": "412:108:4",
               "statements": [
                 {
-                  "assignments": [1006],
+                  "assignments": [
+                    1006
+                  ],
                   "declarations": [
                     {
                       "constant": false,
@@ -1256,8 +1266,7 @@
                       "referencedDeclaration": 1019,
                       "src": "440:10:4",
                       "typeDescriptions": {
-                        "typeIdentifier":
-                          "t_type$_t_contract$_Migrations_$1019_$",
+                        "typeIdentifier": "t_type$_t_contract$_Migrations_$1019_$",
                         "typeString": "type(contract Migrations)"
                       }
                     },
@@ -1326,8 +1335,7 @@
                       "referencedDeclaration": 998,
                       "src": "468:21:4",
                       "typeDescriptions": {
-                        "typeIdentifier":
-                          "t_function_external_nonpayable$_t_uint256_$returns$__$",
+                        "typeIdentifier": "t_function_external_nonpayable$_t_uint256_$returns$__$",
                         "typeString": "function (uint256) external"
                       }
                     },
@@ -1441,10 +1449,9 @@
       "events": {},
       "links": {},
       "address": "0x697a28701b7539ca8cfa1df28f54723427e1df85",
-      "transactionHash":
-        "0x590a1a5aa38546a7cc02cb1836a12ac9b7e3624991a4d87379f1eab908a34a43"
+      "transactionHash": "0x590a1a5aa38546a7cc02cb1836a12ac9b7e3624991a4d87379f1eab908a34a43"
     }
   },
   "schemaVersion": "2.0.0",
-  "updatedAt": "2018-03-18T17:29:00.457Z"
+  "updatedAt": "2018-03-18T17:38:12.533Z"
 }
