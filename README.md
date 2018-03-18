@@ -28,9 +28,9 @@ Although the regulation around token sales is still being formed in most countri
 
 KYC=Know Your Customer, AML=Anti-Money Laundering, CTF=Counter Terrorist Financing, PEP=Politically Exposed Persons
 
-## 4. Concluding the early token sale
+## 4. Concluding the token sale
 
-After the token sale ends, either by selling the maximum amount of tokens assigned or if the four week period has passed, a finalisation function will be called. This will mint the platform and team allocations as described in the white paper. In the period immediately after the sale concludes, the final referrals will be calculated and paid out from the platforms wallet.
+After the token sale ends, either by selling the maximum amount of tokens assigned or if the period has passed, a finalisation function will be called. This will mint the platform and team allocations as described in the white paper. In the period immediately after the sale concludes, the final referrals will be calculated and paid out from the platforms wallet.
 
 ## 5. Show me the code
 
