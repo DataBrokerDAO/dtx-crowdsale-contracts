@@ -15,12 +15,10 @@ module.exports = {
       gasPrice: 0x00,
     },
     mintnet: {
-      provider: () => {
-        return new HDWalletProvider(
-          process.env.ETHEREUM_DEPLOYER_SEED,
-          'https://mintnet.settlemint.com'
-        )
-      },
+      provider: new HDWalletProvider(
+        process.env.ETHEREUM_DEPLOYER_SEED,
+        'https://mintnet.settlemint.com'
+      ),
       gasPrice: 0x00,
       network_id: '8995',
     },
