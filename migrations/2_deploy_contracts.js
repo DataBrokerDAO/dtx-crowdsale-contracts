@@ -76,7 +76,7 @@ async function performMigration(deployer, network, accounts) {
 
   // Set the controller of the token to the early token sale
   const DeployedDTXToken = await DTXToken.deployed()
-  DeployedDTXToken.changeController(TokenSale.address)
+  await DeployedDTXToken.changeController(TokenSale.address)
 }
 
 module.exports = function(deployer, network, accounts) {
