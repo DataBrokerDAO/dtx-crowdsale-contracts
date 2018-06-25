@@ -6,12 +6,17 @@ async function performMigration(deployer, network, accounts) {
   const DeployedTokenSale = await TokenSale.deployed()
   await DeployedTokenSale.handleExternalBuyers(
     [
-      '0x92097a7D9782981BCE907A693595324506CaA183',
-      '0x15f05c127550b08d12de180fc06904aa0252e986',
+      '0x9b4aa69638f8d19b5105ddb592e2f7ae609c9118',
+      '0xCf88f6e099f53faba1EbeAA5e1a09855007e2A42',
+      '0x2bDb74B981b03B021c6FF71Fb27DFa571b2dF0AC',
     ],
-    [web3.toWei(1560), web3.toWei(2073.618208)],
-    [web3.toWei(0), web3.toWei(0)],
-    [lockup, lockup]
+    [
+      web3.toWei(176000),
+      web3.toWei((112000 / 35) * 20),
+      web3.toWei((112000 / 35) * 15),
+    ],
+    [web3.toWei(0), web3.toWei(0), web3.toWei(0)],
+    [lockup, lockup, lockup]
   )
 }
 
