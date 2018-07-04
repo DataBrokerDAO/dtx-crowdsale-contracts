@@ -54,7 +54,9 @@
     "solium": "^1.1.7",
     "truffle-hdwallet-provider": "0.0.5"
   },
-  "dependencies": {},
+  "dependencies": {
+    "ethereumjs-abi": "^0.6.5"
+  },
   "publishConfig": {
     "access": "restricted"
   },
