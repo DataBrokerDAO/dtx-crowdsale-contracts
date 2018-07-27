@@ -187,17 +187,17 @@ contract TokenSale is TokenController, Controlled {
     uint256[] _cliffs
   ) public onlyController {
     // only run if the sale is not finalised yet
-    require(!finalized);
+    require(!finalized, "The sale should not be finalised");
     // loop over all recipients, use smallish lists in regards to gas costs (TBD)
     for (uint256 i = 0; i < _recipients.length; i++) {
       // these tokens count for the hard cap limit, but they are guaranteed to succeed so no hardcap check.
       totalIssued = totalIssued.add(_free[i]);
       // Creates an equal amount of tokens as ether sent. The new tokens are created in the address of the recipient
-      require(tokenContract.generateTokens(_recipients[i], _free[i]));
+      require(tokenContract.generateTokens(_recipients[i], _free[i]), "Generating tokens failed" );
       // locks the rest until the cliff is reached
       vestedAllowances[_recipients[i]] = Vesting(_locked[i], _cliffs[i]);
       totalVested.add(_locked[i]);
-      require(lockedTokens.add(totalVested.add(totalIssued.add(totalIssuedEarlySale))) <= MAX_TOKENS);
+      require(lockedTokens.add(totalVested.add(totalIssued.add(totalIssuedEarlySale))) <= MAX_TOKENS, "Unable to issue more than the max tokens");
     }
   }
 

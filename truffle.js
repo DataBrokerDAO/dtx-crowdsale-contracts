@@ -11,8 +11,8 @@ module.exports = {
     development: {
       host: 'localhost',
       network_id: '*',
-      port: 8545,
-      gasPrice: 0x00,
+      port: 7545,
+      gasPrice: 3000000000,
     },
     mintnet: {
       provider: new HDWalletProvider(
@@ -78,6 +78,7 @@ module.exports = {
         )
       },
       network_id: '1',
+      gasPrice: 3000000000,
       // gas: 4700000,
       // gasPrice: 0x01
     },

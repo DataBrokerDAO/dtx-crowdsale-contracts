@@ -1450,8 +1450,20 @@
       "links": {},
       "address": "0x697a28701b7539ca8cfa1df28f54723427e1df85",
       "transactionHash": "0x590a1a5aa38546a7cc02cb1836a12ac9b7e3624991a4d87379f1eab908a34a43"
+    },
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0x6f8d5eb607be88289c3080268177e7eb079dd9a5",
+      "transactionHash": "0xeca3aee8b41d0ca167151a46dc6a63282c105571fc530967328e58987791aa54"
+    },
+    "8995": {
+      "events": {},
+      "links": {},
+      "address": "0x1bfa47b144ceabf145059eef56b8abde074a732a",
+      "transactionHash": "0x00c44c0b76b21436f1c0eb9625b3a12dcd15657f37e41c71f78d26bffd74e546"
     }
   },
   "schemaVersion": "2.0.1",
-  "updatedAt": "2018-07-04T12:39:27.081Z"
+  "updatedAt": "2018-07-25T08:36:52.066Z"
 }
