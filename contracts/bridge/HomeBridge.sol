@@ -1,16 +1,18 @@
 pragma solidity ^0.4.24;
 
-import "openzeppelin-solidity/contracts/token/ERC20/ERC20Basic.sol";
 import "openzeppelin-solidity/contracts/ownership/Ownable.sol";
 import "openzeppelin-solidity/contracts/math/SafeMath.sol";
+import "../external/MiniMeToken.sol";
 
 import "./Validatable.sol";
 
 
-contract HomeBridge is Validatable {
+contract HomeBridge is Validatable, ApproveAndCallFallBack {
   using SafeMath for uint256;
 
   mapping(bytes32=>bool) usedHashes;
+
+  event DepositReceived(address indexed _from, uint256 _amount, address _mainToken, bytes _data);
 
   constructor(uint8 _requiredValidators,address[] _initialValidators) Validatable(_requiredValidators,_initialValidators) public {
 
@@ -86,9 +88,24 @@ contract HomeBridge is Validatable {
     );
     require(validations >= requiredValidators, "you need more validations than required validators");
     // ERC-20 transfer
-    ERC20Basic(_token).transfer(_recipient, _amount);
+    MiniMeToken(_token).transfer(_recipient, _amount);
   }
 
+  function receiveApproval(
+    address _from,
+    uint256 _amount,
+    address _token,
+    bytes _data) public
+    {
+		assert(_from != 0x0);
+		assert(_token != 0x0);
+		assert(_amount > 0);
+
+    require(MiniMeToken(_token).allowance(_from, address(this)) >= _amount);
+		MiniMeToken(_token).transferFrom(_from, address(this), _amount);
+
+		emit DepositReceived(_from, _amount, _token, _data);
+	}
 
 }
 
