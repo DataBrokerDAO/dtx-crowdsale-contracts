@@ -32,31 +32,31 @@
   },
   "homepage": "https://github.com/databrokerdao/dtx-crowdsale-contracts#readme",
   "devDependencies": {
-    "bluebird": "^3.5.1",
-    "eslint": "^5.2.0",
-    "eslint-config-prettier": "^2.9.0",
-    "eslint-config-standard": "^12.0.0-alpha.0",
-    "eslint-plugin-import": "^2.13.0",
+    "bluebird": "^3.5.2",
+    "eslint": "^5.6.0",
+    "eslint-config-prettier": "^3.0.1",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-node": "^7.0.1",
     "eslint-plugin-prettier": "^2.6.2",
-    "eslint-plugin-promise": "^3.8.0",
-    "eslint-plugin-standard": "^3.1.0",
-    "ethereumjs-testrpc-sc": "^6.1.2",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "ethereumjs-testrpc-sc": "^6.1.6",
     "husky": "^0.14.3",
-    "lint-staged": "^7.2.0",
+    "lint-staged": "^7.2.2",
     "moment": "^2.22.2",
-    "nodemon": "^1.18.3",
+    "nodemon": "^1.18.4",
     "p-iteration": "^1.1.7",
-    "prettier": "^1.14.0",
-    "semantic-release": "^15.9.3",
-    "solc": "^0.4.24",
-    "solidity-coverage": "^0.5.5",
+    "prettier": "^1.14.3",
+    "semantic-release": "^15.9.15",
+    "solc": "^0.4.25",
+    "solidity-coverage": "^0.5.11",
     "solium": "^1.1.8",
-    "truffle-hdwallet-provider": "0.0.6"
+    "truffle-hdwallet-provider": "^1.0.0-web3one.0"
   },
   "dependencies": {
     "ethereumjs-abi": "^0.6.5",
-    "openzeppelin-solidity": "^1.11.0"
+    "openzeppelin-solidity": "^1.12.0"
   },
   "publishConfig": {
     "access": "restricted"

@@ -1,6 +1,11 @@
 const HDWalletProvider = require('truffle-hdwallet-provider')
 
 module.exports = {
+  compilers: {
+    solc: {
+      version: '0.4.25',
+    },
+  },
   solc: {
     optimizer: {
       enabled: true,
@@ -78,7 +83,8 @@ module.exports = {
         )
       },
       network_id: '1',
-      gasPrice: 3000000000,
+      // gasPrice: 3000000000,
+      websockets: true,
       // gas: 4700000,
       // gasPrice: 0x01
     },
