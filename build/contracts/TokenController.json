@@ -874,6 +874,45 @@
     "version": "0.4.25+commit.59dbf8f1.Emscripten.clang"
   },
   "networks": {},
-  "schemaVersion": "3.0.0-beta.0",
-  "updatedAt": "2018-10-04T19:49:13.467Z"
+  "schemaVersion": "3.0.1",
+  "updatedAt": "2019-01-07T20:58:12.904Z",
+  "devdoc": {
+    "methods": {
+      "onApprove(address,address,uint256)": {
+        "params": {
+          "_amount": "The amount in the `approve()` call",
+          "_owner": "The address that calls `approve()`",
+          "_spender": "The spender in the `approve()` call"
+        },
+        "return": "False if the controller does not authorize the approval"
+      },
+      "onTransfer(address,address,uint256)": {
+        "params": {
+          "_amount": "The amount of the transfer",
+          "_from": "The origin of the transfer",
+          "_to": "The destination of the transfer"
+        },
+        "return": "False if the controller does not authorize the transfer"
+      },
+      "proxyPayment(address)": {
+        "params": {
+          "_owner": "The address that sent the ether to create tokens"
+        },
+        "return": "True if the ether is accepted, false if it throws"
+      }
+    }
+  },
+  "userdoc": {
+    "methods": {
+      "onApprove(address,address,uint256)": {
+        "notice": "Notifies the controller about an approval allowing the  controller to react if desired"
+      },
+      "onTransfer(address,address,uint256)": {
+        "notice": "Notifies the controller about a token transfer allowing the  controller to react if desired"
+      },
+      "proxyPayment(address)": {
+        "notice": "Called when `_owner` sends ether to the MiniMe Token contract"
+      }
+    }
+  }
 }

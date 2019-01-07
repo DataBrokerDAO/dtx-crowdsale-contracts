@@ -6,8 +6,8 @@ async function performMigration(deployer, network, accounts) {
   const DeployedTokenSale = await TokenSale.deployed()
   await DeployedTokenSale.handleExternalBuyers(
     ['0x26C9899eA2F8940726BbCC79483F2ce07989314E'],
-    [web3.toWei(161725.067385445)],
-    [web3.toWei(0)],
+    [web3.utils.toWei('161725.067385445')],
+    [web3.utils.toWei('0')],
     [lockup]
   )
 }
@@ -15,7 +15,7 @@ async function performMigration(deployer, network, accounts) {
 module.exports = function(deployer, network, accounts) {
   deployer
     .then(function() {
-      //return performMigration(deployer, network, accounts)
+      return performMigration(deployer, network, accounts)
     })
     .catch(error => {
       console.log(error)

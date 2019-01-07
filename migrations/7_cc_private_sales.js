@@ -19,11 +19,13 @@ async function performMigration(deployer, network, accounts) {
       LastCallHolders[address].forEach(amount => {
         sum += amount
       })
-      DTXHoldersWei[address] = web3.toWei(sum * 4000)
+      DTXHoldersWei[address] = web3.utils.toWei((sum * 4000).toString())
     } else {
-      DTXHoldersWei[address] = web3.toWei(LastCallHolders[address] * 4000)
+      DTXHoldersWei[address] = web3.utils.toWei(
+        (LastCallHolders[address] * 4000).toString()
+      )
     }
-    DTXHoldersWei[address] = DTXHoldersWei[address]
+    // DTXHoldersWei[address] = DTXHoldersWei[address]
     counter++
     if (Object.keys(LastCallHolders).length === counter) {
       DTXBatches.push(DTXHoldersWei)
@@ -33,7 +35,11 @@ async function performMigration(deployer, network, accounts) {
   await forEachSeries(DTXBatches, async batch => {
     const bonus = []
     Object.values(batch).forEach(amount =>
-      bonus.push(web3.toWei(web3.fromWei(amount) * 3400))
+      bonus.push(
+        web3.utils.toWei(
+          (web3.utils.fromWei(amount.toString()) * 3400).toString()
+        )
+      )
     )
     await DeployedTokenSale.handleExternalBuyers(
       Object.keys(batch),
@@ -69,7 +75,7 @@ const LastCallHolders = {
 module.exports = function(deployer, network, accounts) {
   deployer
     .then(function() {
-      //return performMigration(deployer, network, accounts)
+      return performMigration(deployer, network, accounts)
     })
     .catch(error => {
       console.log(error)

@@ -1,6 +1,6 @@
-const HomeBridge = artifacts.require('HomeBridge')
-const config = require('../bridge-config')
-const HDWalletProvider = require('truffle-hdwallet-provider')
+// const HomeBridge = artifacts.require('HomeBridge')
+// const config = require('../bridge-config')
+// const HDWalletProvider = require('truffle-hdwallet-provider')
 
 module.exports = async (deployer, network, accounts) => {
   // const validators = config.validatorSeeds.map(seedToAddress)
@@ -8,11 +8,11 @@ module.exports = async (deployer, network, accounts) => {
   // await sleep(30000)
 }
 
-function seedToAddress(seed) {
-  const provider = new HDWalletProvider(seed)
-  return provider.getAddresses()[0]
-}
+// function seedToAddress(seed) {
+//   const provider = new HDWalletProvider(seed)
+//   return provider.getAddresses()[0]
+// }
 
-function sleep(ms) {
-  return new Promise(resolve => setTimeout(resolve, ms))
-}
+// function sleep(ms) {
+//   return new Promise(resolve => setTimeout(resolve, ms))
+// }

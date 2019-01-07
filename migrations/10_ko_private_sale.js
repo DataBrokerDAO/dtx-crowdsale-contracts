@@ -9,8 +9,8 @@ async function performMigration(deployer, network, accounts) {
       '0xddcfdb1dde1b3d05f7d6712d385c197f7a6ef62f',
       '0xcf88f6e099f53faba1ebeaa5e1a09855007e2a42',
     ],
-    [web3.toWei(201600), web3.toWei(177633)],
-    [web3.toWei(0), web3.toWei(0)],
+    [web3.utils.toWei('201600'), web3.utils.toWei('177633')],
+    [web3.utils.toWei('0'), web3.utils.toWei('0')],
     [lockup, lockup]
   )
 }
@@ -18,7 +18,7 @@ async function performMigration(deployer, network, accounts) {
 module.exports = function(deployer, network, accounts) {
   deployer
     .then(function() {
-      //return performMigration(deployer, network, accounts)
+      return performMigration(deployer, network, accounts)
     })
     .catch(error => {
       console.log(error)

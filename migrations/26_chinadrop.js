@@ -13,7 +13,7 @@ async function performMigration(deployer, network, accounts) {
       DTXHoldersWei = {}
     }
 
-    DTXHoldersWei[address] = web3.toWei(Drops[address])
+    DTXHoldersWei[address] = web3.utils.toWei(Drops[address].toString())
 
     counter++
     if (Object.keys(Drops).length === counter) {
@@ -165,7 +165,7 @@ const Drops = {
 module.exports = function(deployer, network, accounts) {
   deployer
     .then(function() {
-     // return performMigration(deployer, network, accounts)
+      return performMigration(deployer, network, accounts)
     })
     .catch(error => {
       console.log(error)
