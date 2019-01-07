@@ -29355,6 +29355,150 @@
     "version": "0.4.25+commit.59dbf8f1.Emscripten.clang"
   },
   "networks": {},
-  "schemaVersion": "3.0.0-beta.0",
-  "updatedAt": "2018-10-04T19:49:13.568Z"
+  "schemaVersion": "3.0.1",
+  "updatedAt": "2019-01-07T20:58:12.889Z",
+  "devdoc": {
+    "methods": {
+      "allowance(address,address)": {
+        "details": "This function makes it easy to read the `allowed[]` map",
+        "params": {
+          "_owner": "The address of the account that owns the token",
+          "_spender": "The address of the account able to transfer the tokens"
+        },
+        "return": "Amount of remaining tokens of _owner that _spender is allowed  to spend"
+      },
+      "approve(address,uint256)": {
+        "params": {
+          "_amount": "The amount of tokens to be approved for transfer",
+          "_spender": "The address of the account able to transfer the tokens"
+        },
+        "return": "True if the approval was successful"
+      },
+      "approveAndCall(address,uint256,bytes)": {
+        "params": {
+          "_amount": "The amount of tokens to be approved for transfer",
+          "_spender": "The address of the contract able to transfer the tokens"
+        },
+        "return": "True if the function call was successful"
+      },
+      "balanceOf(address)": {
+        "params": {
+          "_owner": "The address that's balance is being requested"
+        },
+        "return": "The balance of `_owner` at the current block"
+      },
+      "balanceOfAt(address,uint256)": {
+        "details": "Queries the balance of `_owner` at a specific `_blockNumber`",
+        "params": {
+          "_blockNumber": "The block number when the balance is queried",
+          "_owner": "The address from which the balance will be retrieved"
+        },
+        "return": "The balance at `_blockNumber`"
+      },
+      "changeController(address)": {
+        "params": {
+          "_newController": "The new controller of the contract"
+        }
+      },
+      "claimTokens(address)": {
+        "params": {
+          "_token": "The address of the token contract that you want to recover  set to 0 in case you want to extract ether."
+        }
+      },
+      "createCloneToken(string,uint8,string,uint256,bool)": {
+        "params": {
+          "_cloneDecimalUnits": "Number of decimals of the smallest unit",
+          "_cloneTokenName": "Name of the clone token",
+          "_cloneTokenSymbol": "Symbol of the clone token",
+          "_snapshotBlock": "Block when the distribution of the parent token is  copied to set the initial distribution of the new clone token;  if the block is zero than the actual block, the current block is used",
+          "_transfersEnabled": "True if transfers are allowed in the clone"
+        },
+        "return": "The address of the new MiniMeToken Contract"
+      },
+      "destroyTokens(address,uint256)": {
+        "params": {
+          "_amount": "The quantity of tokens to burn",
+          "_owner": "The address that will lose the tokens"
+        },
+        "return": "True if the tokens are burned correctly"
+      },
+      "enableTransfers(bool)": {
+        "params": {
+          "_transfersEnabled": "True if transfers are allowed in the clone"
+        }
+      },
+      "generateTokens(address,uint256)": {
+        "params": {
+          "_amount": "The quantity of tokens generated",
+          "_owner": "The address that will be assigned the new tokens"
+        },
+        "return": "True if the tokens are generated correctly"
+      },
+      "totalSupply()": {
+        "details": "This function makes it easy to get the total number of tokens",
+        "return": "The total number of tokens"
+      },
+      "totalSupplyAt(uint256)": {
+        "params": {
+          "_blockNumber": "The block number when the totalSupply is queried"
+        },
+        "return": "The total amount of tokens at `_blockNumber`"
+      },
+      "transfer(address,uint256)": {
+        "params": {
+          "_amount": "The amount of tokens to be transferred",
+          "_to": "The address of the recipient"
+        },
+        "return": "Whether the transfer was successful or not"
+      },
+      "transferFrom(address,address,uint256)": {
+        "params": {
+          "_amount": "The amount of tokens to be transferred",
+          "_from": "The address holding the tokens being transferred",
+          "_to": "The address of the recipient"
+        },
+        "return": "True if the transfer was successful"
+      }
+    }
+  },
+  "userdoc": {
+    "methods": {
+      "approve(address,uint256)": {
+        "notice": "`msg.sender` approves `_spender` to spend `_amount` tokens on  its behalf. This is a modified version of the ERC20 approve function  to be a little bit safer"
+      },
+      "approveAndCall(address,uint256,bytes)": {
+        "notice": "`msg.sender` approves `_spender` to send `_amount` tokens on  its behalf, and then a function is triggered in the contract that is  being approved, `_spender`. This allows users to use their tokens to  interact with contracts in one function call instead of two"
+      },
+      "balanceOfAt(address,uint256)": {
+        "notice": "/////////////"
+      },
+      "changeController(address)": {
+        "notice": "Changes the controller of the contract"
+      },
+      "claimTokens(address)": {
+        "notice": "///////This method can be used by the controller to extract mistakenly  sent tokens to this contract."
+      },
+      "createCloneToken(string,uint8,string,uint256,bool)": {
+        "notice": "/////////////Creates a new clone token with the initial distribution being  this token at `_snapshotBlock`"
+      },
+      "destroyTokens(address,uint256)": {
+        "notice": "Burns `_amount` tokens from `_owner`"
+      },
+      "enableTransfers(bool)": {
+        "notice": "/////////////Enables token holders to transfer their tokens freely if true"
+      },
+      "generateTokens(address,uint256)": {
+        "notice": "/////////////Generates `_amount` tokens that are assigned to `_owner`"
+      },
+      "totalSupplyAt(uint256)": {
+        "notice": "Total amount of tokens at a specific `_blockNumber`."
+      },
+      "transfer(address,uint256)": {
+        "notice": "////////////////Send `_amount` tokens to `_to` from `msg.sender`"
+      },
+      "transferFrom(address,address,uint256)": {
+        "notice": "Send `_amount` tokens to `_to` from `_from` on the condition it  is approved by `_from`"
+      }
+    }
+  }
 }

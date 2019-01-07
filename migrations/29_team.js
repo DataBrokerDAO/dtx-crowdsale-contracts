@@ -9,7 +9,10 @@ async function performMigration(deployer, network, accounts) {
   const calculatedTeamAddresses = {}
 
   Object.keys(TeamAddresses).map(
-    key => (calculatedTeamAddresses[key] = web3.toWei(TeamAddresses[key]))
+    key =>
+      (calculatedTeamAddresses[key] = web3.utils.toWei(
+        TeamAddresses[key].toString()
+      ))
   )
 
   await DeployedTokenSale.handleExternalBuyers(
@@ -18,18 +21,12 @@ async function performMigration(deployer, network, accounts) {
     Object.values(calculatedTeamAddresses),
     new Array(Object.values(calculatedTeamAddresses).length).fill(lockup)
   )
-
-  await sleep(60000)
-}
-
-function sleep(ms) {
-  return new Promise(resolve => setTimeout(resolve, ms))
 }
 
 module.exports = function(deployer, network, accounts) {
   deployer
     .then(function() {
-      //return performMigration(deployer, network, accounts)
+      return performMigration(deployer, network, accounts)
     })
     .catch(error => {
       console.log(error)

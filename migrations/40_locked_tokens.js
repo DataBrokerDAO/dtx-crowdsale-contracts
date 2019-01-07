@@ -10,9 +10,4 @@ module.exports = async function(deployer, network, accounts) {
     [web3.utils.toWei('0')],
     [lockup]
   )
-  await sleep(30000)
-}
-
-function sleep(ms) {
-  return new Promise(resolve => setTimeout(resolve, ms))
 }

@@ -17010,10 +17010,10 @@ module.exports = [
     address: '0x9DEa99C445A7C12f33C6418A47cebD894fdf7332',
     amount: 396.5827338,
   },
-  {
-    address: '0x3974c94044033e5e7908A0cAfB1B725Fed3b411b',
-    amount: 396.5827338,
-  },
+  // {
+  //   address: '0x3974c94044033e5e7908A0cAfB1B725Fed3b411b',
+  //   amount: 396.5827338,
+  // },
   {
     address: '0x674E2174C926904a6fc546e1F5E702037B83b6e4',
     amount: 396.5827338,
@@ -23012,7 +23012,7 @@ module.exports = [
   { address: '0x76256bc90F78e7d6CcB43d0A48aAE6fE90E6e595', amount: 56.25 },
   { address: '0x1AA717149b1dffF72190C7232692Cd3beA39f21B', amount: 56.25 },
   { address: '0x4fF3073c2FB43e47FFBb67bB2eFa5d83310503fd', amount: 56.25 },
-  { address: '0xE5481CC2A517fE4a65eDC24582AD9078a8512DE7', amount: 56.25 },
+  // { address: '0xE5481CC2A517fE4a65eDC24582AD9078a8512DE7', amount: 56.25 },
   { address: '0x37187CA8a37B49643057ed8E3Df9b2AE80E0252b', amount: 56.25 },
   { address: '0xe08Be5f0a1bEe4A07F65F7C0b0C9C23297038223', amount: 56.25 },
   { address: '0x49f47d08CCFf91010Bfe5978b011c21472B4AeE9', amount: 56.25 },

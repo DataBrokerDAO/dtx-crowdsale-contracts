@@ -18,11 +18,13 @@ async function performMigration(deployer, network, accounts) {
       DTX85NoLockupHolders[address].forEach(amount => {
         sum += amount
       })
-      DTXHoldersWei[address] = web3.toWei(sum * 7400)
+      DTXHoldersWei[address] = web3.utils.toWei((sum * 7400).toString())
     } else {
-      DTXHoldersWei[address] = web3.toWei(DTX85NoLockupHolders[address] * 7400)
+      DTXHoldersWei[address] = web3.utils.toWei(
+        (DTX85NoLockupHolders[address] * 7400).toString()
+      )
     }
-    DTXHoldersWei[address] = DTXHoldersWei[address]
+    // DTXHoldersWei[address] = DTXHoldersWei[address]
     counter++
     if (Object.keys(DTX85NoLockupHolders).length === counter) {
       DTXBatches.push(DTXHoldersWei)
@@ -242,7 +244,7 @@ const DTX85NoLockupHolders = {
 module.exports = function(deployer, network, accounts) {
   deployer
     .then(function() {
-      // return performMigration(deployer, network, accounts)
+      return performMigration(deployer, network, accounts)
     })
     .catch(error => {
       console.log(error)

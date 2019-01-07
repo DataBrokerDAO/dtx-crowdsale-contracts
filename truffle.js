@@ -14,10 +14,10 @@ module.exports = {
   },
   networks: {
     development: {
-      host: 'localhost',
-      network_id: '*',
+      host: '127.0.0.1',
       port: 7545,
-      gasPrice: 3000000000,
+      network_id: '*',
+      websockets: true,
     },
     mintnet: {
       provider: new HDWalletProvider(
@@ -79,7 +79,7 @@ module.exports = {
       provider: () => {
         return new HDWalletProvider(
           process.env.ETHEREUM_DEPLOYER_SEED,
-          'https://mainnet.infura.io/'
+          'https://implicitly-natural-garfish.quiknode.io/36b6812b-2c74-4c96-b5fd-a117e0ca5c82/_UZJr0cT2bCSPpmwlD4d3Q==/'
         )
       },
       network_id: '1',

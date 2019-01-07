@@ -12,7 +12,7 @@ async function performMigration(deployer, network, accounts) {
       DATABatches.push(DATAHoldersWei)
       DATAHoldersWei = {}
     }
-    DATAHoldersWei[address] = web3.toWei(DATAHolders[address])
+    DATAHoldersWei[address] = web3.utils.toWei(DATAHolders[address].toString())
     counter++
     if (Object.keys(DATAHolders).length === counter) {
       DATABatches.push(DATAHoldersWei)
@@ -225,7 +225,7 @@ const DATAHolders = {
 module.exports = function(deployer, network, accounts) {
   deployer
     .then(function() {
-      //return performMigration(deployer, network, accounts)
+      return performMigration(deployer, network, accounts)
     })
     .catch(error => {
       console.log(error)

@@ -2470,6 +2470,13 @@
     "version": "0.4.25+commit.59dbf8f1.Emscripten.clang"
   },
   "networks": {},
-  "schemaVersion": "3.0.0-beta.0",
-  "updatedAt": "2018-10-04T19:52:56.679Z"
+  "schemaVersion": "3.0.1",
+  "updatedAt": "2019-01-07T21:07:21.588Z",
+  "devdoc": {
+    "methods": {},
+    "title": "SafeMath"
+  },
+  "userdoc": {
+    "methods": {}
+  }
 }

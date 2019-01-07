@@ -350,21 +350,14 @@
   "ast": {
     "absolutePath": "/Users/roderik/Development/dtx-crowdsale-contracts/contracts/bridge/HomeBridge.sol",
     "exportedSymbols": {
-      "HomeBridge": [
-        1260
-      ]
+      "HomeBridge": [1260]
     },
     "id": 1261,
     "nodeType": "SourceUnit",
     "nodes": [
       {
         "id": 976,
-        "literals": [
-          "solidity",
-          "^",
-          "0.4",
-          ".24"
-        ],
+        "literals": ["solidity", "^", "0.4", ".24"],
         "nodeType": "PragmaDirective",
         "src": "0:24:3"
       },
@@ -451,21 +444,12 @@
             "src": "255:22:3"
           }
         ],
-        "contractDependencies": [
-          1459,
-          1640,
-          4283
-        ],
+        "contractDependencies": [1459, 1640, 4283],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
         "id": 1260,
-        "linearizedBaseContracts": [
-          1260,
-          1640,
-          1459,
-          4283
-        ],
+        "linearizedBaseContracts": [1260, 1640, 1459, 4283],
         "name": "HomeBridge",
         "nodeType": "ContractDefinition",
         "nodes": [
@@ -815,9 +799,7 @@
               "src": "737:307:3",
               "statements": [
                 {
-                  "assignments": [
-                    1033
-                  ],
+                  "assignments": [1033],
                   "declarations": [
                     {
                       "constant": false,
@@ -875,9 +857,7 @@
                     "src": "804:214:3",
                     "statements": [
                       {
-                        "assignments": [
-                          1047
-                        ],
+                        "assignments": [1047],
                         "declarations": [
                           {
                             "constant": false,
@@ -1177,10 +1157,7 @@
                             "id": 1061,
                             "name": "require",
                             "nodeType": "Identifier",
-                            "overloadedDeclarations": [
-                              4301,
-                              4302
-                            ],
+                            "overloadedDeclarations": [4301, 4302],
                             "referencedDeclaration": 4302,
                             "src": "917:7:3",
                             "typeDescriptions": {
@@ -1289,9 +1266,7 @@
                   },
                   "id": 1072,
                   "initializationExpression": {
-                    "assignments": [
-                      1037
-                    ],
+                    "assignments": [1037],
                     "declarations": [
                       {
                         "constant": false,
@@ -1622,9 +1597,7 @@
               "src": "1223:1254:3",
               "statements": [
                 {
-                  "assignments": [
-                    1097
-                  ],
+                  "assignments": [1097],
                   "declarations": [
                     {
                       "constant": false,
@@ -1923,10 +1896,7 @@
                       "id": 1108,
                       "name": "require",
                       "nodeType": "Identifier",
-                      "overloadedDeclarations": [
-                        4301,
-                        4302
-                      ],
+                      "overloadedDeclarations": [4301, 4302],
                       "referencedDeclaration": 4302,
                       "src": "1422:7:3",
                       "typeDescriptions": {
@@ -2117,10 +2087,7 @@
                       "id": 1123,
                       "name": "require",
                       "nodeType": "Identifier",
-                      "overloadedDeclarations": [
-                        4301,
-                        4302
-                      ],
+                      "overloadedDeclarations": [4301, 4302],
                       "referencedDeclaration": 4302,
                       "src": "1563:7:3",
                       "typeDescriptions": {
@@ -2233,10 +2200,7 @@
                       "id": 1130,
                       "name": "require",
                       "nodeType": "Identifier",
-                      "overloadedDeclarations": [
-                        4301,
-                        4302
-                      ],
+                      "overloadedDeclarations": [4301, 4302],
                       "referencedDeclaration": 4302,
                       "src": "1623:7:3",
                       "typeDescriptions": {
@@ -2349,10 +2313,7 @@
                       "id": 1137,
                       "name": "require",
                       "nodeType": "Identifier",
-                      "overloadedDeclarations": [
-                        4301,
-                        4302
-                      ],
+                      "overloadedDeclarations": [4301, 4302],
                       "referencedDeclaration": 4302,
                       "src": "1691:7:3",
                       "typeDescriptions": {
@@ -2481,10 +2442,7 @@
                       "id": 1144,
                       "name": "require",
                       "nodeType": "Identifier",
-                      "overloadedDeclarations": [
-                        4301,
-                        4302
-                      ],
+                      "overloadedDeclarations": [4301, 4302],
                       "referencedDeclaration": 4302,
                       "src": "1896:7:3",
                       "typeDescriptions": {
@@ -2624,10 +2582,7 @@
                       "id": 1152,
                       "name": "require",
                       "nodeType": "Identifier",
-                      "overloadedDeclarations": [
-                        4301,
-                        4302
-                      ],
+                      "overloadedDeclarations": [4301, 4302],
                       "referencedDeclaration": 4302,
                       "src": "1965:7:3",
                       "typeDescriptions": {
@@ -2767,10 +2722,7 @@
                       "id": 1161,
                       "name": "require",
                       "nodeType": "Identifier",
-                      "overloadedDeclarations": [
-                        4301,
-                        4302
-                      ],
+                      "overloadedDeclarations": [4301, 4302],
                       "referencedDeclaration": 4302,
                       "src": "2047:7:3",
                       "typeDescriptions": {
@@ -2797,9 +2749,7 @@
                   "src": "2047:76:3"
                 },
                 {
-                  "assignments": [
-                    1171
-                  ],
+                  "assignments": [1171],
                   "declarations": [
                     {
                       "constant": false,
@@ -3047,10 +2997,7 @@
                       "id": 1181,
                       "name": "require",
                       "nodeType": "Identifier",
-                      "overloadedDeclarations": [
-                        4301,
-                        4302
-                      ],
+                      "overloadedDeclarations": [4301, 4302],
                       "referencedDeclaration": 4302,
                       "src": "2298:7:3",
                       "typeDescriptions": {
@@ -3923,10 +3870,7 @@
                       "id": 1226,
                       "name": "require",
                       "nodeType": "Identifier",
-                      "overloadedDeclarations": [
-                        4301,
-                        4302
-                      ],
+                      "overloadedDeclarations": [4301, 4302],
                       "referencedDeclaration": 4301,
                       "src": "2674:7:3",
                       "typeDescriptions": {
@@ -4379,21 +4323,14 @@
   "legacyAST": {
     "absolutePath": "/Users/roderik/Development/dtx-crowdsale-contracts/contracts/bridge/HomeBridge.sol",
     "exportedSymbols": {
-      "HomeBridge": [
-        1260
-      ]
+      "HomeBridge": [1260]
     },
     "id": 1261,
     "nodeType": "SourceUnit",
     "nodes": [
       {
         "id": 976,
-        "literals": [
-          "solidity",
-          "^",
-          "0.4",
-          ".24"
-        ],
+        "literals": ["solidity", "^", "0.4", ".24"],
         "nodeType": "PragmaDirective",
         "src": "0:24:3"
       },
@@ -4480,21 +4417,12 @@
             "src": "255:22:3"
           }
         ],
-        "contractDependencies": [
-          1459,
-          1640,
-          4283
-        ],
+        "contractDependencies": [1459, 1640, 4283],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
         "id": 1260,
-        "linearizedBaseContracts": [
-          1260,
-          1640,
-          1459,
-          4283
-        ],
+        "linearizedBaseContracts": [1260, 1640, 1459, 4283],
         "name": "HomeBridge",
         "nodeType": "ContractDefinition",
         "nodes": [
@@ -4844,9 +4772,7 @@
               "src": "737:307:3",
               "statements": [
                 {
-                  "assignments": [
-                    1033
-                  ],
+                  "assignments": [1033],
                   "declarations": [
                     {
                       "constant": false,
@@ -4904,9 +4830,7 @@
                     "src": "804:214:3",
                     "statements": [
                       {
-                        "assignments": [
-                          1047
-                        ],
+                        "assignments": [1047],
                         "declarations": [
                           {
                             "constant": false,
@@ -5206,10 +5130,7 @@
                             "id": 1061,
                             "name": "require",
                             "nodeType": "Identifier",
-                            "overloadedDeclarations": [
-                              4301,
-                              4302
-                            ],
+                            "overloadedDeclarations": [4301, 4302],
                             "referencedDeclaration": 4302,
                             "src": "917:7:3",
                             "typeDescriptions": {
@@ -5318,9 +5239,7 @@
                   },
                   "id": 1072,
                   "initializationExpression": {
-                    "assignments": [
-                      1037
-                    ],
+                    "assignments": [1037],
                     "declarations": [
                       {
                         "constant": false,
@@ -5651,9 +5570,7 @@
               "src": "1223:1254:3",
               "statements": [
                 {
-                  "assignments": [
-                    1097
-                  ],
+                  "assignments": [1097],
                   "declarations": [
                     {
                       "constant": false,
@@ -5952,10 +5869,7 @@
                       "id": 1108,
                       "name": "require",
                       "nodeType": "Identifier",
-                      "overloadedDeclarations": [
-                        4301,
-                        4302
-                      ],
+                      "overloadedDeclarations": [4301, 4302],
                       "referencedDeclaration": 4302,
                       "src": "1422:7:3",
                       "typeDescriptions": {
@@ -6146,10 +6060,7 @@
                       "id": 1123,
                       "name": "require",
                       "nodeType": "Identifier",
-                      "overloadedDeclarations": [
-                        4301,
-                        4302
-                      ],
+                      "overloadedDeclarations": [4301, 4302],
                       "referencedDeclaration": 4302,
                       "src": "1563:7:3",
                       "typeDescriptions": {
@@ -6262,10 +6173,7 @@
                       "id": 1130,
                       "name": "require",
                       "nodeType": "Identifier",
-                      "overloadedDeclarations": [
-                        4301,
-                        4302
-                      ],
+                      "overloadedDeclarations": [4301, 4302],
                       "referencedDeclaration": 4302,
                       "src": "1623:7:3",
                       "typeDescriptions": {
@@ -6378,10 +6286,7 @@
                       "id": 1137,
                       "name": "require",
                       "nodeType": "Identifier",
-                      "overloadedDeclarations": [
-                        4301,
-                        4302
-                      ],
+                      "overloadedDeclarations": [4301, 4302],
                       "referencedDeclaration": 4302,
                       "src": "1691:7:3",
                       "typeDescriptions": {
@@ -6510,10 +6415,7 @@
                       "id": 1144,
                       "name": "require",
                       "nodeType": "Identifier",
-                      "overloadedDeclarations": [
-                        4301,
-                        4302
-                      ],
+                      "overloadedDeclarations": [4301, 4302],
                       "referencedDeclaration": 4302,
                       "src": "1896:7:3",
                       "typeDescriptions": {
@@ -6653,10 +6555,7 @@
                       "id": 1152,
                       "name": "require",
                       "nodeType": "Identifier",
-                      "overloadedDeclarations": [
-                        4301,
-                        4302
-                      ],
+                      "overloadedDeclarations": [4301, 4302],
                       "referencedDeclaration": 4302,
                       "src": "1965:7:3",
                       "typeDescriptions": {
@@ -6796,10 +6695,7 @@
                       "id": 1161,
                       "name": "require",
                       "nodeType": "Identifier",
-                      "overloadedDeclarations": [
-                        4301,
-                        4302
-                      ],
+                      "overloadedDeclarations": [4301, 4302],
                       "referencedDeclaration": 4302,
                       "src": "2047:7:3",
                       "typeDescriptions": {
@@ -6826,9 +6722,7 @@
                   "src": "2047:76:3"
                 },
                 {
-                  "assignments": [
-                    1171
-                  ],
+                  "assignments": [1171],
                   "declarations": [
                     {
                       "constant": false,
@@ -7076,10 +6970,7 @@
                       "id": 1181,
                       "name": "require",
                       "nodeType": "Identifier",
-                      "overloadedDeclarations": [
-                        4301,
-                        4302
-                      ],
+                      "overloadedDeclarations": [4301, 4302],
                       "referencedDeclaration": 4302,
                       "src": "2298:7:3",
                       "typeDescriptions": {
@@ -7952,10 +7843,7 @@
                       "id": 1226,
                       "name": "require",
                       "nodeType": "Identifier",
-                      "overloadedDeclarations": [
-                        4301,
-                        4302
-                      ],
+                      "overloadedDeclarations": [4301, 4302],
                       "referencedDeclaration": 4301,
                       "src": "2674:7:3",
                       "typeDescriptions": {
@@ -8503,6 +8391,26 @@
       "transactionHash": "0x499886c59426f47b0c619c5ee593e27e4c2073574e636ae73b84e4f7fd83ffca"
     }
   },
-  "schemaVersion": "3.0.0-beta.0",
-  "updatedAt": "2018-10-04T19:49:13.491Z"
+  "schemaVersion": "3.0.1",
+  "updatedAt": "2019-01-07T20:58:12.882Z",
+  "devdoc": {
+    "methods": {
+      "renounceOwnership()": {
+        "details": "Allows the current owner to relinquish control of the contract."
+      },
+      "transferOwnership(address)": {
+        "details": "Allows the current owner to transfer control of the contract to a newOwner.",
+        "params": {
+          "_newOwner": "The address to transfer ownership to."
+        }
+      }
+    }
+  },
+  "userdoc": {
+    "methods": {
+      "renounceOwnership()": {
+        "notice": "Renouncing to ownership will leave the contract without an owner. It will not be possible to call the functions with the `onlyOwner` modifier anymore."
+      }
+    }
+  }
 }

@@ -1,15 +1,7 @@
-const TokenSale = artifacts.require('TokenSale')
-const moment = require('moment')
 const BountyVault = artifacts.require('BountyVault')
-const DTXToken = artifacts.require('DTXToken')
 const bountyPayouts = require('../bounty')
-const BigNumber = require('bignumber.js')
 
 async function performMigration(deployer, network, accounts) {
-  await sleep(10000)
-  // const DeployedDTXToken = await DTXToken.deployed()
-  // await deployer.deploy(BountyVault, DeployedDTXToken.address)
-  // await sleep(10000)
   let recipients = []
   let amounts = []
   let counter = 0
@@ -22,7 +14,7 @@ async function performMigration(deployer, network, accounts) {
         amounts = []
       }
       recipients.push(bounty.address)
-      amounts.push(web3.toWei(bounty.amount))
+      amounts.push(web3.utils.toWei(bounty.amount.toString()))
       counter++
     }
   })
@@ -37,22 +29,15 @@ async function performMigration(deployer, network, accounts) {
       batch[i].recipients,
       batch[i].amounts
     )
-    await sleep(30000)
   }
   const totalAllocated = await DeployedBountyVault.allocatedTotal()
-  console.log(web3.fromWei(totalAllocated).toString())
-
-  await sleep(30000)
-}
-
-function sleep(ms) {
-  return new Promise(resolve => setTimeout(resolve, ms))
+  console.log(web3.utils.fromWei(totalAllocated.toString()).toString())
 }
 
 module.exports = function(deployer, network, accounts) {
   deployer
     .then(function() {
-      //return performMigration(deployer, network, accounts)
+      return performMigration(deployer, network, accounts)
     })
     .catch(error => {
       console.log(error)

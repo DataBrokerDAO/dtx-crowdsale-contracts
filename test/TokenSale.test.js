@@ -14,7 +14,7 @@ contract('TokenSale', async accounts => {
     try {
       await sale.sendTransaction({
         from: accounts[1],
-        value: web3.toWei(1, 'ether'),
+        value: web3.utils.toWei(1, 'ether'),
       })
     } catch (error) {
       const revert = error.message.includes('revert')
@@ -31,10 +31,10 @@ contract('TokenSale', async accounts => {
     const token = await DTXToken.deployed()
     await sale.sendTransaction({
       from: accounts[1],
-      value: web3.toWei(11, 'ether'),
+      value: web3.utils.toWei(11, 'ether'),
     })
     const balance = await token.balanceOf(accounts[1])
-    assert.equal(balance.toNumber(), web3.toWei(66000))
+    assert.equal(balance.toNumber(), web3.utils.toWei(66000))
   })
 
   it('should fail when trying to send too little ether during the presale', async () => {
@@ -42,7 +42,7 @@ contract('TokenSale', async accounts => {
     try {
       await sale.sendTransaction({
         from: accounts[1],
-        value: web3.toWei(1, 'ether'),
+        value: web3.utils.toWei(1, 'ether'),
       })
     } catch (error) {
       const revert = error.message.includes('revert')
@@ -59,7 +59,7 @@ contract('TokenSale', async accounts => {
     try {
       await sale.sendTransaction({
         from: accounts[1],
-        value: web3.toWei(1, 'ether'),
+        value: web3.utils.toWei(1, 'ether'),
       })
     } catch (error) {
       const revert = error.message.includes('revert')
@@ -76,13 +76,13 @@ contract('TokenSale', async accounts => {
     const token = await DTXToken.deployed()
     await sale.sendTransaction({
       from: accounts[2],
-      value: web3.toWei(1, 'ether'),
+      value: web3.utils.toWei(1, 'ether'),
     })
     const balance = await token.balanceOf(accounts[2])
-    assert.equal(balance.toNumber(), web3.toWei(4400))
+    assert.equal(balance.toNumber(), web3.utils.toWei(4400))
     await sale.sendTransaction({
       from: accounts[0],
-      value: web3.toWei(1, 'ether'),
+      value: web3.utils.toWei(1, 'ether'),
     })
   })
 
@@ -92,7 +92,7 @@ contract('TokenSale', async accounts => {
     try {
       await sale.sendTransaction({
         from: accounts[1],
-        value: web3.toWei(1, 'ether'),
+        value: web3.utils.toWei(1, 'ether'),
       })
     } catch (error) {
       const revert = error.message.includes('revert')
@@ -109,10 +109,10 @@ contract('TokenSale', async accounts => {
     const token = await DTXToken.deployed()
     await sale.sendTransaction({
       from: accounts[3],
-      value: web3.toWei(1, 'ether'),
+      value: web3.utils.toWei(1, 'ether'),
     })
     const balance = await token.balanceOf(accounts[3])
-    assert.equal(balance.toNumber(), web3.toWei(4000))
+    assert.equal(balance.toNumber(), web3.utils.toWei(4000))
   })
 
   it('should be able to do a proxy payment', async () => {
@@ -120,10 +120,10 @@ contract('TokenSale', async accounts => {
     const token = await DTXToken.deployed()
     await sale.proxyPayment(accounts[7], {
       from: accounts[3],
-      value: web3.toWei(1, 'ether'),
+      value: web3.utils.toWei(1, 'ether'),
     })
     const balance = await token.balanceOf(accounts[7])
-    assert.equal(balance.toNumber(), web3.toWei(4000))
+    assert.equal(balance.toNumber(), web3.utils.toWei(4000))
   })
 
   it('should fail when trying to send ether after endTime', async () => {
@@ -132,7 +132,7 @@ contract('TokenSale', async accounts => {
     try {
       await sale.sendTransaction({
         from: accounts[1],
-        value: web3.toWei(1, 'ether'),
+        value: web3.utils.toWei(1, 'ether'),
       })
     } catch (error) {
       const revert = error.message.includes('revert')
@@ -161,8 +161,8 @@ contract('TokenSale', async accounts => {
     const { timestamp } = await getBlock('latest')
     await sale.handleExternalBuyers(
       [accounts[5], accounts[2]],
-      [web3.toWei(4000), web3.toWei(5000)],
-      [web3.toWei(3000), web3.toWei(2000)],
+      [web3.utils.toWei('4000'), web3.utils.toWei('5000')],
+      [web3.utils.toWei('3000'), web3.utils.toWei('2000')],
       [timestamp + timejump, timestamp + timejump + timejump]
     )
   })
@@ -192,10 +192,10 @@ contract('TokenSale', async accounts => {
     const sale = await TokenSale.deployed()
     const token = await DTXToken.deployed()
     let balance = await token.balanceOf(accounts[5])
-    assert.equal(balance.toNumber(), web3.toWei(4000))
+    assert.equal(balance.toNumber(), web3.utils.toWei(4000))
     await sale.claimLockedTokens(accounts[5])
     balance = await token.balanceOf(accounts[5])
-    assert.equal(balance.toNumber(), web3.toWei(7000))
+    assert.equal(balance.toNumber(), web3.utils.toWei(7000))
   })
 
   it('cannot claim locked tokens', async () => {
@@ -213,9 +213,11 @@ contract('TokenSale', async accounts => {
 
   it('can check when a token transfer happens before its transferable', async () => {
     const token = await DTXToken.deployed()
-    await token.transfer(accounts[6], web3.toWei(10))
+    await token.transfer(accounts[6], web3.utils.toWei(10))
     try {
-      await token.transfer(accounts[6], web3.toWei(10), { from: accounts[1] })
+      await token.transfer(accounts[6], web3.utils.toWei(10), {
+        from: accounts[1],
+      })
     } catch (error) {
       const revert = error.message.includes('revert')
       if (!revert) {
@@ -227,9 +229,11 @@ contract('TokenSale', async accounts => {
 
   it('can check when a token approve happens before its transferable', async () => {
     const token = await DTXToken.deployed()
-    await token.approve(accounts[6], web3.toWei(10))
+    await token.approve(accounts[6], web3.utils.toWei(10))
     try {
-      await token.approve(accounts[6], web3.toWei(10), { from: accounts[1] })
+      await token.approve(accounts[6], web3.utils.toWei(10), {
+        from: accounts[1],
+      })
     } catch (error) {
       const revert = error.message.includes('revert')
       if (!revert) {
@@ -248,15 +252,19 @@ contract('TokenSale', async accounts => {
 
   it('can check when a token transfer happens after its transferable', async () => {
     const token = await DTXToken.deployed()
-    await token.transfer(accounts[6], web3.toWei(10))
-    await token.transfer(accounts[6], web3.toWei(10), { from: accounts[1] })
+    await token.transfer(accounts[6], web3.utils.toWei(10))
+    await token.transfer(accounts[6], web3.utils.toWei(10), {
+      from: accounts[1],
+    })
   })
 
   it('can check when a token approval happens after its transferable', async () => {
     const token = await DTXToken.deployed()
     await token.approve(accounts[6], 0)
-    await token.approve(accounts[6], web3.toWei(10))
-    await token.approve(accounts[6], web3.toWei(10), { from: accounts[1] })
+    await token.approve(accounts[6], web3.utils.toWei(10))
+    await token.approve(accounts[6], web3.utils.toWei(10), {
+      from: accounts[1],
+    })
   })
 
   it('can change the token controller', async () => {

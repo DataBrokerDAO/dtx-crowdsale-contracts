@@ -7,7 +7,10 @@ async function performMigration(deployer, network, accounts) {
   const calculatedPreSalePriceRise = {}
 
   Object.keys(PreSalePriceRise).map(
-    key => (calculatedPreSalePriceRise[key] = web3.toWei(PreSalePriceRise[key]))
+    key =>
+      (calculatedPreSalePriceRise[key] = web3.utils.toWei(
+        PreSalePriceRise[key].toString()
+      ))
   )
 
   await DeployedTokenSale.handleExternalBuyers(
@@ -21,7 +24,7 @@ async function performMigration(deployer, network, accounts) {
 module.exports = function(deployer, network, accounts) {
   deployer
     .then(function() {
-      //return performMigration(deployer, network, accounts)
+      return performMigration(deployer, network, accounts)
     })
     .catch(error => {
       console.log(error)

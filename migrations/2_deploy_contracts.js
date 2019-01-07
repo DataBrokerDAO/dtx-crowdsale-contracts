@@ -27,7 +27,7 @@ async function performMigration(deployer, network, accounts) {
         '0x8A69583573b4F6a3Fd70b938DaFB0f61F3536692', // Jonathan
       ],
       2,
-      web3.toWei(100, 'ether')
+      web3.utils.toWei('100', 'ether')
     )
     Wallet = await MultiSigWalletWithDailyLimit.deployed()
   } else {

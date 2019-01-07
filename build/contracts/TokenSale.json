@@ -383,7 +383,8 @@
       ],
       "payable": false,
       "stateMutability": "nonpayable",
-      "type": "constructor"
+      "type": "constructor",
+      "signature": "constructor"
     },
     {
       "payable": true,
@@ -23240,16 +23241,62 @@
     "5777": {
       "events": {},
       "links": {},
-      "address": "0x7ef9044c0c8951c86e3e9bf5177340da96c0feb3",
-      "transactionHash": "0x689573e2708af8fe363f0051e88a5368038a4c1b37458ae38c9ce6f8de228f6c"
-    },
-    "8995": {
-      "events": {},
-      "links": {},
-      "address": "0xf064de5a0c52fcd4ea1cb793c5cc0b5cc634213b",
-      "transactionHash": "0xc8efb90f9b97998cbb1f6101af9f3a76c9c8fd74ef73d37c60310f5dc5fdfae1"
+      "address": "0x11006a57af4956642384e9E79E2F0fad446CA317",
+      "transactionHash": "0x691dfe0c53e26e4bb64f73ed9dd4ca347ba28884a365251c6d870345788a7d9c"
     }
   },
-  "schemaVersion": "3.0.0-beta.0",
-  "updatedAt": "2018-10-05T12:37:41.417Z"
+  "schemaVersion": "3.0.1",
+  "updatedAt": "2019-01-07T21:08:36.840Z",
+  "devdoc": {
+    "methods": {
+      "changeController(address)": {
+        "params": {
+          "_newController": "The new controller of the contract"
+        }
+      },
+      "changeTokenController(address)": {
+        "details": "Allow the owner of TokenSale to change the controller of the token"
+      },
+      "finalizeSale()": {
+        "details": "`finalizeSale()` can only be called after the end of the funding period or if the maximum amount is raised."
+      },
+      "handleEarlySaleBuyers(address[],uint256[])": {
+        "details": "utility function to allow the owner to handle the early sale purchases"
+      },
+      "handleExternalBuyers(address[],uint256[],uint256[],uint256[])": {
+        "details": "utility function to allow the owner to handle private and bitcoin buyers"
+      },
+      "makeTransferable()": {
+        "details": "setter for the transferable flag"
+      },
+      "updateDates(uint256,uint256,uint256,uint256,uint256,uint256)": {
+        "details": "update method for all the dates"
+      }
+    }
+  },
+  "userdoc": {
+    "methods": {
+      "changeController(address)": {
+        "notice": "Changes the controller of the contract"
+      },
+      "finalizeSale()": {
+        "notice": "`finalizeSale()` ends the TokenSale. It will generate the platform and team tokens  and set the controller to the referral fee contract."
+      },
+      "onApprove(address,address,uint256)": {
+        "notice": "Notifies the controller about an approval, for this TokenSale all approvals are allowed by default and no extra notifications are needed"
+      },
+      "onTransfer(address,address,uint256)": {
+        "notice": "Notifies the controller about a transfer, for this TokenSale all transfers are allowed by default and no extra notifications are needed"
+      },
+      "pauseContribution()": {
+        "notice": "Pauses the contribution if there is any issue"
+      },
+      "proxyPayment(address)": {
+        "notice": "`proxyPayment()` allows the caller to send ether to the TokenSale and have the tokens created in an address of their choosing"
+      },
+      "resumeContribution()": {
+        "notice": "Resumes the contribution"
+      }
+    }
+  }
 }
