@@ -5850,12 +5850,12 @@
     "5777": {
       "events": {},
       "links": {},
-      "address": "0x67a4B15b0D194c979f27Cfb97F2D6963A613dB7e",
-      "transactionHash": "0x0d18105e982128c77ca2fbe193a30f7ac1154ba0e7f8b5fde5634379c8605cf9"
+      "address": "0xCE747Ee373519EB1e47e936e5eDbcC31DF62767e",
+      "transactionHash": "0x48083214112bcaf5857cf01bb589ad8cb644581cd090639c174099417234c23f"
     }
   },
   "schemaVersion": "3.0.1",
-  "updatedAt": "2019-01-09T10:26:49.545Z",
+  "updatedAt": "2019-01-09T12:19:34.158Z",
   "devdoc": {
     "author": "Stefan George - <stefan.george@consensys.net>",
     "methods": {

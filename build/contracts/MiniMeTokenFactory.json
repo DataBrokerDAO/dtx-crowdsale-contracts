@@ -28814,12 +28814,12 @@
     "5777": {
       "events": {},
       "links": {},
-      "address": "0x04769848D8977CADDa220Cf280D1633F1a880238",
-      "transactionHash": "0x57cc2b0372360af1e2417bc00ee38c05610b056c1df24f8ad2ca0b3eab6e9702"
+      "address": "0x27453B8E08834618f95B351FEA8cB7602cC00944",
+      "transactionHash": "0xba3c298b8c551f9dc35ca2de2d1dd58bdbcbaf3f4daf584381857d90564718c5"
     }
   },
   "schemaVersion": "3.0.1",
-  "updatedAt": "2019-01-09T10:26:49.554Z",
+  "updatedAt": "2019-01-09T12:19:34.167Z",
   "devdoc": {
     "methods": {
       "createCloneToken(address,uint256,string,uint8,string,bool)": {
