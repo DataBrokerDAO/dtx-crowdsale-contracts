@@ -666,14 +666,14 @@
     "absolutePath": "/Users/roderik/Development/dtx-crowdsale-contracts/contracts/external/MultiSigWalletWithDailyLimit.sol",
     "exportedSymbols": {
       "MultiSigWalletWithDailyLimit": [
-        3887
+        3893
       ]
     },
-    "id": 3888,
+    "id": 3894,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 3683,
+        "id": 3689,
         "literals": [
           "solidity",
           "^",
@@ -686,10 +686,10 @@
       {
         "absolutePath": "/Users/roderik/Development/dtx-crowdsale-contracts/contracts/external/MultiSigWallet.sol",
         "file": "./MultiSigWallet.sol",
-        "id": 3684,
+        "id": 3690,
         "nodeType": "ImportDirective",
-        "scope": 3888,
-        "sourceUnit": 3682,
+        "scope": 3894,
+        "sourceUnit": 3688,
         "src": "25:30:10",
         "symbolAliases": [],
         "unitAlias": ""
@@ -700,31 +700,31 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 3685,
+              "id": 3691,
               "name": "MultiSigWallet",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 3681,
+              "referencedDeclaration": 3687,
               "src": "269:14:10",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_MultiSigWallet_$3681",
+                "typeIdentifier": "t_contract$_MultiSigWallet_$3687",
                 "typeString": "contract MultiSigWallet"
               }
             },
-            "id": 3686,
+            "id": 3692,
             "nodeType": "InheritanceSpecifier",
             "src": "269:14:10"
           }
         ],
         "contractDependencies": [
-          3681
+          3687
         ],
         "contractKind": "contract",
         "documentation": "@title Multisignature wallet with daily limit - Allows an owner to withdraw a daily limit without multisig.\n @author Stefan George - <stefan.george@consensys.net>",
         "fullyImplemented": true,
-        "id": 3887,
+        "id": 3893,
         "linearizedBaseContracts": [
-          3887,
-          3681
+          3893,
+          3687
         ],
         "name": "MultiSigWalletWithDailyLimit",
         "nodeType": "ContractDefinition",
@@ -732,20 +732,20 @@
           {
             "anonymous": false,
             "documentation": null,
-            "id": 3690,
+            "id": 3696,
             "name": "DailyLimitChange",
             "nodeType": "EventDefinition",
             "parameters": {
-              "id": 3689,
+              "id": 3695,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3688,
+                  "id": 3694,
                   "indexed": false,
                   "name": "dailyLimit",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3690,
+                  "scope": 3696,
                   "src": "344:15:10",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -754,7 +754,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 3687,
+                    "id": 3693,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
                     "src": "344:4:10",
@@ -773,10 +773,10 @@
           },
           {
             "constant": false,
-            "id": 3692,
+            "id": 3698,
             "name": "dailyLimit",
             "nodeType": "VariableDeclaration",
-            "scope": 3887,
+            "scope": 3893,
             "src": "398:22:10",
             "stateVariable": true,
             "storageLocation": "default",
@@ -785,7 +785,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 3691,
+              "id": 3697,
               "name": "uint",
               "nodeType": "ElementaryTypeName",
               "src": "398:4:10",
@@ -799,10 +799,10 @@
           },
           {
             "constant": false,
-            "id": 3694,
+            "id": 3700,
             "name": "lastDay",
             "nodeType": "VariableDeclaration",
-            "scope": 3887,
+            "scope": 3893,
             "src": "426:19:10",
             "stateVariable": true,
             "storageLocation": "default",
@@ -811,7 +811,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 3693,
+              "id": 3699,
               "name": "uint",
               "nodeType": "ElementaryTypeName",
               "src": "426:4:10",
@@ -825,10 +825,10 @@
           },
           {
             "constant": false,
-            "id": 3696,
+            "id": 3702,
             "name": "spentToday",
             "nodeType": "VariableDeclaration",
-            "scope": 3887,
+            "scope": 3893,
             "src": "451:22:10",
             "stateVariable": true,
             "storageLocation": "default",
@@ -837,7 +837,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 3695,
+              "id": 3701,
               "name": "uint",
               "nodeType": "ElementaryTypeName",
               "src": "451:4:10",
@@ -851,25 +851,25 @@
           },
           {
             "body": {
-              "id": 3714,
+              "id": 3720,
               "nodeType": "Block",
               "src": "997:41:10",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 3712,
+                    "id": 3718,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 3710,
+                      "id": 3716,
                       "name": "dailyLimit",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 3692,
+                      "referencedDeclaration": 3698,
                       "src": "1007:10:10",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -880,11 +880,11 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 3711,
+                      "id": 3717,
                       "name": "_dailyLimit",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 3703,
+                      "referencedDeclaration": 3709,
                       "src": "1020:11:10",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -897,14 +897,14 @@
                       "typeString": "uint256"
                     }
                   },
-                  "id": 3713,
+                  "id": 3719,
                   "nodeType": "ExpressionStatement",
                   "src": "1007:24:10"
                 }
               ]
             },
             "documentation": "@dev Contract constructor sets initial owners, required number of confirmations and daily withdraw limit.\n @param _owners List of initial owners.\n @param _required Number of required confirmations.\n @param _dailyLimit Amount in wei, which can be withdrawn without confirmations on a daily basis.",
-            "id": 3715,
+            "id": 3721,
             "implemented": true,
             "isConstructor": true,
             "isDeclaredConst": false,
@@ -913,11 +913,11 @@
                 "arguments": [
                   {
                     "argumentTypes": null,
-                    "id": 3706,
+                    "id": 3712,
                     "name": "_owners",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 3699,
+                    "referencedDeclaration": 3705,
                     "src": "973:7:10",
                     "typeDescriptions": {
                       "typeIdentifier": "t_array$_t_address_$dyn_memory_ptr",
@@ -926,11 +926,11 @@
                   },
                   {
                     "argumentTypes": null,
-                    "id": 3707,
+                    "id": 3713,
                     "name": "_required",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 3701,
+                    "referencedDeclaration": 3707,
                     "src": "982:9:10",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
@@ -938,17 +938,17 @@
                     }
                   }
                 ],
-                "id": 3708,
+                "id": 3714,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 3705,
+                  "id": 3711,
                   "name": "MultiSigWallet",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 3681,
+                  "referencedDeclaration": 3687,
                   "src": "958:14:10",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_type$_t_contract$_MultiSigWallet_$3681_$",
+                    "typeIdentifier": "t_type$_t_contract$_MultiSigWallet_$3687_$",
                     "typeString": "type(contract MultiSigWallet)"
                   }
                 },
@@ -959,15 +959,15 @@
             "name": "MultiSigWalletWithDailyLimit",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 3704,
+              "id": 3710,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3699,
+                  "id": 3705,
                   "name": "_owners",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3715,
+                  "scope": 3721,
                   "src": "882:17:10",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -977,7 +977,7 @@
                   },
                   "typeName": {
                     "baseType": {
-                      "id": 3697,
+                      "id": 3703,
                       "name": "address",
                       "nodeType": "ElementaryTypeName",
                       "src": "882:7:10",
@@ -986,7 +986,7 @@
                         "typeString": "address"
                       }
                     },
-                    "id": 3698,
+                    "id": 3704,
                     "length": null,
                     "nodeType": "ArrayTypeName",
                     "src": "882:9:10",
@@ -1000,10 +1000,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 3701,
+                  "id": 3707,
                   "name": "_required",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3715,
+                  "scope": 3721,
                   "src": "901:14:10",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1012,7 +1012,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 3700,
+                    "id": 3706,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
                     "src": "901:4:10",
@@ -1026,10 +1026,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 3703,
+                  "id": 3709,
                   "name": "_dailyLimit",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3715,
+                  "scope": 3721,
                   "src": "917:16:10",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1038,7 +1038,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 3702,
+                    "id": 3708,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
                     "src": "917:4:10",
@@ -1055,12 +1055,12 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 3709,
+              "id": 3715,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "997:0:10"
             },
-            "scope": 3887,
+            "scope": 3893,
             "src": "844:194:10",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -1068,25 +1068,25 @@
           },
           {
             "body": {
-              "id": 3730,
+              "id": 3736,
               "nodeType": "Block",
               "src": "1253:80:10",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 3724,
+                    "id": 3730,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 3722,
+                      "id": 3728,
                       "name": "dailyLimit",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 3692,
+                      "referencedDeclaration": 3698,
                       "src": "1263:10:10",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -1097,11 +1097,11 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 3723,
+                      "id": 3729,
                       "name": "_dailyLimit",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 3717,
+                      "referencedDeclaration": 3723,
                       "src": "1276:11:10",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -1114,7 +1114,7 @@
                       "typeString": "uint256"
                     }
                   },
-                  "id": 3725,
+                  "id": 3731,
                   "nodeType": "ExpressionStatement",
                   "src": "1263:24:10"
                 },
@@ -1124,11 +1124,11 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 3727,
+                        "id": 3733,
                         "name": "_dailyLimit",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 3717,
+                        "referencedDeclaration": 3723,
                         "src": "1314:11:10",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -1143,18 +1143,18 @@
                           "typeString": "uint256"
                         }
                       ],
-                      "id": 3726,
+                      "id": 3732,
                       "name": "DailyLimitChange",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 3690,
+                      "referencedDeclaration": 3696,
                       "src": "1297:16:10",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_event_nonpayable$_t_uint256_$returns$__$",
                         "typeString": "function (uint256)"
                       }
                     },
-                    "id": 3728,
+                    "id": 3734,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1168,28 +1168,28 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 3729,
+                  "id": 3735,
                   "nodeType": "ExpressionStatement",
                   "src": "1297:29:10"
                 }
               ]
             },
             "documentation": "@dev Allows to change the daily limit. Transaction has to be sent by wallet.\n @param _dailyLimit Amount in wei.",
-            "id": 3731,
+            "id": 3737,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
             "modifiers": [
               {
                 "arguments": null,
-                "id": 3720,
+                "id": 3726,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 3719,
+                  "id": 3725,
                   "name": "onlyWallet",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 2787,
+                  "referencedDeclaration": 2793,
                   "src": "1238:10:10",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$__$",
@@ -1203,15 +1203,15 @@
             "name": "changeDailyLimit",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 3718,
+              "id": 3724,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3717,
+                  "id": 3723,
                   "name": "_dailyLimit",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3731,
+                  "scope": 3737,
                   "src": "1197:16:10",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1220,7 +1220,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 3716,
+                    "id": 3722,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
                     "src": "1197:4:10",
@@ -1237,12 +1237,12 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 3721,
+              "id": 3727,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1253:0:10"
             },
-            "scope": 3887,
+            "scope": 3893,
             "src": "1171:162:10",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -1250,37 +1250,37 @@
           },
           {
             "body": {
-              "id": 3822,
+              "id": 3828,
               "nodeType": "Block",
               "src": "1674:619:10",
               "statements": [
                 {
                   "assignments": [
-                    3749
+                    3755
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 3749,
+                      "id": 3755,
                       "name": "txn",
                       "nodeType": "VariableDeclaration",
-                      "scope": 3823,
+                      "scope": 3829,
                       "src": "1684:23:10",
                       "stateVariable": false,
                       "storageLocation": "storage",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_Transaction_$2774_storage_ptr",
+                        "typeIdentifier": "t_struct$_Transaction_$2780_storage_ptr",
                         "typeString": "struct MultiSigWallet.Transaction"
                       },
                       "typeName": {
                         "contractScope": null,
-                        "id": 3748,
+                        "id": 3754,
                         "name": "Transaction",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 2774,
+                        "referencedDeclaration": 2780,
                         "src": "1684:11:10",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Transaction_$2774_storage_ptr",
+                          "typeIdentifier": "t_struct$_Transaction_$2780_storage_ptr",
                           "typeString": "struct MultiSigWallet.Transaction"
                         }
                       },
@@ -1288,30 +1288,30 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 3753,
+                  "id": 3759,
                   "initialValue": {
                     "argumentTypes": null,
                     "baseExpression": {
                       "argumentTypes": null,
-                      "id": 3750,
+                      "id": 3756,
                       "name": "transactions",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 2748,
+                      "referencedDeclaration": 2754,
                       "src": "1710:12:10",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Transaction_$2774_storage_$",
+                        "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Transaction_$2780_storage_$",
                         "typeString": "mapping(uint256 => struct MultiSigWallet.Transaction storage ref)"
                       }
                     },
-                    "id": 3752,
+                    "id": 3758,
                     "indexExpression": {
                       "argumentTypes": null,
-                      "id": 3751,
+                      "id": 3757,
                       "name": "transactionId",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 3733,
+                      "referencedDeclaration": 3739,
                       "src": "1723:13:10",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -1325,7 +1325,7 @@
                     "nodeType": "IndexAccess",
                     "src": "1710:27:10",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Transaction_$2774_storage",
+                      "typeIdentifier": "t_struct$_Transaction_$2780_storage",
                       "typeString": "struct MultiSigWallet.Transaction storage ref"
                     }
                   },
@@ -1334,15 +1334,15 @@
                 },
                 {
                   "assignments": [
-                    3755
+                    3761
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 3755,
+                      "id": 3761,
                       "name": "_confirmed",
                       "nodeType": "VariableDeclaration",
-                      "scope": 3823,
+                      "scope": 3829,
                       "src": "1747:15:10",
                       "stateVariable": false,
                       "storageLocation": "default",
@@ -1351,7 +1351,7 @@
                         "typeString": "bool"
                       },
                       "typeName": {
-                        "id": 3754,
+                        "id": 3760,
                         "name": "bool",
                         "nodeType": "ElementaryTypeName",
                         "src": "1747:4:10",
@@ -1364,17 +1364,17 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 3759,
+                  "id": 3765,
                   "initialValue": {
                     "argumentTypes": null,
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 3757,
+                        "id": 3763,
                         "name": "transactionId",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 3733,
+                        "referencedDeclaration": 3739,
                         "src": "1777:13:10",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -1389,18 +1389,18 @@
                           "typeString": "uint256"
                         }
                       ],
-                      "id": 3756,
+                      "id": 3762,
                       "name": "isConfirmed",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 3374,
+                      "referencedDeclaration": 3380,
                       "src": "1765:11:10",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_view$_t_uint256_$returns$_t_bool_$",
                         "typeString": "function (uint256) view returns (bool)"
                       }
                     },
-                    "id": 3758,
+                    "id": 3764,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1424,18 +1424,18 @@
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
                     },
-                    "id": 3771,
+                    "id": 3777,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftExpression": {
                       "argumentTypes": null,
-                      "id": 3760,
+                      "id": 3766,
                       "name": "_confirmed",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 3755,
+                      "referencedDeclaration": 3761,
                       "src": "1805:10:10",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
@@ -1450,7 +1450,7 @@
                         "typeIdentifier": "t_bool",
                         "typeString": "bool"
                       },
-                      "id": 3770,
+                      "id": 3776,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -1461,7 +1461,7 @@
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
                         },
-                        "id": 3765,
+                        "id": 3771,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -1472,32 +1472,32 @@
                             "argumentTypes": null,
                             "expression": {
                               "argumentTypes": null,
-                              "id": 3761,
+                              "id": 3767,
                               "name": "txn",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 3749,
+                              "referencedDeclaration": 3755,
                               "src": "1819:3:10",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_struct$_Transaction_$2774_storage_ptr",
+                                "typeIdentifier": "t_struct$_Transaction_$2780_storage_ptr",
                                 "typeString": "struct MultiSigWallet.Transaction storage pointer"
                               }
                             },
-                            "id": 3762,
+                            "id": 3768,
                             "isConstant": false,
                             "isLValue": true,
                             "isPure": false,
                             "lValueRequested": false,
                             "memberName": "data",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 2771,
+                            "referencedDeclaration": 2777,
                             "src": "1819:8:10",
                             "typeDescriptions": {
                               "typeIdentifier": "t_bytes_storage",
                               "typeString": "bytes storage ref"
                             }
                           },
-                          "id": 3763,
+                          "id": 3769,
                           "isConstant": false,
                           "isLValue": true,
                           "isPure": false,
@@ -1516,7 +1516,7 @@
                         "rightExpression": {
                           "argumentTypes": null,
                           "hexValue": "30",
-                          "id": 3764,
+                          "id": 3770,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -1546,25 +1546,25 @@
                             "argumentTypes": null,
                             "expression": {
                               "argumentTypes": null,
-                              "id": 3767,
+                              "id": 3773,
                               "name": "txn",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 3749,
+                              "referencedDeclaration": 3755,
                               "src": "1856:3:10",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_struct$_Transaction_$2774_storage_ptr",
+                                "typeIdentifier": "t_struct$_Transaction_$2780_storage_ptr",
                                 "typeString": "struct MultiSigWallet.Transaction storage pointer"
                               }
                             },
-                            "id": 3768,
+                            "id": 3774,
                             "isConstant": false,
                             "isLValue": true,
                             "isPure": false,
                             "lValueRequested": false,
                             "memberName": "value",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 2769,
+                            "referencedDeclaration": 2775,
                             "src": "1856:9:10",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
@@ -1579,18 +1579,18 @@
                               "typeString": "uint256"
                             }
                           ],
-                          "id": 3766,
+                          "id": 3772,
                           "name": "isUnderLimit",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 3862,
+                          "referencedDeclaration": 3868,
                           "src": "1843:12:10",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_internal_nonpayable$_t_uint256_$returns$_t_bool_$",
                             "typeString": "function (uint256) returns (bool)"
                           }
                         },
-                        "id": 3769,
+                        "id": 3775,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -1617,18 +1617,18 @@
                     }
                   },
                   "falseBody": null,
-                  "id": 3821,
+                  "id": 3827,
                   "nodeType": "IfStatement",
                   "src": "1801:486:10",
                   "trueBody": {
-                    "id": 3820,
+                    "id": 3826,
                     "nodeType": "Block",
                     "src": "1868:419:10",
                     "statements": [
                       {
                         "expression": {
                           "argumentTypes": null,
-                          "id": 3776,
+                          "id": 3782,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -1637,25 +1637,25 @@
                             "argumentTypes": null,
                             "expression": {
                               "argumentTypes": null,
-                              "id": 3772,
+                              "id": 3778,
                               "name": "txn",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 3749,
+                              "referencedDeclaration": 3755,
                               "src": "1882:3:10",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_struct$_Transaction_$2774_storage_ptr",
+                                "typeIdentifier": "t_struct$_Transaction_$2780_storage_ptr",
                                 "typeString": "struct MultiSigWallet.Transaction storage pointer"
                               }
                             },
-                            "id": 3774,
+                            "id": 3780,
                             "isConstant": false,
                             "isLValue": true,
                             "isPure": false,
                             "lValueRequested": true,
                             "memberName": "executed",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 2773,
+                            "referencedDeclaration": 2779,
                             "src": "1882:12:10",
                             "typeDescriptions": {
                               "typeIdentifier": "t_bool",
@@ -1667,7 +1667,7 @@
                           "rightHandSide": {
                             "argumentTypes": null,
                             "hexValue": "74727565",
-                            "id": 3775,
+                            "id": 3781,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -1688,14 +1688,14 @@
                             "typeString": "bool"
                           }
                         },
-                        "id": 3777,
+                        "id": 3783,
                         "nodeType": "ExpressionStatement",
                         "src": "1882:19:10"
                       },
                       {
                         "condition": {
                           "argumentTypes": null,
-                          "id": 3779,
+                          "id": 3785,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -1706,11 +1706,11 @@
                           "src": "1919:11:10",
                           "subExpression": {
                             "argumentTypes": null,
-                            "id": 3778,
+                            "id": 3784,
                             "name": "_confirmed",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 3755,
+                            "referencedDeclaration": 3761,
                             "src": "1920:10:10",
                             "typeDescriptions": {
                               "typeIdentifier": "t_bool",
@@ -1723,24 +1723,24 @@
                           }
                         },
                         "falseBody": null,
-                        "id": 3785,
+                        "id": 3791,
                         "nodeType": "IfStatement",
                         "src": "1915:56:10",
                         "trueBody": {
                           "expression": {
                             "argumentTypes": null,
-                            "id": 3783,
+                            "id": 3789,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
                             "lValueRequested": false,
                             "leftHandSide": {
                               "argumentTypes": null,
-                              "id": 3780,
+                              "id": 3786,
                               "name": "spentToday",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 3696,
+                              "referencedDeclaration": 3702,
                               "src": "1948:10:10",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_uint256",
@@ -1753,25 +1753,25 @@
                               "argumentTypes": null,
                               "expression": {
                                 "argumentTypes": null,
-                                "id": 3781,
+                                "id": 3787,
                                 "name": "txn",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 3749,
+                                "referencedDeclaration": 3755,
                                 "src": "1962:3:10",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_struct$_Transaction_$2774_storage_ptr",
+                                  "typeIdentifier": "t_struct$_Transaction_$2780_storage_ptr",
                                   "typeString": "struct MultiSigWallet.Transaction storage pointer"
                                 }
                               },
-                              "id": 3782,
+                              "id": 3788,
                               "isConstant": false,
                               "isLValue": true,
                               "isPure": false,
                               "lValueRequested": false,
                               "memberName": "value",
                               "nodeType": "MemberAccess",
-                              "referencedDeclaration": 2769,
+                              "referencedDeclaration": 2775,
                               "src": "1962:9:10",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_uint256",
@@ -1784,7 +1784,7 @@
                               "typeString": "uint256"
                             }
                           },
-                          "id": 3784,
+                          "id": 3790,
                           "nodeType": "ExpressionStatement",
                           "src": "1948:23:10"
                         }
@@ -1797,25 +1797,25 @@
                               "argumentTypes": null,
                               "expression": {
                                 "argumentTypes": null,
-                                "id": 3793,
+                                "id": 3799,
                                 "name": "txn",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 3749,
+                                "referencedDeclaration": 3755,
                                 "src": "2027:3:10",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_struct$_Transaction_$2774_storage_ptr",
+                                  "typeIdentifier": "t_struct$_Transaction_$2780_storage_ptr",
                                   "typeString": "struct MultiSigWallet.Transaction storage pointer"
                                 }
                               },
-                              "id": 3794,
+                              "id": 3800,
                               "isConstant": false,
                               "isLValue": true,
                               "isPure": false,
                               "lValueRequested": false,
                               "memberName": "data",
                               "nodeType": "MemberAccess",
-                              "referencedDeclaration": 2771,
+                              "referencedDeclaration": 2777,
                               "src": "2027:8:10",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_bytes_storage",
@@ -1835,25 +1835,25 @@
                                 "argumentTypes": null,
                                 "expression": {
                                   "argumentTypes": null,
-                                  "id": 3790,
+                                  "id": 3796,
                                   "name": "txn",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 3749,
+                                  "referencedDeclaration": 3755,
                                   "src": "2016:3:10",
                                   "typeDescriptions": {
-                                    "typeIdentifier": "t_struct$_Transaction_$2774_storage_ptr",
+                                    "typeIdentifier": "t_struct$_Transaction_$2780_storage_ptr",
                                     "typeString": "struct MultiSigWallet.Transaction storage pointer"
                                   }
                                 },
-                                "id": 3791,
+                                "id": 3797,
                                 "isConstant": false,
                                 "isLValue": true,
                                 "isPure": false,
                                 "lValueRequested": false,
                                 "memberName": "value",
                                 "nodeType": "MemberAccess",
-                                "referencedDeclaration": 2769,
+                                "referencedDeclaration": 2775,
                                 "src": "2016:9:10",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_uint256",
@@ -1874,32 +1874,32 @@
                                   "argumentTypes": null,
                                   "expression": {
                                     "argumentTypes": null,
-                                    "id": 3786,
+                                    "id": 3792,
                                     "name": "txn",
                                     "nodeType": "Identifier",
                                     "overloadedDeclarations": [],
-                                    "referencedDeclaration": 3749,
+                                    "referencedDeclaration": 3755,
                                     "src": "1989:3:10",
                                     "typeDescriptions": {
-                                      "typeIdentifier": "t_struct$_Transaction_$2774_storage_ptr",
+                                      "typeIdentifier": "t_struct$_Transaction_$2780_storage_ptr",
                                       "typeString": "struct MultiSigWallet.Transaction storage pointer"
                                     }
                                   },
-                                  "id": 3787,
+                                  "id": 3793,
                                   "isConstant": false,
                                   "isLValue": true,
                                   "isPure": false,
                                   "lValueRequested": false,
                                   "memberName": "destination",
                                   "nodeType": "MemberAccess",
-                                  "referencedDeclaration": 2767,
+                                  "referencedDeclaration": 2773,
                                   "src": "1989:15:10",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_address",
                                     "typeString": "address"
                                   }
                                 },
-                                "id": 3788,
+                                "id": 3794,
                                 "isConstant": false,
                                 "isLValue": false,
                                 "isPure": false,
@@ -1913,7 +1913,7 @@
                                   "typeString": "function () payable returns (bool)"
                                 }
                               },
-                              "id": 3789,
+                              "id": 3795,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": false,
@@ -1927,7 +1927,7 @@
                                 "typeString": "function (uint256) returns (function () payable returns (bool))"
                               }
                             },
-                            "id": 3792,
+                            "id": 3798,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
@@ -1941,7 +1941,7 @@
                               "typeString": "function () payable returns (bool)"
                             }
                           },
-                          "id": 3795,
+                          "id": 3801,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -1956,7 +1956,7 @@
                           }
                         },
                         "falseBody": {
-                          "id": 3818,
+                          "id": 3824,
                           "nodeType": "Block",
                           "src": "2097:180:10",
                           "statements": [
@@ -1966,11 +1966,11 @@
                                 "arguments": [
                                   {
                                     "argumentTypes": null,
-                                    "id": 3801,
+                                    "id": 3807,
                                     "name": "transactionId",
                                     "nodeType": "Identifier",
                                     "overloadedDeclarations": [],
-                                    "referencedDeclaration": 3733,
+                                    "referencedDeclaration": 3739,
                                     "src": "2132:13:10",
                                     "typeDescriptions": {
                                       "typeIdentifier": "t_uint256",
@@ -1985,18 +1985,18 @@
                                       "typeString": "uint256"
                                     }
                                   ],
-                                  "id": 3800,
+                                  "id": 3806,
                                   "name": "ExecutionFailure",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 2723,
+                                  "referencedDeclaration": 2729,
                                   "src": "2115:16:10",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_function_event_nonpayable$_t_uint256_$returns$__$",
                                     "typeString": "function (uint256)"
                                   }
                                 },
-                                "id": 3802,
+                                "id": 3808,
                                 "isConstant": false,
                                 "isLValue": false,
                                 "isPure": false,
@@ -2010,14 +2010,14 @@
                                   "typeString": "tuple()"
                                 }
                               },
-                              "id": 3803,
+                              "id": 3809,
                               "nodeType": "ExpressionStatement",
                               "src": "2115:31:10"
                             },
                             {
                               "expression": {
                                 "argumentTypes": null,
-                                "id": 3808,
+                                "id": 3814,
                                 "isConstant": false,
                                 "isLValue": false,
                                 "isPure": false,
@@ -2026,25 +2026,25 @@
                                   "argumentTypes": null,
                                   "expression": {
                                     "argumentTypes": null,
-                                    "id": 3804,
+                                    "id": 3810,
                                     "name": "txn",
                                     "nodeType": "Identifier",
                                     "overloadedDeclarations": [],
-                                    "referencedDeclaration": 3749,
+                                    "referencedDeclaration": 3755,
                                     "src": "2164:3:10",
                                     "typeDescriptions": {
-                                      "typeIdentifier": "t_struct$_Transaction_$2774_storage_ptr",
+                                      "typeIdentifier": "t_struct$_Transaction_$2780_storage_ptr",
                                       "typeString": "struct MultiSigWallet.Transaction storage pointer"
                                     }
                                   },
-                                  "id": 3806,
+                                  "id": 3812,
                                   "isConstant": false,
                                   "isLValue": true,
                                   "isPure": false,
                                   "lValueRequested": true,
                                   "memberName": "executed",
                                   "nodeType": "MemberAccess",
-                                  "referencedDeclaration": 2773,
+                                  "referencedDeclaration": 2779,
                                   "src": "2164:12:10",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_bool",
@@ -2056,7 +2056,7 @@
                                 "rightHandSide": {
                                   "argumentTypes": null,
                                   "hexValue": "66616c7365",
-                                  "id": 3807,
+                                  "id": 3813,
                                   "isConstant": false,
                                   "isLValue": false,
                                   "isPure": true,
@@ -2077,14 +2077,14 @@
                                   "typeString": "bool"
                                 }
                               },
-                              "id": 3809,
+                              "id": 3815,
                               "nodeType": "ExpressionStatement",
                               "src": "2164:20:10"
                             },
                             {
                               "condition": {
                                 "argumentTypes": null,
-                                "id": 3811,
+                                "id": 3817,
                                 "isConstant": false,
                                 "isLValue": false,
                                 "isPure": false,
@@ -2095,11 +2095,11 @@
                                 "src": "2206:11:10",
                                 "subExpression": {
                                   "argumentTypes": null,
-                                  "id": 3810,
+                                  "id": 3816,
                                   "name": "_confirmed",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 3755,
+                                  "referencedDeclaration": 3761,
                                   "src": "2207:10:10",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_bool",
@@ -2112,24 +2112,24 @@
                                 }
                               },
                               "falseBody": null,
-                              "id": 3817,
+                              "id": 3823,
                               "nodeType": "IfStatement",
                               "src": "2202:60:10",
                               "trueBody": {
                                 "expression": {
                                   "argumentTypes": null,
-                                  "id": 3815,
+                                  "id": 3821,
                                   "isConstant": false,
                                   "isLValue": false,
                                   "isPure": false,
                                   "lValueRequested": false,
                                   "leftHandSide": {
                                     "argumentTypes": null,
-                                    "id": 3812,
+                                    "id": 3818,
                                     "name": "spentToday",
                                     "nodeType": "Identifier",
                                     "overloadedDeclarations": [],
-                                    "referencedDeclaration": 3696,
+                                    "referencedDeclaration": 3702,
                                     "src": "2239:10:10",
                                     "typeDescriptions": {
                                       "typeIdentifier": "t_uint256",
@@ -2142,25 +2142,25 @@
                                     "argumentTypes": null,
                                     "expression": {
                                       "argumentTypes": null,
-                                      "id": 3813,
+                                      "id": 3819,
                                       "name": "txn",
                                       "nodeType": "Identifier",
                                       "overloadedDeclarations": [],
-                                      "referencedDeclaration": 3749,
+                                      "referencedDeclaration": 3755,
                                       "src": "2253:3:10",
                                       "typeDescriptions": {
-                                        "typeIdentifier": "t_struct$_Transaction_$2774_storage_ptr",
+                                        "typeIdentifier": "t_struct$_Transaction_$2780_storage_ptr",
                                         "typeString": "struct MultiSigWallet.Transaction storage pointer"
                                       }
                                     },
-                                    "id": 3814,
+                                    "id": 3820,
                                     "isConstant": false,
                                     "isLValue": true,
                                     "isPure": false,
                                     "lValueRequested": false,
                                     "memberName": "value",
                                     "nodeType": "MemberAccess",
-                                    "referencedDeclaration": 2769,
+                                    "referencedDeclaration": 2775,
                                     "src": "2253:9:10",
                                     "typeDescriptions": {
                                       "typeIdentifier": "t_uint256",
@@ -2173,14 +2173,14 @@
                                     "typeString": "uint256"
                                   }
                                 },
-                                "id": 3816,
+                                "id": 3822,
                                 "nodeType": "ExpressionStatement",
                                 "src": "2239:23:10"
                               }
                             }
                           ]
                         },
-                        "id": 3819,
+                        "id": 3825,
                         "nodeType": "IfStatement",
                         "src": "1985:292:10",
                         "trueBody": {
@@ -2189,11 +2189,11 @@
                             "arguments": [
                               {
                                 "argumentTypes": null,
-                                "id": 3797,
+                                "id": 3803,
                                 "name": "transactionId",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 3733,
+                                "referencedDeclaration": 3739,
                                 "src": "2064:13:10",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_uint256",
@@ -2208,18 +2208,18 @@
                                   "typeString": "uint256"
                                 }
                               ],
-                              "id": 3796,
+                              "id": 3802,
                               "name": "Execution",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 2719,
+                              "referencedDeclaration": 2725,
                               "src": "2054:9:10",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_function_event_nonpayable$_t_uint256_$returns$__$",
                                 "typeString": "function (uint256)"
                               }
                             },
-                            "id": 3798,
+                            "id": 3804,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
@@ -2233,7 +2233,7 @@
                               "typeString": "tuple()"
                             }
                           },
-                          "id": 3799,
+                          "id": 3805,
                           "nodeType": "ExpressionStatement",
                           "src": "2054:24:10"
                         }
@@ -2244,7 +2244,7 @@
               ]
             },
             "documentation": "@dev Allows anyone to execute a confirmed transaction or ether withdraws until daily limit is reached.\n @param transactionId Transaction ID.",
-            "id": 3823,
+            "id": 3829,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -2255,18 +2255,18 @@
                     "argumentTypes": null,
                     "expression": {
                       "argumentTypes": null,
-                      "id": 3736,
+                      "id": 3742,
                       "name": "msg",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 4298,
+                      "referencedDeclaration": 4304,
                       "src": "1578:3:10",
                       "typeDescriptions": {
                         "typeIdentifier": "t_magic_message",
                         "typeString": "msg"
                       }
                     },
-                    "id": 3737,
+                    "id": 3743,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2281,14 +2281,14 @@
                     }
                   }
                 ],
-                "id": 3738,
+                "id": 3744,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 3735,
+                  "id": 3741,
                   "name": "ownerExists",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 2812,
+                  "referencedDeclaration": 2818,
                   "src": "1566:11:10",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$_t_address_$",
@@ -2302,11 +2302,11 @@
                 "arguments": [
                   {
                     "argumentTypes": null,
-                    "id": 3740,
+                    "id": 3746,
                     "name": "transactionId",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 3733,
+                    "referencedDeclaration": 3739,
                     "src": "1608:13:10",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
@@ -2317,18 +2317,18 @@
                     "argumentTypes": null,
                     "expression": {
                       "argumentTypes": null,
-                      "id": 3741,
+                      "id": 3747,
                       "name": "msg",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 4298,
+                      "referencedDeclaration": 4304,
                       "src": "1623:3:10",
                       "typeDescriptions": {
                         "typeIdentifier": "t_magic_message",
                         "typeString": "msg"
                       }
                     },
-                    "id": 3742,
+                    "id": 3748,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2343,14 +2343,14 @@
                     }
                   }
                 ],
-                "id": 3743,
+                "id": 3749,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 3739,
+                  "id": 3745,
                   "name": "confirmed",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 2843,
+                  "referencedDeclaration": 2849,
                   "src": "1598:9:10",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$_t_uint256_$_t_address_$",
@@ -2364,11 +2364,11 @@
                 "arguments": [
                   {
                     "argumentTypes": null,
-                    "id": 3745,
+                    "id": 3751,
                     "name": "transactionId",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 3733,
+                    "referencedDeclaration": 3739,
                     "src": "1655:13:10",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
@@ -2376,14 +2376,14 @@
                     }
                   }
                 ],
-                "id": 3746,
+                "id": 3752,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 3744,
+                  "id": 3750,
                   "name": "notExecuted",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 2874,
+                  "referencedDeclaration": 2880,
                   "src": "1643:11:10",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$_t_uint256_$",
@@ -2397,15 +2397,15 @@
             "name": "executeTransaction",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 3734,
+              "id": 3740,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3733,
+                  "id": 3739,
                   "name": "transactionId",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3823,
+                  "scope": 3829,
                   "src": "1523:18:10",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2414,7 +2414,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 3732,
+                    "id": 3738,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
                     "src": "1523:4:10",
@@ -2431,20 +2431,20 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 3747,
+              "id": 3753,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1674:0:10"
             },
-            "scope": 3887,
+            "scope": 3893,
             "src": "1495:798:10",
             "stateMutability": "nonpayable",
-            "superFunction": 3331,
+            "superFunction": 3337,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 3861,
+              "id": 3867,
               "nodeType": "Block",
               "src": "2607:241:10",
               "statements": [
@@ -2455,18 +2455,18 @@
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     },
-                    "id": 3834,
+                    "id": 3840,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftExpression": {
                       "argumentTypes": null,
-                      "id": 3830,
+                      "id": 3836,
                       "name": "now",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 4300,
+                      "referencedDeclaration": 4306,
                       "src": "2621:3:10",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -2481,18 +2481,18 @@
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
                       },
-                      "id": 3833,
+                      "id": 3839,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "leftExpression": {
                         "argumentTypes": null,
-                        "id": 3831,
+                        "id": 3837,
                         "name": "lastDay",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 3694,
+                        "referencedDeclaration": 3700,
                         "src": "2627:7:10",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -2504,7 +2504,7 @@
                       "rightExpression": {
                         "argumentTypes": null,
                         "hexValue": "3234",
-                        "id": 3832,
+                        "id": 3838,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -2532,29 +2532,29 @@
                     }
                   },
                   "falseBody": null,
-                  "id": 3844,
+                  "id": 3850,
                   "nodeType": "IfStatement",
                   "src": "2617:96:10",
                   "trueBody": {
-                    "id": 3843,
+                    "id": 3849,
                     "nodeType": "Block",
                     "src": "2647:66:10",
                     "statements": [
                       {
                         "expression": {
                           "argumentTypes": null,
-                          "id": 3837,
+                          "id": 3843,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
                           "lValueRequested": false,
                           "leftHandSide": {
                             "argumentTypes": null,
-                            "id": 3835,
+                            "id": 3841,
                             "name": "lastDay",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 3694,
+                            "referencedDeclaration": 3700,
                             "src": "2661:7:10",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
@@ -2565,11 +2565,11 @@
                           "operator": "=",
                           "rightHandSide": {
                             "argumentTypes": null,
-                            "id": 3836,
+                            "id": 3842,
                             "name": "now",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 4300,
+                            "referencedDeclaration": 4306,
                             "src": "2671:3:10",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
@@ -2582,25 +2582,25 @@
                             "typeString": "uint256"
                           }
                         },
-                        "id": 3838,
+                        "id": 3844,
                         "nodeType": "ExpressionStatement",
                         "src": "2661:13:10"
                       },
                       {
                         "expression": {
                           "argumentTypes": null,
-                          "id": 3841,
+                          "id": 3847,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
                           "lValueRequested": false,
                           "leftHandSide": {
                             "argumentTypes": null,
-                            "id": 3839,
+                            "id": 3845,
                             "name": "spentToday",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 3696,
+                            "referencedDeclaration": 3702,
                             "src": "2688:10:10",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
@@ -2612,7 +2612,7 @@
                           "rightHandSide": {
                             "argumentTypes": null,
                             "hexValue": "30",
-                            "id": 3840,
+                            "id": 3846,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -2633,7 +2633,7 @@
                             "typeString": "uint256"
                           }
                         },
-                        "id": 3842,
+                        "id": 3848,
                         "nodeType": "ExpressionStatement",
                         "src": "2688:14:10"
                       }
@@ -2647,7 +2647,7 @@
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
                     },
-                    "id": 3855,
+                    "id": 3861,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2658,7 +2658,7 @@
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
                       },
-                      "id": 3849,
+                      "id": 3855,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -2669,18 +2669,18 @@
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
                         },
-                        "id": 3847,
+                        "id": 3853,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
                         "lValueRequested": false,
                         "leftExpression": {
                           "argumentTypes": null,
-                          "id": 3845,
+                          "id": 3851,
                           "name": "spentToday",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 3696,
+                          "referencedDeclaration": 3702,
                           "src": "2726:10:10",
                           "typeDescriptions": {
                             "typeIdentifier": "t_uint256",
@@ -2691,11 +2691,11 @@
                         "operator": "+",
                         "rightExpression": {
                           "argumentTypes": null,
-                          "id": 3846,
+                          "id": 3852,
                           "name": "amount",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 3825,
+                          "referencedDeclaration": 3831,
                           "src": "2739:6:10",
                           "typeDescriptions": {
                             "typeIdentifier": "t_uint256",
@@ -2712,11 +2712,11 @@
                       "operator": ">",
                       "rightExpression": {
                         "argumentTypes": null,
-                        "id": 3848,
+                        "id": 3854,
                         "name": "dailyLimit",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 3692,
+                        "referencedDeclaration": 3698,
                         "src": "2748:10:10",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -2737,7 +2737,7 @@
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
                       },
-                      "id": 3854,
+                      "id": 3860,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -2748,18 +2748,18 @@
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
                         },
-                        "id": 3852,
+                        "id": 3858,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
                         "lValueRequested": false,
                         "leftExpression": {
                           "argumentTypes": null,
-                          "id": 3850,
+                          "id": 3856,
                           "name": "spentToday",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 3696,
+                          "referencedDeclaration": 3702,
                           "src": "2762:10:10",
                           "typeDescriptions": {
                             "typeIdentifier": "t_uint256",
@@ -2770,11 +2770,11 @@
                         "operator": "+",
                         "rightExpression": {
                           "argumentTypes": null,
-                          "id": 3851,
+                          "id": 3857,
                           "name": "amount",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 3825,
+                          "referencedDeclaration": 3831,
                           "src": "2775:6:10",
                           "typeDescriptions": {
                             "typeIdentifier": "t_uint256",
@@ -2791,11 +2791,11 @@
                       "operator": "<",
                       "rightExpression": {
                         "argumentTypes": null,
-                        "id": 3853,
+                        "id": 3859,
                         "name": "spentToday",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 3696,
+                        "referencedDeclaration": 3702,
                         "src": "2784:10:10",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -2815,14 +2815,14 @@
                     }
                   },
                   "falseBody": null,
-                  "id": 3858,
+                  "id": 3864,
                   "nodeType": "IfStatement",
                   "src": "2722:98:10",
                   "trueBody": {
                     "expression": {
                       "argumentTypes": null,
                       "hexValue": "66616c7365",
-                      "id": 3856,
+                      "id": 3862,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -2837,8 +2837,8 @@
                       },
                       "value": "false"
                     },
-                    "functionReturnParameters": 3829,
-                    "id": 3857,
+                    "functionReturnParameters": 3835,
+                    "id": 3863,
                     "nodeType": "Return",
                     "src": "2808:12:10"
                   }
@@ -2847,7 +2847,7 @@
                   "expression": {
                     "argumentTypes": null,
                     "hexValue": "74727565",
-                    "id": 3859,
+                    "id": 3865,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": true,
@@ -2862,15 +2862,15 @@
                     },
                     "value": "true"
                   },
-                  "functionReturnParameters": 3829,
-                  "id": 3860,
+                  "functionReturnParameters": 3835,
+                  "id": 3866,
                   "nodeType": "Return",
                   "src": "2830:11:10"
                 }
               ]
             },
             "documentation": "@dev Returns if amount is within daily limit and resets spentToday after one day.\n @param amount Amount to withdraw.\n @return Returns if amount is under daily limit.",
-            "id": 3862,
+            "id": 3868,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -2878,15 +2878,15 @@
             "name": "isUnderLimit",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 3826,
+              "id": 3832,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3825,
+                  "id": 3831,
                   "name": "amount",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3862,
+                  "scope": 3868,
                   "src": "2550:11:10",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2895,7 +2895,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 3824,
+                    "id": 3830,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
                     "src": "2550:4:10",
@@ -2912,15 +2912,15 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 3829,
+              "id": 3835,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3828,
+                  "id": 3834,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3862,
+                  "scope": 3868,
                   "src": "2597:4:10",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2929,7 +2929,7 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 3827,
+                    "id": 3833,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
                     "src": "2597:4:10",
@@ -2944,7 +2944,7 @@
               ],
               "src": "2596:6:10"
             },
-            "scope": 3887,
+            "scope": 3893,
             "src": "2528:320:10",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -2952,7 +2952,7 @@
           },
           {
             "body": {
-              "id": 3885,
+              "id": 3891,
               "nodeType": "Block",
               "src": "3060:175:10",
               "statements": [
@@ -2963,18 +2963,18 @@
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     },
-                    "id": 3871,
+                    "id": 3877,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftExpression": {
                       "argumentTypes": null,
-                      "id": 3867,
+                      "id": 3873,
                       "name": "now",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 4300,
+                      "referencedDeclaration": 4306,
                       "src": "3074:3:10",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -2989,18 +2989,18 @@
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
                       },
-                      "id": 3870,
+                      "id": 3876,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "leftExpression": {
                         "argumentTypes": null,
-                        "id": 3868,
+                        "id": 3874,
                         "name": "lastDay",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 3694,
+                        "referencedDeclaration": 3700,
                         "src": "3080:7:10",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -3012,7 +3012,7 @@
                       "rightExpression": {
                         "argumentTypes": null,
                         "hexValue": "3234",
-                        "id": 3869,
+                        "id": 3875,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -3040,106 +3040,31 @@
                     }
                   },
                   "falseBody": null,
-                  "id": 3874,
+                  "id": 3880,
                   "nodeType": "IfStatement",
                   "src": "3070:59:10",
                   "trueBody": {
                     "expression": {
                       "argumentTypes": null,
-                      "id": 3872,
+                      "id": 3878,
                       "name": "dailyLimit",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 3692,
+                      "referencedDeclaration": 3698,
                       "src": "3119:10:10",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
                       }
                     },
-                    "functionReturnParameters": 3866,
-                    "id": 3873,
+                    "functionReturnParameters": 3872,
+                    "id": 3879,
                     "nodeType": "Return",
                     "src": "3112:17:10"
                   }
                 },
                 {
                   "condition": {
-                    "argumentTypes": null,
-                    "commonType": {
-                      "typeIdentifier": "t_uint256",
-                      "typeString": "uint256"
-                    },
-                    "id": 3877,
-                    "isConstant": false,
-                    "isLValue": false,
-                    "isPure": false,
-                    "lValueRequested": false,
-                    "leftExpression": {
-                      "argumentTypes": null,
-                      "id": 3875,
-                      "name": "dailyLimit",
-                      "nodeType": "Identifier",
-                      "overloadedDeclarations": [],
-                      "referencedDeclaration": 3692,
-                      "src": "3143:10:10",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_uint256",
-                        "typeString": "uint256"
-                      }
-                    },
-                    "nodeType": "BinaryOperation",
-                    "operator": "<",
-                    "rightExpression": {
-                      "argumentTypes": null,
-                      "id": 3876,
-                      "name": "spentToday",
-                      "nodeType": "Identifier",
-                      "overloadedDeclarations": [],
-                      "referencedDeclaration": 3696,
-                      "src": "3156:10:10",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_uint256",
-                        "typeString": "uint256"
-                      }
-                    },
-                    "src": "3143:23:10",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_bool",
-                      "typeString": "bool"
-                    }
-                  },
-                  "falseBody": null,
-                  "id": 3880,
-                  "nodeType": "IfStatement",
-                  "src": "3139:49:10",
-                  "trueBody": {
-                    "expression": {
-                      "argumentTypes": null,
-                      "hexValue": "30",
-                      "id": 3878,
-                      "isConstant": false,
-                      "isLValue": false,
-                      "isPure": true,
-                      "kind": "number",
-                      "lValueRequested": false,
-                      "nodeType": "Literal",
-                      "src": "3187:1:10",
-                      "subdenomination": null,
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_rational_0_by_1",
-                        "typeString": "int_const 0"
-                      },
-                      "value": "0"
-                    },
-                    "functionReturnParameters": 3866,
-                    "id": 3879,
-                    "nodeType": "Return",
-                    "src": "3180:8:10"
-                  }
-                },
-                {
-                  "expression": {
                     "argumentTypes": null,
                     "commonType": {
                       "typeIdentifier": "t_uint256",
@@ -3156,7 +3081,82 @@
                       "name": "dailyLimit",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 3692,
+                      "referencedDeclaration": 3698,
+                      "src": "3143:10:10",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "BinaryOperation",
+                    "operator": "<",
+                    "rightExpression": {
+                      "argumentTypes": null,
+                      "id": 3882,
+                      "name": "spentToday",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 3702,
+                      "src": "3156:10:10",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "3143:23:10",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "falseBody": null,
+                  "id": 3886,
+                  "nodeType": "IfStatement",
+                  "src": "3139:49:10",
+                  "trueBody": {
+                    "expression": {
+                      "argumentTypes": null,
+                      "hexValue": "30",
+                      "id": 3884,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "3187:1:10",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_0_by_1",
+                        "typeString": "int_const 0"
+                      },
+                      "value": "0"
+                    },
+                    "functionReturnParameters": 3872,
+                    "id": 3885,
+                    "nodeType": "Return",
+                    "src": "3180:8:10"
+                  }
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "commonType": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    },
+                    "id": 3889,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftExpression": {
+                      "argumentTypes": null,
+                      "id": 3887,
+                      "name": "dailyLimit",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 3698,
                       "src": "3205:10:10",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -3167,11 +3167,11 @@
                     "operator": "-",
                     "rightExpression": {
                       "argumentTypes": null,
-                      "id": 3882,
+                      "id": 3888,
                       "name": "spentToday",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 3696,
+                      "referencedDeclaration": 3702,
                       "src": "3218:10:10",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -3184,15 +3184,15 @@
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 3866,
-                  "id": 3884,
+                  "functionReturnParameters": 3872,
+                  "id": 3890,
                   "nodeType": "Return",
                   "src": "3198:30:10"
                 }
               ]
             },
             "documentation": "@dev Returns maximum withdraw amount.\n @return Returns amount.",
-            "id": 3886,
+            "id": 3892,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -3200,22 +3200,22 @@
             "name": "calcMaxWithdraw",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 3863,
+              "id": 3869,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "2998:2:10"
             },
             "payable": false,
             "returnParameters": {
-              "id": 3866,
+              "id": 3872,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3865,
+                  "id": 3871,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3886,
+                  "scope": 3892,
                   "src": "3050:4:10",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -3224,7 +3224,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 3864,
+                    "id": 3870,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
                     "src": "3050:4:10",
@@ -3239,14 +3239,14 @@
               ],
               "src": "3049:6:10"
             },
-            "scope": 3887,
+            "scope": 3893,
             "src": "2974:261:10",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 3888,
+        "scope": 3894,
         "src": "228:3009:10"
       }
     ],
@@ -3256,14 +3256,14 @@
     "absolutePath": "/Users/roderik/Development/dtx-crowdsale-contracts/contracts/external/MultiSigWalletWithDailyLimit.sol",
     "exportedSymbols": {
       "MultiSigWalletWithDailyLimit": [
-        3887
+        3893
       ]
     },
-    "id": 3888,
+    "id": 3894,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 3683,
+        "id": 3689,
         "literals": [
           "solidity",
           "^",
@@ -3276,10 +3276,10 @@
       {
         "absolutePath": "/Users/roderik/Development/dtx-crowdsale-contracts/contracts/external/MultiSigWallet.sol",
         "file": "./MultiSigWallet.sol",
-        "id": 3684,
+        "id": 3690,
         "nodeType": "ImportDirective",
-        "scope": 3888,
-        "sourceUnit": 3682,
+        "scope": 3894,
+        "sourceUnit": 3688,
         "src": "25:30:10",
         "symbolAliases": [],
         "unitAlias": ""
@@ -3290,31 +3290,31 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 3685,
+              "id": 3691,
               "name": "MultiSigWallet",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 3681,
+              "referencedDeclaration": 3687,
               "src": "269:14:10",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_MultiSigWallet_$3681",
+                "typeIdentifier": "t_contract$_MultiSigWallet_$3687",
                 "typeString": "contract MultiSigWallet"
               }
             },
-            "id": 3686,
+            "id": 3692,
             "nodeType": "InheritanceSpecifier",
             "src": "269:14:10"
           }
         ],
         "contractDependencies": [
-          3681
+          3687
         ],
         "contractKind": "contract",
         "documentation": "@title Multisignature wallet with daily limit - Allows an owner to withdraw a daily limit without multisig.\n @author Stefan George - <stefan.george@consensys.net>",
         "fullyImplemented": true,
-        "id": 3887,
+        "id": 3893,
         "linearizedBaseContracts": [
-          3887,
-          3681
+          3893,
+          3687
         ],
         "name": "MultiSigWalletWithDailyLimit",
         "nodeType": "ContractDefinition",
@@ -3322,20 +3322,20 @@
           {
             "anonymous": false,
             "documentation": null,
-            "id": 3690,
+            "id": 3696,
             "name": "DailyLimitChange",
             "nodeType": "EventDefinition",
             "parameters": {
-              "id": 3689,
+              "id": 3695,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3688,
+                  "id": 3694,
                   "indexed": false,
                   "name": "dailyLimit",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3690,
+                  "scope": 3696,
                   "src": "344:15:10",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -3344,7 +3344,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 3687,
+                    "id": 3693,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
                     "src": "344:4:10",
@@ -3363,10 +3363,10 @@
           },
           {
             "constant": false,
-            "id": 3692,
+            "id": 3698,
             "name": "dailyLimit",
             "nodeType": "VariableDeclaration",
-            "scope": 3887,
+            "scope": 3893,
             "src": "398:22:10",
             "stateVariable": true,
             "storageLocation": "default",
@@ -3375,7 +3375,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 3691,
+              "id": 3697,
               "name": "uint",
               "nodeType": "ElementaryTypeName",
               "src": "398:4:10",
@@ -3389,10 +3389,10 @@
           },
           {
             "constant": false,
-            "id": 3694,
+            "id": 3700,
             "name": "lastDay",
             "nodeType": "VariableDeclaration",
-            "scope": 3887,
+            "scope": 3893,
             "src": "426:19:10",
             "stateVariable": true,
             "storageLocation": "default",
@@ -3401,7 +3401,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 3693,
+              "id": 3699,
               "name": "uint",
               "nodeType": "ElementaryTypeName",
               "src": "426:4:10",
@@ -3415,10 +3415,10 @@
           },
           {
             "constant": false,
-            "id": 3696,
+            "id": 3702,
             "name": "spentToday",
             "nodeType": "VariableDeclaration",
-            "scope": 3887,
+            "scope": 3893,
             "src": "451:22:10",
             "stateVariable": true,
             "storageLocation": "default",
@@ -3427,7 +3427,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 3695,
+              "id": 3701,
               "name": "uint",
               "nodeType": "ElementaryTypeName",
               "src": "451:4:10",
@@ -3441,25 +3441,25 @@
           },
           {
             "body": {
-              "id": 3714,
+              "id": 3720,
               "nodeType": "Block",
               "src": "997:41:10",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 3712,
+                    "id": 3718,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 3710,
+                      "id": 3716,
                       "name": "dailyLimit",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 3692,
+                      "referencedDeclaration": 3698,
                       "src": "1007:10:10",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -3470,11 +3470,11 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 3711,
+                      "id": 3717,
                       "name": "_dailyLimit",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 3703,
+                      "referencedDeclaration": 3709,
                       "src": "1020:11:10",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -3487,14 +3487,14 @@
                       "typeString": "uint256"
                     }
                   },
-                  "id": 3713,
+                  "id": 3719,
                   "nodeType": "ExpressionStatement",
                   "src": "1007:24:10"
                 }
               ]
             },
             "documentation": "@dev Contract constructor sets initial owners, required number of confirmations and daily withdraw limit.\n @param _owners List of initial owners.\n @param _required Number of required confirmations.\n @param _dailyLimit Amount in wei, which can be withdrawn without confirmations on a daily basis.",
-            "id": 3715,
+            "id": 3721,
             "implemented": true,
             "isConstructor": true,
             "isDeclaredConst": false,
@@ -3503,11 +3503,11 @@
                 "arguments": [
                   {
                     "argumentTypes": null,
-                    "id": 3706,
+                    "id": 3712,
                     "name": "_owners",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 3699,
+                    "referencedDeclaration": 3705,
                     "src": "973:7:10",
                     "typeDescriptions": {
                       "typeIdentifier": "t_array$_t_address_$dyn_memory_ptr",
@@ -3516,11 +3516,11 @@
                   },
                   {
                     "argumentTypes": null,
-                    "id": 3707,
+                    "id": 3713,
                     "name": "_required",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 3701,
+                    "referencedDeclaration": 3707,
                     "src": "982:9:10",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
@@ -3528,17 +3528,17 @@
                     }
                   }
                 ],
-                "id": 3708,
+                "id": 3714,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 3705,
+                  "id": 3711,
                   "name": "MultiSigWallet",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 3681,
+                  "referencedDeclaration": 3687,
                   "src": "958:14:10",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_type$_t_contract$_MultiSigWallet_$3681_$",
+                    "typeIdentifier": "t_type$_t_contract$_MultiSigWallet_$3687_$",
                     "typeString": "type(contract MultiSigWallet)"
                   }
                 },
@@ -3549,15 +3549,15 @@
             "name": "MultiSigWalletWithDailyLimit",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 3704,
+              "id": 3710,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3699,
+                  "id": 3705,
                   "name": "_owners",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3715,
+                  "scope": 3721,
                   "src": "882:17:10",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -3567,7 +3567,7 @@
                   },
                   "typeName": {
                     "baseType": {
-                      "id": 3697,
+                      "id": 3703,
                       "name": "address",
                       "nodeType": "ElementaryTypeName",
                       "src": "882:7:10",
@@ -3576,7 +3576,7 @@
                         "typeString": "address"
                       }
                     },
-                    "id": 3698,
+                    "id": 3704,
                     "length": null,
                     "nodeType": "ArrayTypeName",
                     "src": "882:9:10",
@@ -3590,10 +3590,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 3701,
+                  "id": 3707,
                   "name": "_required",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3715,
+                  "scope": 3721,
                   "src": "901:14:10",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -3602,7 +3602,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 3700,
+                    "id": 3706,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
                     "src": "901:4:10",
@@ -3616,10 +3616,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 3703,
+                  "id": 3709,
                   "name": "_dailyLimit",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3715,
+                  "scope": 3721,
                   "src": "917:16:10",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -3628,7 +3628,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 3702,
+                    "id": 3708,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
                     "src": "917:4:10",
@@ -3645,12 +3645,12 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 3709,
+              "id": 3715,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "997:0:10"
             },
-            "scope": 3887,
+            "scope": 3893,
             "src": "844:194:10",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -3658,25 +3658,25 @@
           },
           {
             "body": {
-              "id": 3730,
+              "id": 3736,
               "nodeType": "Block",
               "src": "1253:80:10",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 3724,
+                    "id": 3730,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 3722,
+                      "id": 3728,
                       "name": "dailyLimit",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 3692,
+                      "referencedDeclaration": 3698,
                       "src": "1263:10:10",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -3687,11 +3687,11 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 3723,
+                      "id": 3729,
                       "name": "_dailyLimit",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 3717,
+                      "referencedDeclaration": 3723,
                       "src": "1276:11:10",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -3704,7 +3704,7 @@
                       "typeString": "uint256"
                     }
                   },
-                  "id": 3725,
+                  "id": 3731,
                   "nodeType": "ExpressionStatement",
                   "src": "1263:24:10"
                 },
@@ -3714,11 +3714,11 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 3727,
+                        "id": 3733,
                         "name": "_dailyLimit",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 3717,
+                        "referencedDeclaration": 3723,
                         "src": "1314:11:10",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -3733,18 +3733,18 @@
                           "typeString": "uint256"
                         }
                       ],
-                      "id": 3726,
+                      "id": 3732,
                       "name": "DailyLimitChange",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 3690,
+                      "referencedDeclaration": 3696,
                       "src": "1297:16:10",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_event_nonpayable$_t_uint256_$returns$__$",
                         "typeString": "function (uint256)"
                       }
                     },
-                    "id": 3728,
+                    "id": 3734,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -3758,28 +3758,28 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 3729,
+                  "id": 3735,
                   "nodeType": "ExpressionStatement",
                   "src": "1297:29:10"
                 }
               ]
             },
             "documentation": "@dev Allows to change the daily limit. Transaction has to be sent by wallet.\n @param _dailyLimit Amount in wei.",
-            "id": 3731,
+            "id": 3737,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
             "modifiers": [
               {
                 "arguments": null,
-                "id": 3720,
+                "id": 3726,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 3719,
+                  "id": 3725,
                   "name": "onlyWallet",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 2787,
+                  "referencedDeclaration": 2793,
                   "src": "1238:10:10",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$__$",
@@ -3793,15 +3793,15 @@
             "name": "changeDailyLimit",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 3718,
+              "id": 3724,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3717,
+                  "id": 3723,
                   "name": "_dailyLimit",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3731,
+                  "scope": 3737,
                   "src": "1197:16:10",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -3810,7 +3810,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 3716,
+                    "id": 3722,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
                     "src": "1197:4:10",
@@ -3827,12 +3827,12 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 3721,
+              "id": 3727,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1253:0:10"
             },
-            "scope": 3887,
+            "scope": 3893,
             "src": "1171:162:10",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -3840,37 +3840,37 @@
           },
           {
             "body": {
-              "id": 3822,
+              "id": 3828,
               "nodeType": "Block",
               "src": "1674:619:10",
               "statements": [
                 {
                   "assignments": [
-                    3749
+                    3755
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 3749,
+                      "id": 3755,
                       "name": "txn",
                       "nodeType": "VariableDeclaration",
-                      "scope": 3823,
+                      "scope": 3829,
                       "src": "1684:23:10",
                       "stateVariable": false,
                       "storageLocation": "storage",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_Transaction_$2774_storage_ptr",
+                        "typeIdentifier": "t_struct$_Transaction_$2780_storage_ptr",
                         "typeString": "struct MultiSigWallet.Transaction"
                       },
                       "typeName": {
                         "contractScope": null,
-                        "id": 3748,
+                        "id": 3754,
                         "name": "Transaction",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 2774,
+                        "referencedDeclaration": 2780,
                         "src": "1684:11:10",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Transaction_$2774_storage_ptr",
+                          "typeIdentifier": "t_struct$_Transaction_$2780_storage_ptr",
                           "typeString": "struct MultiSigWallet.Transaction"
                         }
                       },
@@ -3878,30 +3878,30 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 3753,
+                  "id": 3759,
                   "initialValue": {
                     "argumentTypes": null,
                     "baseExpression": {
                       "argumentTypes": null,
-                      "id": 3750,
+                      "id": 3756,
                       "name": "transactions",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 2748,
+                      "referencedDeclaration": 2754,
                       "src": "1710:12:10",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Transaction_$2774_storage_$",
+                        "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Transaction_$2780_storage_$",
                         "typeString": "mapping(uint256 => struct MultiSigWallet.Transaction storage ref)"
                       }
                     },
-                    "id": 3752,
+                    "id": 3758,
                     "indexExpression": {
                       "argumentTypes": null,
-                      "id": 3751,
+                      "id": 3757,
                       "name": "transactionId",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 3733,
+                      "referencedDeclaration": 3739,
                       "src": "1723:13:10",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -3915,7 +3915,7 @@
                     "nodeType": "IndexAccess",
                     "src": "1710:27:10",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Transaction_$2774_storage",
+                      "typeIdentifier": "t_struct$_Transaction_$2780_storage",
                       "typeString": "struct MultiSigWallet.Transaction storage ref"
                     }
                   },
@@ -3924,15 +3924,15 @@
                 },
                 {
                   "assignments": [
-                    3755
+                    3761
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 3755,
+                      "id": 3761,
                       "name": "_confirmed",
                       "nodeType": "VariableDeclaration",
-                      "scope": 3823,
+                      "scope": 3829,
                       "src": "1747:15:10",
                       "stateVariable": false,
                       "storageLocation": "default",
@@ -3941,7 +3941,7 @@
                         "typeString": "bool"
                       },
                       "typeName": {
-                        "id": 3754,
+                        "id": 3760,
                         "name": "bool",
                         "nodeType": "ElementaryTypeName",
                         "src": "1747:4:10",
@@ -3954,17 +3954,17 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 3759,
+                  "id": 3765,
                   "initialValue": {
                     "argumentTypes": null,
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 3757,
+                        "id": 3763,
                         "name": "transactionId",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 3733,
+                        "referencedDeclaration": 3739,
                         "src": "1777:13:10",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -3979,18 +3979,18 @@
                           "typeString": "uint256"
                         }
                       ],
-                      "id": 3756,
+                      "id": 3762,
                       "name": "isConfirmed",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 3374,
+                      "referencedDeclaration": 3380,
                       "src": "1765:11:10",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_view$_t_uint256_$returns$_t_bool_$",
                         "typeString": "function (uint256) view returns (bool)"
                       }
                     },
-                    "id": 3758,
+                    "id": 3764,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -4014,18 +4014,18 @@
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
                     },
-                    "id": 3771,
+                    "id": 3777,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftExpression": {
                       "argumentTypes": null,
-                      "id": 3760,
+                      "id": 3766,
                       "name": "_confirmed",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 3755,
+                      "referencedDeclaration": 3761,
                       "src": "1805:10:10",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
@@ -4040,7 +4040,7 @@
                         "typeIdentifier": "t_bool",
                         "typeString": "bool"
                       },
-                      "id": 3770,
+                      "id": 3776,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -4051,7 +4051,7 @@
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
                         },
-                        "id": 3765,
+                        "id": 3771,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -4062,32 +4062,32 @@
                             "argumentTypes": null,
                             "expression": {
                               "argumentTypes": null,
-                              "id": 3761,
+                              "id": 3767,
                               "name": "txn",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 3749,
+                              "referencedDeclaration": 3755,
                               "src": "1819:3:10",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_struct$_Transaction_$2774_storage_ptr",
+                                "typeIdentifier": "t_struct$_Transaction_$2780_storage_ptr",
                                 "typeString": "struct MultiSigWallet.Transaction storage pointer"
                               }
                             },
-                            "id": 3762,
+                            "id": 3768,
                             "isConstant": false,
                             "isLValue": true,
                             "isPure": false,
                             "lValueRequested": false,
                             "memberName": "data",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 2771,
+                            "referencedDeclaration": 2777,
                             "src": "1819:8:10",
                             "typeDescriptions": {
                               "typeIdentifier": "t_bytes_storage",
                               "typeString": "bytes storage ref"
                             }
                           },
-                          "id": 3763,
+                          "id": 3769,
                           "isConstant": false,
                           "isLValue": true,
                           "isPure": false,
@@ -4106,7 +4106,7 @@
                         "rightExpression": {
                           "argumentTypes": null,
                           "hexValue": "30",
-                          "id": 3764,
+                          "id": 3770,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -4136,25 +4136,25 @@
                             "argumentTypes": null,
                             "expression": {
                               "argumentTypes": null,
-                              "id": 3767,
+                              "id": 3773,
                               "name": "txn",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 3749,
+                              "referencedDeclaration": 3755,
                               "src": "1856:3:10",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_struct$_Transaction_$2774_storage_ptr",
+                                "typeIdentifier": "t_struct$_Transaction_$2780_storage_ptr",
                                 "typeString": "struct MultiSigWallet.Transaction storage pointer"
                               }
                             },
-                            "id": 3768,
+                            "id": 3774,
                             "isConstant": false,
                             "isLValue": true,
                             "isPure": false,
                             "lValueRequested": false,
                             "memberName": "value",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 2769,
+                            "referencedDeclaration": 2775,
                             "src": "1856:9:10",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
@@ -4169,18 +4169,18 @@
                               "typeString": "uint256"
                             }
                           ],
-                          "id": 3766,
+                          "id": 3772,
                           "name": "isUnderLimit",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 3862,
+                          "referencedDeclaration": 3868,
                           "src": "1843:12:10",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_internal_nonpayable$_t_uint256_$returns$_t_bool_$",
                             "typeString": "function (uint256) returns (bool)"
                           }
                         },
-                        "id": 3769,
+                        "id": 3775,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -4207,18 +4207,18 @@
                     }
                   },
                   "falseBody": null,
-                  "id": 3821,
+                  "id": 3827,
                   "nodeType": "IfStatement",
                   "src": "1801:486:10",
                   "trueBody": {
-                    "id": 3820,
+                    "id": 3826,
                     "nodeType": "Block",
                     "src": "1868:419:10",
                     "statements": [
                       {
                         "expression": {
                           "argumentTypes": null,
-                          "id": 3776,
+                          "id": 3782,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -4227,25 +4227,25 @@
                             "argumentTypes": null,
                             "expression": {
                               "argumentTypes": null,
-                              "id": 3772,
+                              "id": 3778,
                               "name": "txn",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 3749,
+                              "referencedDeclaration": 3755,
                               "src": "1882:3:10",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_struct$_Transaction_$2774_storage_ptr",
+                                "typeIdentifier": "t_struct$_Transaction_$2780_storage_ptr",
                                 "typeString": "struct MultiSigWallet.Transaction storage pointer"
                               }
                             },
-                            "id": 3774,
+                            "id": 3780,
                             "isConstant": false,
                             "isLValue": true,
                             "isPure": false,
                             "lValueRequested": true,
                             "memberName": "executed",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 2773,
+                            "referencedDeclaration": 2779,
                             "src": "1882:12:10",
                             "typeDescriptions": {
                               "typeIdentifier": "t_bool",
@@ -4257,7 +4257,7 @@
                           "rightHandSide": {
                             "argumentTypes": null,
                             "hexValue": "74727565",
-                            "id": 3775,
+                            "id": 3781,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -4278,14 +4278,14 @@
                             "typeString": "bool"
                           }
                         },
-                        "id": 3777,
+                        "id": 3783,
                         "nodeType": "ExpressionStatement",
                         "src": "1882:19:10"
                       },
                       {
                         "condition": {
                           "argumentTypes": null,
-                          "id": 3779,
+                          "id": 3785,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -4296,11 +4296,11 @@
                           "src": "1919:11:10",
                           "subExpression": {
                             "argumentTypes": null,
-                            "id": 3778,
+                            "id": 3784,
                             "name": "_confirmed",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 3755,
+                            "referencedDeclaration": 3761,
                             "src": "1920:10:10",
                             "typeDescriptions": {
                               "typeIdentifier": "t_bool",
@@ -4313,24 +4313,24 @@
                           }
                         },
                         "falseBody": null,
-                        "id": 3785,
+                        "id": 3791,
                         "nodeType": "IfStatement",
                         "src": "1915:56:10",
                         "trueBody": {
                           "expression": {
                             "argumentTypes": null,
-                            "id": 3783,
+                            "id": 3789,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
                             "lValueRequested": false,
                             "leftHandSide": {
                               "argumentTypes": null,
-                              "id": 3780,
+                              "id": 3786,
                               "name": "spentToday",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 3696,
+                              "referencedDeclaration": 3702,
                               "src": "1948:10:10",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_uint256",
@@ -4343,25 +4343,25 @@
                               "argumentTypes": null,
                               "expression": {
                                 "argumentTypes": null,
-                                "id": 3781,
+                                "id": 3787,
                                 "name": "txn",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 3749,
+                                "referencedDeclaration": 3755,
                                 "src": "1962:3:10",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_struct$_Transaction_$2774_storage_ptr",
+                                  "typeIdentifier": "t_struct$_Transaction_$2780_storage_ptr",
                                   "typeString": "struct MultiSigWallet.Transaction storage pointer"
                                 }
                               },
-                              "id": 3782,
+                              "id": 3788,
                               "isConstant": false,
                               "isLValue": true,
                               "isPure": false,
                               "lValueRequested": false,
                               "memberName": "value",
                               "nodeType": "MemberAccess",
-                              "referencedDeclaration": 2769,
+                              "referencedDeclaration": 2775,
                               "src": "1962:9:10",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_uint256",
@@ -4374,7 +4374,7 @@
                               "typeString": "uint256"
                             }
                           },
-                          "id": 3784,
+                          "id": 3790,
                           "nodeType": "ExpressionStatement",
                           "src": "1948:23:10"
                         }
@@ -4387,25 +4387,25 @@
                               "argumentTypes": null,
                               "expression": {
                                 "argumentTypes": null,
-                                "id": 3793,
+                                "id": 3799,
                                 "name": "txn",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 3749,
+                                "referencedDeclaration": 3755,
                                 "src": "2027:3:10",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_struct$_Transaction_$2774_storage_ptr",
+                                  "typeIdentifier": "t_struct$_Transaction_$2780_storage_ptr",
                                   "typeString": "struct MultiSigWallet.Transaction storage pointer"
                                 }
                               },
-                              "id": 3794,
+                              "id": 3800,
                               "isConstant": false,
                               "isLValue": true,
                               "isPure": false,
                               "lValueRequested": false,
                               "memberName": "data",
                               "nodeType": "MemberAccess",
-                              "referencedDeclaration": 2771,
+                              "referencedDeclaration": 2777,
                               "src": "2027:8:10",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_bytes_storage",
@@ -4425,25 +4425,25 @@
                                 "argumentTypes": null,
                                 "expression": {
                                   "argumentTypes": null,
-                                  "id": 3790,
+                                  "id": 3796,
                                   "name": "txn",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 3749,
+                                  "referencedDeclaration": 3755,
                                   "src": "2016:3:10",
                                   "typeDescriptions": {
-                                    "typeIdentifier": "t_struct$_Transaction_$2774_storage_ptr",
+                                    "typeIdentifier": "t_struct$_Transaction_$2780_storage_ptr",
                                     "typeString": "struct MultiSigWallet.Transaction storage pointer"
                                   }
                                 },
-                                "id": 3791,
+                                "id": 3797,
                                 "isConstant": false,
                                 "isLValue": true,
                                 "isPure": false,
                                 "lValueRequested": false,
                                 "memberName": "value",
                                 "nodeType": "MemberAccess",
-                                "referencedDeclaration": 2769,
+                                "referencedDeclaration": 2775,
                                 "src": "2016:9:10",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_uint256",
@@ -4464,32 +4464,32 @@
                                   "argumentTypes": null,
                                   "expression": {
                                     "argumentTypes": null,
-                                    "id": 3786,
+                                    "id": 3792,
                                     "name": "txn",
                                     "nodeType": "Identifier",
                                     "overloadedDeclarations": [],
-                                    "referencedDeclaration": 3749,
+                                    "referencedDeclaration": 3755,
                                     "src": "1989:3:10",
                                     "typeDescriptions": {
-                                      "typeIdentifier": "t_struct$_Transaction_$2774_storage_ptr",
+                                      "typeIdentifier": "t_struct$_Transaction_$2780_storage_ptr",
                                       "typeString": "struct MultiSigWallet.Transaction storage pointer"
                                     }
                                   },
-                                  "id": 3787,
+                                  "id": 3793,
                                   "isConstant": false,
                                   "isLValue": true,
                                   "isPure": false,
                                   "lValueRequested": false,
                                   "memberName": "destination",
                                   "nodeType": "MemberAccess",
-                                  "referencedDeclaration": 2767,
+                                  "referencedDeclaration": 2773,
                                   "src": "1989:15:10",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_address",
                                     "typeString": "address"
                                   }
                                 },
-                                "id": 3788,
+                                "id": 3794,
                                 "isConstant": false,
                                 "isLValue": false,
                                 "isPure": false,
@@ -4503,7 +4503,7 @@
                                   "typeString": "function () payable returns (bool)"
                                 }
                               },
-                              "id": 3789,
+                              "id": 3795,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": false,
@@ -4517,7 +4517,7 @@
                                 "typeString": "function (uint256) returns (function () payable returns (bool))"
                               }
                             },
-                            "id": 3792,
+                            "id": 3798,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
@@ -4531,7 +4531,7 @@
                               "typeString": "function () payable returns (bool)"
                             }
                           },
-                          "id": 3795,
+                          "id": 3801,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -4546,7 +4546,7 @@
                           }
                         },
                         "falseBody": {
-                          "id": 3818,
+                          "id": 3824,
                           "nodeType": "Block",
                           "src": "2097:180:10",
                           "statements": [
@@ -4556,11 +4556,11 @@
                                 "arguments": [
                                   {
                                     "argumentTypes": null,
-                                    "id": 3801,
+                                    "id": 3807,
                                     "name": "transactionId",
                                     "nodeType": "Identifier",
                                     "overloadedDeclarations": [],
-                                    "referencedDeclaration": 3733,
+                                    "referencedDeclaration": 3739,
                                     "src": "2132:13:10",
                                     "typeDescriptions": {
                                       "typeIdentifier": "t_uint256",
@@ -4575,18 +4575,18 @@
                                       "typeString": "uint256"
                                     }
                                   ],
-                                  "id": 3800,
+                                  "id": 3806,
                                   "name": "ExecutionFailure",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 2723,
+                                  "referencedDeclaration": 2729,
                                   "src": "2115:16:10",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_function_event_nonpayable$_t_uint256_$returns$__$",
                                     "typeString": "function (uint256)"
                                   }
                                 },
-                                "id": 3802,
+                                "id": 3808,
                                 "isConstant": false,
                                 "isLValue": false,
                                 "isPure": false,
@@ -4600,14 +4600,14 @@
                                   "typeString": "tuple()"
                                 }
                               },
-                              "id": 3803,
+                              "id": 3809,
                               "nodeType": "ExpressionStatement",
                               "src": "2115:31:10"
                             },
                             {
                               "expression": {
                                 "argumentTypes": null,
-                                "id": 3808,
+                                "id": 3814,
                                 "isConstant": false,
                                 "isLValue": false,
                                 "isPure": false,
@@ -4616,25 +4616,25 @@
                                   "argumentTypes": null,
                                   "expression": {
                                     "argumentTypes": null,
-                                    "id": 3804,
+                                    "id": 3810,
                                     "name": "txn",
                                     "nodeType": "Identifier",
                                     "overloadedDeclarations": [],
-                                    "referencedDeclaration": 3749,
+                                    "referencedDeclaration": 3755,
                                     "src": "2164:3:10",
                                     "typeDescriptions": {
-                                      "typeIdentifier": "t_struct$_Transaction_$2774_storage_ptr",
+                                      "typeIdentifier": "t_struct$_Transaction_$2780_storage_ptr",
                                       "typeString": "struct MultiSigWallet.Transaction storage pointer"
                                     }
                                   },
-                                  "id": 3806,
+                                  "id": 3812,
                                   "isConstant": false,
                                   "isLValue": true,
                                   "isPure": false,
                                   "lValueRequested": true,
                                   "memberName": "executed",
                                   "nodeType": "MemberAccess",
-                                  "referencedDeclaration": 2773,
+                                  "referencedDeclaration": 2779,
                                   "src": "2164:12:10",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_bool",
@@ -4646,7 +4646,7 @@
                                 "rightHandSide": {
                                   "argumentTypes": null,
                                   "hexValue": "66616c7365",
-                                  "id": 3807,
+                                  "id": 3813,
                                   "isConstant": false,
                                   "isLValue": false,
                                   "isPure": true,
@@ -4667,14 +4667,14 @@
                                   "typeString": "bool"
                                 }
                               },
-                              "id": 3809,
+                              "id": 3815,
                               "nodeType": "ExpressionStatement",
                               "src": "2164:20:10"
                             },
                             {
                               "condition": {
                                 "argumentTypes": null,
-                                "id": 3811,
+                                "id": 3817,
                                 "isConstant": false,
                                 "isLValue": false,
                                 "isPure": false,
@@ -4685,11 +4685,11 @@
                                 "src": "2206:11:10",
                                 "subExpression": {
                                   "argumentTypes": null,
-                                  "id": 3810,
+                                  "id": 3816,
                                   "name": "_confirmed",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 3755,
+                                  "referencedDeclaration": 3761,
                                   "src": "2207:10:10",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_bool",
@@ -4702,24 +4702,24 @@
                                 }
                               },
                               "falseBody": null,
-                              "id": 3817,
+                              "id": 3823,
                               "nodeType": "IfStatement",
                               "src": "2202:60:10",
                               "trueBody": {
                                 "expression": {
                                   "argumentTypes": null,
-                                  "id": 3815,
+                                  "id": 3821,
                                   "isConstant": false,
                                   "isLValue": false,
                                   "isPure": false,
                                   "lValueRequested": false,
                                   "leftHandSide": {
                                     "argumentTypes": null,
-                                    "id": 3812,
+                                    "id": 3818,
                                     "name": "spentToday",
                                     "nodeType": "Identifier",
                                     "overloadedDeclarations": [],
-                                    "referencedDeclaration": 3696,
+                                    "referencedDeclaration": 3702,
                                     "src": "2239:10:10",
                                     "typeDescriptions": {
                                       "typeIdentifier": "t_uint256",
@@ -4732,25 +4732,25 @@
                                     "argumentTypes": null,
                                     "expression": {
                                       "argumentTypes": null,
-                                      "id": 3813,
+                                      "id": 3819,
                                       "name": "txn",
                                       "nodeType": "Identifier",
                                       "overloadedDeclarations": [],
-                                      "referencedDeclaration": 3749,
+                                      "referencedDeclaration": 3755,
                                       "src": "2253:3:10",
                                       "typeDescriptions": {
-                                        "typeIdentifier": "t_struct$_Transaction_$2774_storage_ptr",
+                                        "typeIdentifier": "t_struct$_Transaction_$2780_storage_ptr",
                                         "typeString": "struct MultiSigWallet.Transaction storage pointer"
                                       }
                                     },
-                                    "id": 3814,
+                                    "id": 3820,
                                     "isConstant": false,
                                     "isLValue": true,
                                     "isPure": false,
                                     "lValueRequested": false,
                                     "memberName": "value",
                                     "nodeType": "MemberAccess",
-                                    "referencedDeclaration": 2769,
+                                    "referencedDeclaration": 2775,
                                     "src": "2253:9:10",
                                     "typeDescriptions": {
                                       "typeIdentifier": "t_uint256",
@@ -4763,14 +4763,14 @@
                                     "typeString": "uint256"
                                   }
                                 },
-                                "id": 3816,
+                                "id": 3822,
                                 "nodeType": "ExpressionStatement",
                                 "src": "2239:23:10"
                               }
                             }
                           ]
                         },
-                        "id": 3819,
+                        "id": 3825,
                         "nodeType": "IfStatement",
                         "src": "1985:292:10",
                         "trueBody": {
@@ -4779,11 +4779,11 @@
                             "arguments": [
                               {
                                 "argumentTypes": null,
-                                "id": 3797,
+                                "id": 3803,
                                 "name": "transactionId",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 3733,
+                                "referencedDeclaration": 3739,
                                 "src": "2064:13:10",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_uint256",
@@ -4798,18 +4798,18 @@
                                   "typeString": "uint256"
                                 }
                               ],
-                              "id": 3796,
+                              "id": 3802,
                               "name": "Execution",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 2719,
+                              "referencedDeclaration": 2725,
                               "src": "2054:9:10",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_function_event_nonpayable$_t_uint256_$returns$__$",
                                 "typeString": "function (uint256)"
                               }
                             },
-                            "id": 3798,
+                            "id": 3804,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
@@ -4823,7 +4823,7 @@
                               "typeString": "tuple()"
                             }
                           },
-                          "id": 3799,
+                          "id": 3805,
                           "nodeType": "ExpressionStatement",
                           "src": "2054:24:10"
                         }
@@ -4834,7 +4834,7 @@
               ]
             },
             "documentation": "@dev Allows anyone to execute a confirmed transaction or ether withdraws until daily limit is reached.\n @param transactionId Transaction ID.",
-            "id": 3823,
+            "id": 3829,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -4845,18 +4845,18 @@
                     "argumentTypes": null,
                     "expression": {
                       "argumentTypes": null,
-                      "id": 3736,
+                      "id": 3742,
                       "name": "msg",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 4298,
+                      "referencedDeclaration": 4304,
                       "src": "1578:3:10",
                       "typeDescriptions": {
                         "typeIdentifier": "t_magic_message",
                         "typeString": "msg"
                       }
                     },
-                    "id": 3737,
+                    "id": 3743,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -4871,14 +4871,14 @@
                     }
                   }
                 ],
-                "id": 3738,
+                "id": 3744,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 3735,
+                  "id": 3741,
                   "name": "ownerExists",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 2812,
+                  "referencedDeclaration": 2818,
                   "src": "1566:11:10",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$_t_address_$",
@@ -4892,11 +4892,11 @@
                 "arguments": [
                   {
                     "argumentTypes": null,
-                    "id": 3740,
+                    "id": 3746,
                     "name": "transactionId",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 3733,
+                    "referencedDeclaration": 3739,
                     "src": "1608:13:10",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
@@ -4907,18 +4907,18 @@
                     "argumentTypes": null,
                     "expression": {
                       "argumentTypes": null,
-                      "id": 3741,
+                      "id": 3747,
                       "name": "msg",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 4298,
+                      "referencedDeclaration": 4304,
                       "src": "1623:3:10",
                       "typeDescriptions": {
                         "typeIdentifier": "t_magic_message",
                         "typeString": "msg"
                       }
                     },
-                    "id": 3742,
+                    "id": 3748,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -4933,14 +4933,14 @@
                     }
                   }
                 ],
-                "id": 3743,
+                "id": 3749,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 3739,
+                  "id": 3745,
                   "name": "confirmed",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 2843,
+                  "referencedDeclaration": 2849,
                   "src": "1598:9:10",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$_t_uint256_$_t_address_$",
@@ -4954,11 +4954,11 @@
                 "arguments": [
                   {
                     "argumentTypes": null,
-                    "id": 3745,
+                    "id": 3751,
                     "name": "transactionId",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 3733,
+                    "referencedDeclaration": 3739,
                     "src": "1655:13:10",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
@@ -4966,14 +4966,14 @@
                     }
                   }
                 ],
-                "id": 3746,
+                "id": 3752,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 3744,
+                  "id": 3750,
                   "name": "notExecuted",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 2874,
+                  "referencedDeclaration": 2880,
                   "src": "1643:11:10",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$_t_uint256_$",
@@ -4987,15 +4987,15 @@
             "name": "executeTransaction",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 3734,
+              "id": 3740,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3733,
+                  "id": 3739,
                   "name": "transactionId",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3823,
+                  "scope": 3829,
                   "src": "1523:18:10",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -5004,7 +5004,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 3732,
+                    "id": 3738,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
                     "src": "1523:4:10",
@@ -5021,20 +5021,20 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 3747,
+              "id": 3753,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1674:0:10"
             },
-            "scope": 3887,
+            "scope": 3893,
             "src": "1495:798:10",
             "stateMutability": "nonpayable",
-            "superFunction": 3331,
+            "superFunction": 3337,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 3861,
+              "id": 3867,
               "nodeType": "Block",
               "src": "2607:241:10",
               "statements": [
@@ -5045,18 +5045,18 @@
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     },
-                    "id": 3834,
+                    "id": 3840,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftExpression": {
                       "argumentTypes": null,
-                      "id": 3830,
+                      "id": 3836,
                       "name": "now",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 4300,
+                      "referencedDeclaration": 4306,
                       "src": "2621:3:10",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -5071,18 +5071,18 @@
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
                       },
-                      "id": 3833,
+                      "id": 3839,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "leftExpression": {
                         "argumentTypes": null,
-                        "id": 3831,
+                        "id": 3837,
                         "name": "lastDay",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 3694,
+                        "referencedDeclaration": 3700,
                         "src": "2627:7:10",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -5094,7 +5094,7 @@
                       "rightExpression": {
                         "argumentTypes": null,
                         "hexValue": "3234",
-                        "id": 3832,
+                        "id": 3838,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -5122,29 +5122,29 @@
                     }
                   },
                   "falseBody": null,
-                  "id": 3844,
+                  "id": 3850,
                   "nodeType": "IfStatement",
                   "src": "2617:96:10",
                   "trueBody": {
-                    "id": 3843,
+                    "id": 3849,
                     "nodeType": "Block",
                     "src": "2647:66:10",
                     "statements": [
                       {
                         "expression": {
                           "argumentTypes": null,
-                          "id": 3837,
+                          "id": 3843,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
                           "lValueRequested": false,
                           "leftHandSide": {
                             "argumentTypes": null,
-                            "id": 3835,
+                            "id": 3841,
                             "name": "lastDay",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 3694,
+                            "referencedDeclaration": 3700,
                             "src": "2661:7:10",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
@@ -5155,11 +5155,11 @@
                           "operator": "=",
                           "rightHandSide": {
                             "argumentTypes": null,
-                            "id": 3836,
+                            "id": 3842,
                             "name": "now",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 4300,
+                            "referencedDeclaration": 4306,
                             "src": "2671:3:10",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
@@ -5172,25 +5172,25 @@
                             "typeString": "uint256"
                           }
                         },
-                        "id": 3838,
+                        "id": 3844,
                         "nodeType": "ExpressionStatement",
                         "src": "2661:13:10"
                       },
                       {
                         "expression": {
                           "argumentTypes": null,
-                          "id": 3841,
+                          "id": 3847,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
                           "lValueRequested": false,
                           "leftHandSide": {
                             "argumentTypes": null,
-                            "id": 3839,
+                            "id": 3845,
                             "name": "spentToday",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 3696,
+                            "referencedDeclaration": 3702,
                             "src": "2688:10:10",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
@@ -5202,7 +5202,7 @@
                           "rightHandSide": {
                             "argumentTypes": null,
                             "hexValue": "30",
-                            "id": 3840,
+                            "id": 3846,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -5223,7 +5223,7 @@
                             "typeString": "uint256"
                           }
                         },
-                        "id": 3842,
+                        "id": 3848,
                         "nodeType": "ExpressionStatement",
                         "src": "2688:14:10"
                       }
@@ -5237,7 +5237,7 @@
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
                     },
-                    "id": 3855,
+                    "id": 3861,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -5248,7 +5248,7 @@
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
                       },
-                      "id": 3849,
+                      "id": 3855,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -5259,18 +5259,18 @@
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
                         },
-                        "id": 3847,
+                        "id": 3853,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
                         "lValueRequested": false,
                         "leftExpression": {
                           "argumentTypes": null,
-                          "id": 3845,
+                          "id": 3851,
                           "name": "spentToday",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 3696,
+                          "referencedDeclaration": 3702,
                           "src": "2726:10:10",
                           "typeDescriptions": {
                             "typeIdentifier": "t_uint256",
@@ -5281,11 +5281,11 @@
                         "operator": "+",
                         "rightExpression": {
                           "argumentTypes": null,
-                          "id": 3846,
+                          "id": 3852,
                           "name": "amount",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 3825,
+                          "referencedDeclaration": 3831,
                           "src": "2739:6:10",
                           "typeDescriptions": {
                             "typeIdentifier": "t_uint256",
@@ -5302,11 +5302,11 @@
                       "operator": ">",
                       "rightExpression": {
                         "argumentTypes": null,
-                        "id": 3848,
+                        "id": 3854,
                         "name": "dailyLimit",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 3692,
+                        "referencedDeclaration": 3698,
                         "src": "2748:10:10",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -5327,7 +5327,7 @@
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
                       },
-                      "id": 3854,
+                      "id": 3860,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -5338,18 +5338,18 @@
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
                         },
-                        "id": 3852,
+                        "id": 3858,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
                         "lValueRequested": false,
                         "leftExpression": {
                           "argumentTypes": null,
-                          "id": 3850,
+                          "id": 3856,
                           "name": "spentToday",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 3696,
+                          "referencedDeclaration": 3702,
                           "src": "2762:10:10",
                           "typeDescriptions": {
                             "typeIdentifier": "t_uint256",
@@ -5360,11 +5360,11 @@
                         "operator": "+",
                         "rightExpression": {
                           "argumentTypes": null,
-                          "id": 3851,
+                          "id": 3857,
                           "name": "amount",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 3825,
+                          "referencedDeclaration": 3831,
                           "src": "2775:6:10",
                           "typeDescriptions": {
                             "typeIdentifier": "t_uint256",
@@ -5381,11 +5381,11 @@
                       "operator": "<",
                       "rightExpression": {
                         "argumentTypes": null,
-                        "id": 3853,
+                        "id": 3859,
                         "name": "spentToday",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 3696,
+                        "referencedDeclaration": 3702,
                         "src": "2784:10:10",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -5405,14 +5405,14 @@
                     }
                   },
                   "falseBody": null,
-                  "id": 3858,
+                  "id": 3864,
                   "nodeType": "IfStatement",
                   "src": "2722:98:10",
                   "trueBody": {
                     "expression": {
                       "argumentTypes": null,
                       "hexValue": "66616c7365",
-                      "id": 3856,
+                      "id": 3862,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -5427,8 +5427,8 @@
                       },
                       "value": "false"
                     },
-                    "functionReturnParameters": 3829,
-                    "id": 3857,
+                    "functionReturnParameters": 3835,
+                    "id": 3863,
                     "nodeType": "Return",
                     "src": "2808:12:10"
                   }
@@ -5437,7 +5437,7 @@
                   "expression": {
                     "argumentTypes": null,
                     "hexValue": "74727565",
-                    "id": 3859,
+                    "id": 3865,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": true,
@@ -5452,15 +5452,15 @@
                     },
                     "value": "true"
                   },
-                  "functionReturnParameters": 3829,
-                  "id": 3860,
+                  "functionReturnParameters": 3835,
+                  "id": 3866,
                   "nodeType": "Return",
                   "src": "2830:11:10"
                 }
               ]
             },
             "documentation": "@dev Returns if amount is within daily limit and resets spentToday after one day.\n @param amount Amount to withdraw.\n @return Returns if amount is under daily limit.",
-            "id": 3862,
+            "id": 3868,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -5468,15 +5468,15 @@
             "name": "isUnderLimit",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 3826,
+              "id": 3832,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3825,
+                  "id": 3831,
                   "name": "amount",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3862,
+                  "scope": 3868,
                   "src": "2550:11:10",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -5485,7 +5485,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 3824,
+                    "id": 3830,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
                     "src": "2550:4:10",
@@ -5502,15 +5502,15 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 3829,
+              "id": 3835,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3828,
+                  "id": 3834,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3862,
+                  "scope": 3868,
                   "src": "2597:4:10",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -5519,7 +5519,7 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 3827,
+                    "id": 3833,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
                     "src": "2597:4:10",
@@ -5534,7 +5534,7 @@
               ],
               "src": "2596:6:10"
             },
-            "scope": 3887,
+            "scope": 3893,
             "src": "2528:320:10",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -5542,7 +5542,7 @@
           },
           {
             "body": {
-              "id": 3885,
+              "id": 3891,
               "nodeType": "Block",
               "src": "3060:175:10",
               "statements": [
@@ -5553,18 +5553,18 @@
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     },
-                    "id": 3871,
+                    "id": 3877,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftExpression": {
                       "argumentTypes": null,
-                      "id": 3867,
+                      "id": 3873,
                       "name": "now",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 4300,
+                      "referencedDeclaration": 4306,
                       "src": "3074:3:10",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -5579,18 +5579,18 @@
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
                       },
-                      "id": 3870,
+                      "id": 3876,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "leftExpression": {
                         "argumentTypes": null,
-                        "id": 3868,
+                        "id": 3874,
                         "name": "lastDay",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 3694,
+                        "referencedDeclaration": 3700,
                         "src": "3080:7:10",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -5602,7 +5602,7 @@
                       "rightExpression": {
                         "argumentTypes": null,
                         "hexValue": "3234",
-                        "id": 3869,
+                        "id": 3875,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -5630,106 +5630,31 @@
                     }
                   },
                   "falseBody": null,
-                  "id": 3874,
+                  "id": 3880,
                   "nodeType": "IfStatement",
                   "src": "3070:59:10",
                   "trueBody": {
                     "expression": {
                       "argumentTypes": null,
-                      "id": 3872,
+                      "id": 3878,
                       "name": "dailyLimit",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 3692,
+                      "referencedDeclaration": 3698,
                       "src": "3119:10:10",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
                       }
                     },
-                    "functionReturnParameters": 3866,
-                    "id": 3873,
+                    "functionReturnParameters": 3872,
+                    "id": 3879,
                     "nodeType": "Return",
                     "src": "3112:17:10"
                   }
                 },
                 {
                   "condition": {
-                    "argumentTypes": null,
-                    "commonType": {
-                      "typeIdentifier": "t_uint256",
-                      "typeString": "uint256"
-                    },
-                    "id": 3877,
-                    "isConstant": false,
-                    "isLValue": false,
-                    "isPure": false,
-                    "lValueRequested": false,
-                    "leftExpression": {
-                      "argumentTypes": null,
-                      "id": 3875,
-                      "name": "dailyLimit",
-                      "nodeType": "Identifier",
-                      "overloadedDeclarations": [],
-                      "referencedDeclaration": 3692,
-                      "src": "3143:10:10",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_uint256",
-                        "typeString": "uint256"
-                      }
-                    },
-                    "nodeType": "BinaryOperation",
-                    "operator": "<",
-                    "rightExpression": {
-                      "argumentTypes": null,
-                      "id": 3876,
-                      "name": "spentToday",
-                      "nodeType": "Identifier",
-                      "overloadedDeclarations": [],
-                      "referencedDeclaration": 3696,
-                      "src": "3156:10:10",
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_uint256",
-                        "typeString": "uint256"
-                      }
-                    },
-                    "src": "3143:23:10",
-                    "typeDescriptions": {
-                      "typeIdentifier": "t_bool",
-                      "typeString": "bool"
-                    }
-                  },
-                  "falseBody": null,
-                  "id": 3880,
-                  "nodeType": "IfStatement",
-                  "src": "3139:49:10",
-                  "trueBody": {
-                    "expression": {
-                      "argumentTypes": null,
-                      "hexValue": "30",
-                      "id": 3878,
-                      "isConstant": false,
-                      "isLValue": false,
-                      "isPure": true,
-                      "kind": "number",
-                      "lValueRequested": false,
-                      "nodeType": "Literal",
-                      "src": "3187:1:10",
-                      "subdenomination": null,
-                      "typeDescriptions": {
-                        "typeIdentifier": "t_rational_0_by_1",
-                        "typeString": "int_const 0"
-                      },
-                      "value": "0"
-                    },
-                    "functionReturnParameters": 3866,
-                    "id": 3879,
-                    "nodeType": "Return",
-                    "src": "3180:8:10"
-                  }
-                },
-                {
-                  "expression": {
                     "argumentTypes": null,
                     "commonType": {
                       "typeIdentifier": "t_uint256",
@@ -5746,7 +5671,82 @@
                       "name": "dailyLimit",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 3692,
+                      "referencedDeclaration": 3698,
+                      "src": "3143:10:10",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "BinaryOperation",
+                    "operator": "<",
+                    "rightExpression": {
+                      "argumentTypes": null,
+                      "id": 3882,
+                      "name": "spentToday",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 3702,
+                      "src": "3156:10:10",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "3143:23:10",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "falseBody": null,
+                  "id": 3886,
+                  "nodeType": "IfStatement",
+                  "src": "3139:49:10",
+                  "trueBody": {
+                    "expression": {
+                      "argumentTypes": null,
+                      "hexValue": "30",
+                      "id": 3884,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "3187:1:10",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_0_by_1",
+                        "typeString": "int_const 0"
+                      },
+                      "value": "0"
+                    },
+                    "functionReturnParameters": 3872,
+                    "id": 3885,
+                    "nodeType": "Return",
+                    "src": "3180:8:10"
+                  }
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "commonType": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    },
+                    "id": 3889,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftExpression": {
+                      "argumentTypes": null,
+                      "id": 3887,
+                      "name": "dailyLimit",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 3698,
                       "src": "3205:10:10",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -5757,11 +5757,11 @@
                     "operator": "-",
                     "rightExpression": {
                       "argumentTypes": null,
-                      "id": 3882,
+                      "id": 3888,
                       "name": "spentToday",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 3696,
+                      "referencedDeclaration": 3702,
                       "src": "3218:10:10",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -5774,15 +5774,15 @@
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 3866,
-                  "id": 3884,
+                  "functionReturnParameters": 3872,
+                  "id": 3890,
                   "nodeType": "Return",
                   "src": "3198:30:10"
                 }
               ]
             },
             "documentation": "@dev Returns maximum withdraw amount.\n @return Returns amount.",
-            "id": 3886,
+            "id": 3892,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -5790,22 +5790,22 @@
             "name": "calcMaxWithdraw",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 3863,
+              "id": 3869,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "2998:2:10"
             },
             "payable": false,
             "returnParameters": {
-              "id": 3866,
+              "id": 3872,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3865,
+                  "id": 3871,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3886,
+                  "scope": 3892,
                   "src": "3050:4:10",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -5814,7 +5814,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 3864,
+                    "id": 3870,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
                     "src": "3050:4:10",
@@ -5829,14 +5829,14 @@
               ],
               "src": "3049:6:10"
             },
-            "scope": 3887,
+            "scope": 3893,
             "src": "2974:261:10",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 3888,
+        "scope": 3894,
         "src": "228:3009:10"
       }
     ],
@@ -5850,12 +5850,12 @@
     "5777": {
       "events": {},
       "links": {},
-      "address": "0xe87B7293754c0398aaD5F31EaDA44aE2d01C5052",
-      "transactionHash": "0xa32e316f6c17c2c1f91afa79dfb1ed8ca590ce56acd299e20147a774a179059a"
+      "address": "0x67a4B15b0D194c979f27Cfb97F2D6963A613dB7e",
+      "transactionHash": "0x0d18105e982128c77ca2fbe193a30f7ac1154ba0e7f8b5fde5634379c8605cf9"
     }
   },
   "schemaVersion": "3.0.1",
-  "updatedAt": "2019-01-07T21:07:23.011Z",
+  "updatedAt": "2019-01-09T10:26:49.545Z",
   "devdoc": {
     "author": "Stefan George - <stefan.george@consensys.net>",
     "methods": {
