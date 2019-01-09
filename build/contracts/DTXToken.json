@@ -625,7 +625,7 @@
         "id": 119,
         "nodeType": "ImportDirective",
         "scope": 138,
-        "sourceUnit": 2698,
+        "sourceUnit": 2704,
         "src": "26:36:1",
         "symbolAliases": [],
         "unitAlias": ""
@@ -639,10 +639,10 @@
               "id": 120,
               "name": "MiniMeToken",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 2656,
+              "referencedDeclaration": 2662,
               "src": "86:11:1",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_MiniMeToken_$2656",
+                "typeIdentifier": "t_contract$_MiniMeToken_$2662",
                 "typeString": "contract MiniMeToken"
               }
             },
@@ -652,8 +652,8 @@
           }
         ],
         "contractDependencies": [
-          1496,
-          2656
+          1502,
+          2662
         ],
         "contractKind": "contract",
         "documentation": null,
@@ -661,8 +661,8 @@
         "id": 137,
         "linearizedBaseContracts": [
           137,
-          2656,
-          1496
+          2662,
+          1502
         ],
         "name": "DTXToken",
         "nodeType": "ContractDefinition",
@@ -811,10 +811,10 @@
                   "name": "MiniMeToken",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 2656,
+                  "referencedDeclaration": 2662,
                   "src": "151:11:1",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_type$_t_contract$_MiniMeToken_$2656_$",
+                    "typeIdentifier": "t_type$_t_contract$_MiniMeToken_$2662_$",
                     "typeString": "type(contract MiniMeToken)"
                   }
                 },
@@ -904,7 +904,7 @@
         "id": 119,
         "nodeType": "ImportDirective",
         "scope": 138,
-        "sourceUnit": 2698,
+        "sourceUnit": 2704,
         "src": "26:36:1",
         "symbolAliases": [],
         "unitAlias": ""
@@ -918,10 +918,10 @@
               "id": 120,
               "name": "MiniMeToken",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 2656,
+              "referencedDeclaration": 2662,
               "src": "86:11:1",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_MiniMeToken_$2656",
+                "typeIdentifier": "t_contract$_MiniMeToken_$2662",
                 "typeString": "contract MiniMeToken"
               }
             },
@@ -931,8 +931,8 @@
           }
         ],
         "contractDependencies": [
-          1496,
-          2656
+          1502,
+          2662
         ],
         "contractKind": "contract",
         "documentation": null,
@@ -940,8 +940,8 @@
         "id": 137,
         "linearizedBaseContracts": [
           137,
-          2656,
-          1496
+          2662,
+          1502
         ],
         "name": "DTXToken",
         "nodeType": "ContractDefinition",
@@ -1090,10 +1090,10 @@
                   "name": "MiniMeToken",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 2656,
+                  "referencedDeclaration": 2662,
                   "src": "151:11:1",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_type$_t_contract$_MiniMeToken_$2656_$",
+                    "typeIdentifier": "t_type$_t_contract$_MiniMeToken_$2662_$",
                     "typeString": "type(contract MiniMeToken)"
                   }
                 },
@@ -1170,12 +1170,12 @@
     "5777": {
       "events": {},
       "links": {},
-      "address": "0x4311Ee8252643b32e2A6D4D73554A3E62a3B526C",
-      "transactionHash": "0x0fd1ff67e641d0f4a933f240f3b724a2aceeaf39be08b3ec5d99032ffd63b678"
+      "address": "0x877829fDCb383989f90Ca235Fe2466940a496122",
+      "transactionHash": "0xe32bb6b40f904a28bdbbdc084c19949eb7a69b2adc452da88bf1f1777d9a8a02"
     }
   },
   "schemaVersion": "3.0.1",
-  "updatedAt": "2019-01-07T21:08:17.954Z",
+  "updatedAt": "2019-01-09T10:27:40.709Z",
   "devdoc": {
     "methods": {
       "allowance(address,address)": {

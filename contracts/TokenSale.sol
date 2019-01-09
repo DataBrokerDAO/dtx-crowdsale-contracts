@@ -58,7 +58,7 @@ contract TokenSale is TokenController, Controlled {
   bool public transferable;
 
   // listing of addresses with allowances
-  mapping(address => Vesting) vestedAllowances;
+  mapping(address => Vesting) public vestedAllowances;
 
   struct Vesting {
     uint256 amount;
@@ -193,7 +193,7 @@ contract TokenSale is TokenController, Controlled {
       // these tokens count for the hard cap limit, but they are guaranteed to succeed so no hardcap check.
       totalIssued = totalIssued.add(_free[i]);
       // Creates an equal amount of tokens as ether sent. The new tokens are created in the address of the recipient
-      require(tokenContract.generateTokens(_recipients[i], _free[i]), "Generating tokens failed" );
+      require(tokenContract.generateTokens(_recipients[i], _free[i]), "Generating tokens failed");
       // locks the rest until the cliff is reached
       vestedAllowances[_recipients[i]] = Vesting(_locked[i], _cliffs[i]);
       totalVested.add(_locked[i]);
@@ -280,11 +280,12 @@ contract TokenSale is TokenController, Controlled {
   }
 
   function claimLockedTokens(address _owner) public {
-    require(vestedAllowances[_owner].cliff > 0 && vestedAllowances[_owner].amount > 0);
-    require(now >= vestedAllowances[_owner].cliff);
+    require(vestedAllowances[_owner].cliff > 0, "Cliff should be bigger than 0");
+    require(vestedAllowances[_owner].amount > 0, "Amount should be bigger than 0");
+    require(now >= vestedAllowances[_owner].cliff, "Cliff date should be after now");
     uint256 amount = vestedAllowances[_owner].amount;
     vestedAllowances[_owner].amount = 0;
-    require(tokenContract.transfer(_owner, amount));
+    require(tokenContract.transfer(_owner, amount), "The token transfer failed");
   }
 
   /// @notice Pauses the contribution if there is any issue
