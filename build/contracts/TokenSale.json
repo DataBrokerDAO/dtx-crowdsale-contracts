@@ -23491,12 +23491,12 @@
     "5777": {
       "events": {},
       "links": {},
-      "address": "0x9F21E1d613312cB5DF5B1287Ee4124901a332b4e",
-      "transactionHash": "0xfd84aec341c4489a7dec73459b70324c08eb151c33c68bfe9cecea3c6255fe29"
+      "address": "0xB3D7fEF5BC4fBB81A857C680E59Bcf72aB4112F9",
+      "transactionHash": "0xaacf0ad45ad0860118b61bb43e1ddbee6e33dd19a4eaa15dfa69e441db1226b4"
     }
   },
   "schemaVersion": "3.0.1",
-  "updatedAt": "2019-01-09T10:31:30.644Z",
+  "updatedAt": "2019-01-09T12:23:04.000Z",
   "devdoc": {
     "methods": {
       "changeController(address)": {

@@ -3206,12 +3206,12 @@
     "5777": {
       "events": {},
       "links": {},
-      "address": "0x88EB7062dC99F4DC176AbCdB44c2a3F047E33ED1",
-      "transactionHash": "0x0a7a0908b3ec580c39b5effac305a37e03bc86cbd735c7721be72152cd6ff28b"
+      "address": "0x0360A351FB18c6efF2a6078f6C95DA497BF3cf11",
+      "transactionHash": "0x32d72fecb99887c1ab644baee09bbb830e5cf2b3ad9aa972bd8b773b541dbd1b"
     }
   },
   "schemaVersion": "3.0.1",
-  "updatedAt": "2019-01-09T10:27:56.277Z",
+  "updatedAt": "2019-01-09T12:20:42.751Z",
   "devdoc": {
     "methods": {
       "allocateTokens(address[],uint256[])": {
